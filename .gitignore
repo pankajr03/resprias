@@ -7,12 +7,14 @@
 /files/
 /administrator/cache/
 /administrator/components/com_akeebabackup/backup/
+/administrator/logs/
 /cache/
 /logs/
 /tmp/
 /media/
 /images/
 /cli/cache/
+.gitignore  
 
 #######################################
 # Joomla configuration (VERY IMPORTANT)

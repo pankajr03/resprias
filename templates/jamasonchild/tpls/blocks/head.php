@@ -15,18 +15,9 @@ defined('_JEXEC') or die;
 ?>
 
 <!-- META FOR IOS & HANDHELD -->
-/**
-* Commented out to allow custom meta tags in index.php
-*/
-{% comment %} <?php if ($this->getParam('responsive', 1)): ?>
+<?php if ($this->getParam('responsive', 1)): ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-	<title>Advanced Breathing Therapy in Colorado Springs | Respiras Breathing</title>
-    <meta name="description" content="Respiras offers advanced breathing therapy to restore CO₂ balance, improve oxygen delivery, and calm an overactive nervous system. Drug-free solutions for anxiety, pain, and sleep issues.">
-    <meta name="keywords" content="breathing therapy Colorado Springs, science-based breathing therapy, CO₂ breathing retraining, anxiety breathing therapy, natural anxiety treatment, dysautonomia therapy, sleep optimization breathing, non-drug anxiety solution, restore CO₂ balance">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Respiras Breathing">
-    <link rel="canonical" href="https://respiras.com/">
-	<style type="text/stylesheet">
+		<style type="text/stylesheet">
 		@-webkit-viewport   { width: device-width; }
 		@-moz-viewport      { width: device-width; }
 		@-ms-viewport       { width: device-width; }
@@ -46,7 +37,7 @@ defined('_JEXEC') or die;
 	</script>
 <?php endif ?>
 <meta name="HandheldFriendly" content="true"/>
-<meta name="apple-mobile-web-app-capable" content="YES"/> {% endcomment %}
+<meta name="apple-mobile-web-app-capable" content="yes"/>
 <!-- //META FOR IOS & HANDHELD -->
 
 <?php
