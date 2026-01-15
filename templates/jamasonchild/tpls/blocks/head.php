@@ -15,7 +15,10 @@ defined('_JEXEC') or die;
 ?>
 
 <!-- META FOR IOS & HANDHELD -->
-<?php if ($this->getParam('responsive', 1)): ?>
+/**
+* Commented out to allow custom meta tags in index.php
+*/
+{% comment %} <?php if ($this->getParam('responsive', 1)): ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	<title>Advanced Breathing Therapy in Colorado Springs | Respiras Breathing</title>
     <meta name="description" content="Respiras offers advanced breathing therapy to restore CO₂ balance, improve oxygen delivery, and calm an overactive nervous system. Drug-free solutions for anxiety, pain, and sleep issues.">
@@ -43,7 +46,7 @@ defined('_JEXEC') or die;
 	</script>
 <?php endif ?>
 <meta name="HandheldFriendly" content="true"/>
-<meta name="apple-mobile-web-app-capable" content="YES"/>
+<meta name="apple-mobile-web-app-capable" content="YES"/> {% endcomment %}
 <!-- //META FOR IOS & HANDHELD -->
 
 <?php
