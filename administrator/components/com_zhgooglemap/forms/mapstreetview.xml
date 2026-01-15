@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details">
+        <field
+            name="id"
+            type="hidden"
+        />
+        <field
+            name="title"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_TITLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_TITLE_DESC"
+            size="60"
+            class="inputbox span10"
+            required="true"
+            default=""
+        />
+        <field
+            name="description"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_DESCRIPTION_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_DESCRIPTION_DESC"
+            size="100"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field
+            name="published"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_PUBLISHED_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_PUBLISHED_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="heading"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_HEADING_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_HEADING_DESC"
+            size="20"
+            class="inputbox"
+            required="true"
+            default="0"
+        />
+        <field
+            name="pitch"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_PITCH_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_PITCH_DESC"
+            size="20"
+            class="inputbox"
+            required="true"
+            default="0"
+        />
+        <field
+            name="zoom"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_ZOOM_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_ZOOM_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+        </field>
+        <field
+            name="catid"
+            type="category"
+            extension="com_zhgooglemap"
+            class="inputbox span5"
+            default=""
+            label="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_CATEGORY_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_CATEGORY_DESC"
+            required="false"
+        >
+            <option value="0">JOPTION_SELECT_CATEGORY</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="streetviewadvanced">
+        <field name="publish_up" 
+            type="calendar"
+            label="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_PUBLISH_UP_LABEL" 
+            description="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_PUBLISH_UP_DESC"
+            translateformat="true"
+			showtime="true"
+			size="22"
+            filter="user_utc"
+        />
+        <field name="publish_down" 
+            type="calendar"
+            label="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_PUBLISH_DOWN_LABEL" 
+            description="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_PUBLISH_DOWN_DESC"
+            translateformat="true"
+			showtime="true"
+			size="22"
+            filter="user_utc"
+        />         
+    </fieldset>
+            
+    <fields name="params">
+        <fieldset
+            name="params"
+            label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+        >
+            <field
+                name="show_category"
+                type="list"
+                label="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_SHOW_CATEGORY_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPSTREETVIEW_DETAIL_SHOW_CATEGORY_DESC"
+                default=""
+                class="lst-dropdown-sinlge"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+        </fieldset>
+    </fields>
+
+</form>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset
+        name="Map"
+        label="COM_ZHGOOGLEMAP_CONFIG_MAP_LABEL"
+        description="COM_ZHGOOGLEMAP_CONFIG_MAP_DESC"
+    >
+        
+        <field
+            name="map_map_key"
+            type="text"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPMAPKEY_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPMAPKEY_DESC"
+            size="150"
+            default=""
+            class="inputbox span8"
+        />
+        <field
+            name="map_map_key_nz"
+            type="text"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPMAPKEY_NZ_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPMAPKEY_NZ_DESC"
+            size="150"
+            default=""
+            class="inputbox span8"
+        />
+        <field
+            name="map_lat"
+            type="text"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPDEFLAT_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPDEFLAT_DESC"
+            size="60"
+            default=""
+        />
+        <field
+            name="map_lng"
+            type="text"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPDEFLNG_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPDEFLNG_DESC"
+            size="60"
+            default=""
+        />
+        <field
+            name="map_height"
+            type="text"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPHEIGHT_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPHEIGHT_DESC"
+            size="60"
+            default=""
+        />
+        <field
+            name="placemarktitletag"
+            type="list"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_PLACEMARK_TITLE_H2_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_PLACEMARK_TITLE_H2_DESC"
+            default="h2"
+        >
+            <option value="h2">COM_ZHGOOGLEMAP_CONFIG_MAP_PLACEMARK_TITLE_H2</option>
+            <option value="h3">COM_ZHGOOGLEMAP_CONFIG_MAP_PLACEMARK_TITLE_H3</option>
+        </field>        
+
+        
+        
+        <field
+            name="map_type_google"
+            type="list"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPTYPE_GOOGLE_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPTYPE_GOOGLE_DESC"
+            default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="map_type_osm"
+            type="list"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPTYPE_OSM_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPTYPE_OSM_DESC"
+            default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+            <option value="2">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPTYPE_DEFAULT</option>
+        </field>
+        <field
+            name="map_type_custom"
+            type="list"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPTYPE_CUSTOM_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPTYPE_CUSTOM_DESC"
+            default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+            <option value="2">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPTYPE_DEFAULT</option>
+        </field>
+
+        <field
+            name="load_jquery"
+            type="list"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_LOAD_JQUERY_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_LOAD_JQUERY_DESC"
+            default="1"
+            size="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_LOAD_JQUERY_JOOMLA</option>
+        </field>
+        
+        <field
+            name="map_compatiblemode"
+            type="list"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_COMPATIBLEMODE_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_COMPATIBLEMODE_DESC"
+            default="2"
+            size="1"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_COMPATIBLEMODE_MOOTOOLS</option>
+            <option value="1">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_COMPATIBLEMODE_INTERNAL</option>
+            <option value="2">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_COMPATIBLEMODE_JQUERY</option>
+        </field>
+        <field
+            name="httpsprotocol"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_HTTPSPROTOCOL_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_HTTPSPROTOCOL_DESC"
+            default="0"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_HTTPSPROTOCOL_HTTP</option>
+            <option value="0">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_HTTPSPROTOCOL_HTTPS</option>
+        </field>
+        <field
+            name="loadtype"
+            type="list"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_LOADTYPE_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_LOADTYPE_DESC"
+            size="1"
+            default="2"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_LOADTYPE_ONLOAD</option>
+            <option value="1">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_LOADTYPE_DOMREADY</option>
+            <option value="2">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_LOADTYPE_JQUERYREADY</option>
+            <option value="3">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_LOADTYPE_CALLBACK</option>
+
+        </field>
+        <field
+            name="map_api_version"
+            type="text"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPAPIVERSION_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPAPIVERSION_DESC"
+                        size="10"
+            default="3"
+        />
+        <field
+            name="api_type"
+            type="list"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_API_TYPE_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_API_TYPE_DESC"
+            default="0"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_API_TYPE_DEFAULT</option>
+            <option value="1">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_API_TYPE_DITU</option>
+        </field>
+        <field
+            name="geotag_link"
+            type="list"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_GEOTAG_LINK_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_GEOTAG_LINK_DESC"
+                        size="1"
+            default="0"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_GEOTAG_LINK_ICON</option>
+            <option value="1">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_GEOTAG_LINK_NONE</option>
+        </field>
+        <field
+            name="geotag_css"
+            type="list"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_GEOTAG_CSS_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_GEOTAG_CSS_DESC"
+                        size="1"
+            default="0"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_GEOTAG_CSS_ADVANCED</option>
+            <option value="1">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_GEOTAG_CSS_SIMPLE</option>
+            <option value="10">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_GEOTAG_CSS_A_EXTERNAL</option>
+            <option value="11">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_GEOTAG_CSS_S_EXTERNAL</option>
+        </field>
+        <field
+            name="geotag_hide_marker"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_GEOTAG_MARKER_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_GEOTAG_MARKER_DESC"
+            default="0"
+            class="btn-group"
+        >
+            <option value="1">JNO</option>
+            <option value="0">JYES</option>
+        </field>
+            
+        <field
+            name="show_category"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_SHOW_CATEGORY_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_SHOW_CATEGORY_DESC"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
+        </field>    
+    
+        <field
+            name="note1"
+            type="note"
+            class="alert alert-warning w-100"
+            description="COM_ZHGOOGLEMAP_CONFIG_MAP_LICENSE_DESC"
+        />
+        <field
+            name="licenseinfo"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_POWEREDBY"
+            description="If you disable the &lt;strong&gt;'powered by'&lt;/strong&gt; link from my component, it is fair to donate for the component. &lt;br/&gt; Developing and maintaining Zh GoogleMap is a lot of work which should be recompensed adequately. &lt;br/&gt; Click on the link below to my site &lt;strong>zhuk.cc&lt;/strong&gt;, and donate via PayPal, WebMoney or Yandex.Money."
+            default="8"
+        >
+                    <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLISTPOS_NONE</option>                    
+                    <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+                    <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+                    <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+                    <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+                    <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+                    <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+                    <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+                    <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+                    <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+                    <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+                    <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+                    <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+                    <option value="114">COM_ZHGOOGLEMAP_MAP_DETAIL_SHOWPANEL_BOTTOM</option>
+        </field>
+        <field
+            name="note2"
+            type="note"
+            class="alert alert-success w-100"
+            description="Visit &lt;a href=&quot;http://joomla.zhuk.cc/index.php/donate &quot; target=&quot;_blank&quot; &gt;zhuk.cc&lt;/a&gt; for donation "
+        />
+
+    </fieldset>
+
+    <fieldset
+        name="map_gpdr"
+        label="COM_ZHGOOGLEMAP_CONFIG_GPDR_LABEL"
+        description="COM_ZHGOOGLEMAP_CONFIG_GPDR_DESC"
+    >
+
+        <field
+            name="enable_map_gpdr"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_CONFIG_GPDR_ENABLE_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_GPDR_ENABLE_DESC"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+		
+		<field
+            name="buttonlabel"
+            type="text"
+            label="COM_ZHGOOGLEMAP_CONFIG_GPDR_BUTTONL_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_GPDR_BUTTONL_DESC"
+            size="90"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+		
+		<field
+            name="headerhtml"
+            type="editor"
+            label="COM_ZHGOOGLEMAP_CONFIG_GPDR_HEADERHTML_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_GPDR_HEADERHTML_DESC"
+            rows="10"
+            size="100"
+            class="inputbox"
+            required="false"
+            default=""
+            filter="raw"
+        />
+		<field
+            name="footerhtml"
+            type="editor"
+            label="COM_ZHGOOGLEMAP_CONFIG_GPDR_FOOTERHTML_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_GPDR_FOOTERHTML_DESC"
+            rows="10"
+            size="100"
+            class="inputbox"
+            required="false"
+            default=""
+            filter="raw"
+        />
+		
+
+        <field
+            name="cookies_button"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_CONFIG_GPDR_BUTTONC_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_GPDR_BUTTONC_DESC"
+            default="0"
+            class="btn-group"
+        >
+            <option value="1">JNO</option>
+            <option value="0">JYES</option>
+        </field>
+
+		<field
+            name="buttonlabelc"
+            type="text"
+            label="COM_ZHGOOGLEMAP_CONFIG_GPDR_BUTTONCL_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_GPDR_BUTTONCL_DESC"
+            size="90"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+
+		<field
+            name="cookies_days"
+            type="integer"
+            label="COM_ZHGOOGLEMAP_CONFIG_GPDR_COOKIESDAY_LABEL"
+            description="COM_ZHGOOGLEMAP_CONFIG_GPDR_COOKIESDAY_DESC"
+            size="1"
+            class="inputbox span10"
+            required="false"
+            default="0"
+			first="0" last="365" step="1"
+        />		
+	</fieldset>
+
+    <fieldset
+        name="permissions"
+        label="JCONFIG_PERMISSIONS_LABEL"
+        description="JCONFIG_PERMISSIONS_DESC"
+    >
+        <field
+            name="rules"
+            type="rules"
+            label="JCONFIG_PERMISSIONS_LABEL"
+            class="inputbox"
+            validate="rules"
+            filter="rules"
+            component="com_zhgooglemap"
+            section="component"
+        />
+    </fieldset>
+</config>
+

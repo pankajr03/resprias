@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<extension type="module" version="4.0" client="site" method="upgrade">
+
+    <name>MOD_ZHGOOGLEMAP</name>
+    <!-- The following elements are optional and free of formatting conttraints -->
+    <creationDate>Feb 2013</creationDate>
+    <author>Zhuk Dmitry</author>
+    <authorEmail>ZhukDL@gmail.com</authorEmail>
+    <authorUrl>http://zhuk.cc</authorUrl>
+    <copyright>Copyright</copyright>
+    <license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPLv2 or later</license>
+    <!--  The version string is recorded in the components table -->
+    <version>10.25.11.25</version>
+    <!-- The description is optional and defaults to the name -->
+    <description>MOD_ZHGOOGLEMAP_DESCRIPTION</description>
+
+
+    <!-- Note the folder attribute: This attribute describes what to copy
+        into the module folder -->
+    <files>
+        <filename module="mod_zhgooglemap">mod_zhgooglemap.php</filename>
+        <filename>mod_zhgooglemap.xml</filename>
+        <filename>index.html</filename>
+        <folder>helpers</folder>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+    </files>
+    <languages>
+                <language tag="ar-AA">language/ar-AA/ar-AA.mod_zhgooglemap.ini</language>
+                <language tag="bg-BG">language/bg-BG/bg-BG.mod_zhgooglemap.ini</language>
+                <language tag="cs-CZ">language/cs-CZ/cs-CZ.mod_zhgooglemap.ini</language>
+                <language tag="da-DK">language/da-DK/da-DK.mod_zhgooglemap.ini</language>
+                <language tag="de-DE">language/de-DE/de-DE.mod_zhgooglemap.ini</language>
+                <language tag="el-GR">language/el-GR/el-GR.mod_zhgooglemap.ini</language>
+                <language tag="en-GB">language/en-GB/en-GB.mod_zhgooglemap.ini</language>
+                <language tag="es-ES">language/es-ES/es-ES.mod_zhgooglemap.ini</language>
+                <language tag="fi-FI">language/fi-FI/fi-FI.mod_zhgooglemap.ini</language>
+                <language tag="en-FR">language/en-FR/en-FR.mod_zhgooglemap.ini</language>
+                <language tag="fr-FR">language/fr-FR/fr-FR.mod_zhgooglemap.ini</language>
+                <language tag="hr-HR">language/hr-HR/hr-HR.mod_zhgooglemap.ini</language>
+                <language tag="hu-HU">language/hu-HU/hu-HU.mod_zhgooglemap.ini</language>
+                <language tag="it-IT">language/it-IT/it-IT.mod_zhgooglemap.ini</language>
+                <language tag="nl-NL">language/nl-NL/nl-NL.mod_zhgooglemap.ini</language>
+                <language tag="pl-PL">language/pl-PL/pl-PL.mod_zhgooglemap.ini</language>
+                <language tag="pt-BR">language/pt-BR/pt-BR.mod_zhgooglemap.ini</language>
+                <language tag="pt-PT">language/pt-PT/pt-PT.mod_zhgooglemap.ini</language>
+                <language tag="ro-RO">language/ro-RO/ro-RO.mod_zhgooglemap.ini</language>
+                <language tag="ru-RU">language/ru-RU/ru-RU.mod_zhgooglemap.ini</language>
+                <language tag="tr-TR">language/tr-TR/tr-TR.mod_zhgooglemap.ini</language>
+                <language tag="uk-UA">language/uk-UA/uk-UA.mod_zhgooglemap.ini</language>
+                <language tag="vi-VN">language/vi-VN/vi-VN.mod_zhgooglemap.ini</language>
+                <language tag="zh-CN">language/zh-CN/zh-CN.mod_zhgooglemap.ini</language>                
+                <language tag="zh-TW">language/zh-TW/zh-TW.mod_zhgooglemap.ini</language>                
+    </languages>
+
+    <config>
+        <fields name="params" >
+            <fieldset name="basic">
+            <field
+                name="mapid"
+                type="mapmap"
+                default=""
+                label="MOD_ZHGOOGLEMAP_MAP_ID_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_ID_DESC"
+                class="inputbox span10"
+                required="true"
+                addfieldprefix="ZhukDL\Component\ZhGoogleMap\Administrator\Field"
+            />
+            <field
+                name="placemarklistid"
+                type="text"
+                default=""
+                label="MOD_ZHGOOGLEMAP_MAP_PLACEMARKLIST_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_PLACEMARKLIST_DESC"
+                class="inputbox span10"
+            />
+            <field
+                name="explacemarklistid"
+                type="text"
+                default=""
+                label="MOD_ZHGOOGLEMAP_MAP_EXPLACEMARKLIST_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_EXPLACEMARKLIST_DESC"
+                class="inputbox span10"
+            />
+            <field
+                name="grouplistid"
+                type="text"
+                default=""
+                label="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_GROUPLIST_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_GROUPLIST_DESC"
+                class="inputbox span10"
+            />
+            <field
+                name="categorylistid"
+                type="text"
+                default=""
+                label="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_PLACEMARKCATECATEGORYLIST_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_PLACEMARKCATECATEGORYLIST_DESC"
+                class="inputbox span10"
+            />
+            <field
+                name="taglistid"
+                type="text"
+                class="inputbox span10"
+                default=""
+                size="60"
+                label="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_PLACEMARKTAGLIST_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_PLACEMARKTAGLIST_DESC"
+            />    
+            <field
+                name="routelistid"
+                type="text"
+                class="inputbox span10"
+                default=""
+                size="60"
+                label="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_ROUTELIST_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_ROUTELIST_DESC"
+            />
+            <field
+                name="exroutelistid"
+                type="text"
+                class="inputbox span10"
+                default=""
+                size="60"
+                label="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_EXROUTELIST_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_EXROUTELIST_DESC"
+            />
+            <field
+                name="routecategorylistid"
+                type="text"
+                class="inputbox span10"
+                default=""
+                size="60"
+                label="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_ROUTECATEGORYLIST_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_ROUTECATEGORYLIST_DESC"
+            />
+            <field
+                name="pathlistid"
+                type="text"
+                class="inputbox span10"
+                default=""
+                size="60"
+                label="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHLIST_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHLIST_DESC"
+            />
+            <field
+                name="expathlistid"
+                type="text"
+                class="inputbox span10"
+                default=""
+                size="60"
+                label="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_EXPATHLIST_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_EXPATHLIST_DESC"
+            />
+            <field
+                name="pathgrouplistid"
+                type="text"
+                class="inputbox span10"
+                default=""
+                size="60"
+                label="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHGROUPLIST_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHGROUPLIST_DESC"
+            />
+            <field
+                name="pathcategorylistid"
+                type="text"
+                class="inputbox span10"
+                default=""
+                size="60"
+                label="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHCATEGORYLIST_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHCATEGORYLIST_DESC"
+            />
+            <field
+                name="pathtaglistid"
+                type="text"
+                class="inputbox span10"
+                default=""
+                size="60"
+                label="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHTAGLIST_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHTAGLIST_DESC"
+            />
+            <field
+                name="centerplacemarkid"
+                type="text"
+                class="inputbox"
+                size="30"
+                default=""
+                label="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_MAPCENTERPLACEMARK_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_MAPCENTERPLACEMARK_DESC"
+            />
+            <field
+                name="centerplacemarkaction"
+                type="text"
+                class="inputbox span10"
+                filter="raw"
+                size="60"
+                default=""
+                label="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_MAPCENTERACTION_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_MAPCENTERACTION_DESC"
+            />                        
+            <field
+                name="externalmarkerlink"
+                type="radio"
+                size="60"
+                default="0"
+                label="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_EXTERNALMARKERLINK_LABEL"
+                description="MOD_ZHGOOGLEMAP_MAP_VIEW_FIELD_EXTERNALMARKERLINK_DESC"
+                class="btn-group"
+                >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            
+            </fieldset>
+ 
+        </fields>
+    </config>    
+        <!-- UPDATESERVER DEFINITION -->
+        <updateservers>
+                <!-- Note: No spaces or linebreaks allowed between the server tags -->
+                <server type="extension" priority="1" name="Zh GoogleMap Module Update Site">http://zhuk.cc/update/mod_zhgooglemap/extension.xml</server>
+        </updateservers>
+
+</extension>

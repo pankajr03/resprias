@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<extension type="component" version="4.0" method="upgrade">
+
+    <name>COM_ZHGOOGLEMAP</name>
+    <!-- The following elements are optional and free of formatting conttraints -->
+    <creationDate>Feb 2013</creationDate>
+    <author>Zhuk Dmitry</author>
+    <authorEmail>ZhukDL@gmail.com</authorEmail>
+    <authorUrl>http://zhuk.cc</authorUrl>
+    <copyright>Copyright</copyright>
+    <license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPLv2 or later</license>
+    <!--  The version string is recorded in the components table -->
+    <version>20.25.11.25</version>
+    <!-- The description is optional and defaults to the name -->
+    <description>COM_ZHGOOGLEMAP_DESCRIPTION</description>
+
+        <install> <!-- Runs on install -->
+			<sql>
+				<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+				<file driver="postgresql" charset="utf8">sql/install.postgresql.utf8.sql</file>
+			</sql>
+        </install>
+        <uninstall> <!-- Runs on uninstall -->
+			<sql>
+				<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+				<file driver="postgresql" charset="utf8">sql/uninstall.postgresql.utf8.sql</file>
+			</sql>
+        </uninstall>
+
+    <update> <!-- Runs on update; New in 1.6 -->
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+			<schemapath type="postgresql">sql/updates/postgresql</schemapath>
+        </schemas>
+    </update>
+
+    <namespace path="src/">ZhukDL\Component\ZhGoogleMap</namespace>
+
+    <!-- Site Main File Copy Section -->
+    <!-- Note the folder attribute: This attribute describes the folder
+        to copy FROM in the package to install therefore files copied
+        in this section are copied from /site/ in the package -->
+    <files folder="site">
+        <filename>index.html</filename>
+        <!-- assets files section -->
+        <folder>assets</folder>
+        <!-- forms files section -->
+        <folder>forms</folder>
+        <!-- models files section -->
+        <folder>tmpl</folder>
+        <!-- language files section -->
+        <folder>language</folder>
+        <!-- src files section -->
+        <folder>src</folder>
+        <!-- uploads files section -->
+        <folder>uploads</folder>
+    </files>
+
+    <media destination="com_zhgooglemap" folder="media">
+        <filename>index.html</filename>
+        <folder>images</folder>
+    </media>
+
+    <administration>
+        <!-- Administration Menu Section -->
+        <menu img="../media/com_zhgooglemap/images/menu-16x16.png">COM_ZHGOOGLEMAP_MENU</menu>
+        <submenu>
+            <!--
+                Note that all & must be escaped to &amp; for the file to be valid
+                XML and be parsed by the installer
+            -->
+            <menu link="option=com_zhgooglemap&amp;view=dashboard" img=""
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_DASHBOARD</menu>
+            <menu link="option=com_zhgooglemap&amp;view=mapmaps" img=""
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_MAPS</menu>
+            <menu link="option=com_zhgooglemap&amp;view=mapmarkers" img=""
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_MAPMARKERS</menu>
+            <menu link="option=com_zhgooglemap&amp;view=mapmarkergroups" img=""
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_MAPMARKERGROUPS</menu>
+            <menu link="option=com_zhgooglemap&amp;view=maprouters" img=""
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_MAPROUTERS</menu>
+            <menu link="option=com_zhgooglemap&amp;view=mappaths" img=""
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_MAPPATHS</menu>
+            <menu link="option=com_zhgooglemap&amp;view=maptypes" img=""
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_MAPTYPES</menu>
+            <menu link="option=com_zhgooglemap&amp;view=mapinfobubbles" img=""
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_MAPINFOBUBBLES</menu>
+            <menu link="option=com_zhgooglemap&amp;view=mapstreetviews" img=""
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_MAPSTREETVIEWS</menu>
+            <!--<menu link="option=com_zhgooglemap&amp;view=mapweathertypes" img=""
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_MAPWEATHERTYPES</menu> -->
+            <menu link="option=com_zhgooglemap&amp;view=mapoverrides" img=""
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_MAPOVERRIDES</menu>
+            <!--<menu link="option=com_zhgooglemap&amp;view=mapmarkercontents" img=""
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_MAPMARKERCONTENTS</menu>-->
+            <menu link="option=com_categories&amp;extension=com_zhgooglemap&amp;view=categories" img="" 
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_CATEGORIES</menu>
+            <menu link="option=com_zhgooglemap&amp;view=utils" img=""
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_UTIL</menu>
+            <menu link="option=com_zhgooglemap&amp;view=abouts" img=""
+                alt="">COM_ZHGOOGLEMAP_SUBMENU_ABOUT</menu>
+        </submenu>
+        <!-- Administration Main File Copy Section -->
+        <!-- Note the folder attribute: This attribute describes the folder
+            to copy FROM in the package to install therefore files copied
+            in this section are copied from /admin/ in the package -->
+        <files folder="admin">
+            <!-- Admin Main File Copy Section -->
+            <filename>index.html</filename>
+            <filename>config.xml</filename>
+            <filename>access.xml</filename>
+            <!-- assets files section -->
+            <folder>assets</folder>
+            <!-- SQL files section -->
+            <folder>sql</folder>
+            <!-- forms files section -->
+            <folder>forms</folder>
+            <!-- src files section -->
+            <folder>src</folder>
+            <!-- services files section -->
+            <folder>services</folder>
+            <!-- tmpl files section -->
+            <folder>tmpl</folder>
+            <!-- helpers files section         
+            <folder>helpers</folder> -->   
+            <!-- uploads files section -->
+            <folder>uploads</folder>            
+        </files>
+        <languages folder="admin">
+                <language tag="ar-AA">language/ar-AA/ar-AA.com_zhgooglemap.ini</language>
+                <language tag="ar-AA">language/ar-AA/ar-AA.com_zhgooglemap.sys.ini</language>
+                <language tag="bg-BG">language/bg-BG/bg-BG.com_zhgooglemap.ini</language>
+                <language tag="bg-BG">language/bg-BG/bg-BG.com_zhgooglemap.sys.ini</language>
+                <language tag="cs-CZ">language/cs-CZ/cs-CZ.com_zhgooglemap.ini</language>
+                <language tag="cs-CZ">language/cs-CZ/cs-CZ.com_zhgooglemap.sys.ini</language>
+                <language tag="da-DK">language/da-DK/da-DK.com_zhgooglemap.ini</language>
+                <language tag="da-DK">language/da-DK/da-DK.com_zhgooglemap.sys.ini</language>
+                <language tag="de-DE">language/de-DE/de-DE.com_zhgooglemap.ini</language>
+                <language tag="de-DE">language/de-DE/de-DE.com_zhgooglemap.sys.ini</language>
+                <language tag="el-GR">language/el-GR/el-GR.com_zhgooglemap.ini</language>
+                <language tag="el-GR">language/el-GR/el-GR.com_zhgooglemap.sys.ini</language>
+                <language tag="en-GB">language/en-GB/en-GB.com_zhgooglemap.ini</language>
+                <language tag="en-GB">language/en-GB/en-GB.com_zhgooglemap.sys.ini</language>
+                <language tag="es-ES">language/es-ES/es-ES.com_zhgooglemap.ini</language>
+                <language tag="es-ES">language/es-ES/es-ES.com_zhgooglemap.sys.ini</language>
+                <language tag="fi-FI">language/fi-FI/fi-FI.com_zhgooglemap.ini</language>
+                <language tag="fi-FI">language/fi-FI/fi-FI.com_zhgooglemap.sys.ini</language>
+                <language tag="en-FR">language/en-FR/en-FR.com_zhgooglemap.ini</language>
+                <language tag="en-FR">language/en-FR/en-FR.com_zhgooglemap.sys.ini</language>
+                <language tag="fr-FR">language/fr-FR/fr-FR.com_zhgooglemap.ini</language>
+                <language tag="fr-FR">language/fr-FR/fr-FR.com_zhgooglemap.sys.ini</language>
+                <language tag="hr-HR">language/hr-HR/hr-HR.com_zhgooglemap.ini</language>
+                <language tag="hr-HR">language/hr-HR/hr-HR.com_zhgooglemap.sys.ini</language>
+                <language tag="hu-HU">language/hu-HU/hu-HU.com_zhgooglemap.ini</language>
+                <language tag="hu-HU">language/hu-HU/hu-HU.com_zhgooglemap.sys.ini</language>
+                <language tag="it-IT">language/it-IT/it-IT.com_zhgooglemap.ini</language>
+                <language tag="it-IT">language/it-IT/it-IT.com_zhgooglemap.sys.ini</language>
+                <language tag="nl-NL">language/nl-NL/nl-NL.com_zhgooglemap.ini</language>
+                <language tag="nl-NL">language/nl-NL/nl-NL.com_zhgooglemap.sys.ini</language>
+                <language tag="pl-PL">language/pl-PL/pl-PL.com_zhgooglemap.ini</language>
+                <language tag="pl-PL">language/pl-PL/pl-PL.com_zhgooglemap.sys.ini</language>
+                <language tag="pt-BR">language/pt-BR/pt-BR.com_zhgooglemap.ini</language>
+                <language tag="pt-BR">language/pt-BR/pt-BR.com_zhgooglemap.sys.ini</language>
+                <language tag="pt-PT">language/pt-PT/pt-PT.com_zhgooglemap.ini</language>
+                <language tag="pt-PT">language/pt-PT/pt-PT.com_zhgooglemap.sys.ini</language>
+                <language tag="ro-RO">language/ro-RO/ro-RO.com_zhgooglemap.ini</language>
+                <language tag="ro-RO">language/ro-RO/ro-RO.com_zhgooglemap.sys.ini</language>
+                <language tag="ru-RU">language/ru-RU/ru-RU.com_zhgooglemap.ini</language>
+                <language tag="ru-RU">language/ru-RU/ru-RU.com_zhgooglemap.sys.ini</language>
+                <language tag="tr-TR">language/tr-TR/tr-TR.com_zhgooglemap.ini</language>
+                <language tag="tr-TR">language/tr-TR/tr-TR.com_zhgooglemap.sys.ini</language>
+                <language tag="uk-UA">language/uk-UA/uk-UA.com_zhgooglemap.ini</language>
+                <language tag="uk-UA">language/uk-UA/uk-UA.com_zhgooglemap.sys.ini</language>
+                <language tag="vi-VN">language/vi-VN/vi-VN.com_zhgooglemap.ini</language>
+                <language tag="vi-VN">language/vi-VN/vi-VN.com_zhgooglemap.sys.ini</language>
+                <language tag="zh-CN">language/zh-CN/zh-CN.com_zhgooglemap.ini</language>                
+                <language tag="zh-CN">language/zh-CN/zh-CN.com_zhgooglemap.sys.ini</language>                                        
+                <language tag="zh-TW">language/zh-TW/zh-TW.com_zhgooglemap.ini</language>                
+                <language tag="zh-TW">language/zh-TW/zh-TW.com_zhgooglemap.sys.ini</language>                                        
+        </languages>
+    </administration>
+
+        <!-- UPDATESERVER DEFINITION -->
+        <updateservers>
+                <!-- Note: No spaces or linebreaks allowed between the server tags -->
+                <server type="extension" priority="1" name="Zh GoogleMap Component Update Site">http://zhuk.cc/update/com_zhgooglemap/extension.xml</server>
+        </updateservers>
+
+</extension>
+

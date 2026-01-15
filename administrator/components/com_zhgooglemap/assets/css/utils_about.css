@@ -1,0 +1,11 @@
+.zhgm-about-table th, td{
+    padding: 0px 0px 0px 5px;
+}
+
+.zhgm-about-table a:before{
+	content: none !important;
+}
+
+.zhgm-about-table-row {
+    vertical-align: top;
+}

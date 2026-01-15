@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="params">
+		<field name="pdf.library" type="pdflibrary" label="RSFP_PDF_LIBRARY" description="RSFP_PDF_LIBRARY_DESC" />
+		<field name="pdf.font" showon="pdf.library:dompdf,dompdf10,dompdf20" type="list" label="RSFP_PDF_FONT" description="RSFP_PDF_FONT_DESC">
+			<option value="dejavu sans">RSFP_PDF_DEJAVU_SANS</option>
+			<option value="fireflysung">RSFP_PDF_FIREFLYSUNG</option>
+			<option value="courier">RSFP_PDF_COURIER</option>
+			<option value="helvetica">RSFP_PDF_HELVETICA</option>
+			<option value="times">RSFP_PDF_TIMES</option>
+		</field>
+		<field name="pdf.orientation" type="list" label="RSFP_PDF_ORIENTATION" description="RSFP_PDF_ORIENTATION_DESC">
+			<option value="portrait">RSFP_PDF_PORTRAIT</option>
+			<option value="landscape">RSFP_PDF_LANDSCAPE</option>
+		</field>
+		<field name="pdf.paper" type="list" label="RSFP_PDF_PAPER" description="RSFP_PDF_PAPER_DESC">
+			<option value="4a0">4a0</option>
+			<option value="2a0">2a0</option>
+			<option value="a0">a0</option>
+			<option value="a1">a1</option>
+			<option value="a2">a2</option>
+			<option value="a3">a3</option>
+			<option value="a4">a4</option>
+			<option value="a5">a5</option>
+			<option value="a6">a6</option>
+			<option value="a7">a7</option>
+			<option value="a8">a8</option>
+			<option value="a9">a9</option>
+			<option value="a10">a10</option>
+			<option value="b0">b0</option>
+			<option value="b1">b1</option>
+			<option value="b2">b2</option>
+			<option value="b3">b3</option>
+			<option value="b4">b4</option>
+			<option value="b5">b5</option>
+			<option value="b6">b6</option>
+			<option value="b7">b7</option>
+			<option value="b8">b8</option>
+			<option value="b9">b9</option>
+			<option value="b10">b10</option>
+			<option value="c0">c0</option>
+			<option value="c1">c1</option>
+			<option value="c2">c2</option>
+			<option value="c3">c3</option>
+			<option value="c4">c4</option>
+			<option value="c5">c5</option>
+			<option value="c6">c6</option>
+			<option value="c7">c7</option>
+			<option value="c8">c8</option>
+			<option value="c9">c9</option>
+			<option value="c10">c10</option>
+			<option value="ra0">ra0</option>
+			<option value="ra1">ra1</option>
+			<option value="ra2">ra2</option>
+			<option value="ra3">ra3</option>
+			<option value="ra4">ra4</option>
+			<option value="sra0">sra0</option>
+			<option value="sra1">sra1</option>
+			<option value="sra2">sra2</option>
+			<option value="sra3">sra3</option>
+			<option value="sra4">sra4</option>
+			<option value="letter">letter</option>
+			<option value="legal">legal</option>
+			<option value="ledger">ledger</option>
+			<option value="tabloid">tabloid</option>
+			<option value="executive">executive</option>
+			<option value="folio">folio</option>
+		</field>
+		<field name="pdf.remote" showon="pdf.library:dompdf,dompdf10,dompdf20" type="radio" class="btn-group btn-group-yesno" label="RSFP_PDF_ALLOW_REMOTE_RESOURCES" description="RSFP_PDF_ALLOW_REMOTE_RESOURCES_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+</form>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="template" method="upgrade" client="site" >
+	<name>zh_template_map_fullscreen</name>
+	<version>2.24.06.25</version>
+	<creationDate>April 2012</creationDate>
+	<author>Zhuk Dmitry</author>
+	<authorEmail>ZhukDL@gmail.com</authorEmail>
+	<authorUrl>http://zhuk.cc</authorUrl>
+	<copyright>Copyright</copyright>
+	<license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPLv2 or later</license>
+	<description>TPL_ZH_TEMPLATE_MAP_FULLSCREEN_DESCRIPTION</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>component.php</filename>
+		<filename>template_thumbnail.png</filename>		
+		<folder>css</folder>
+		<folder>language</folder>
+		<folder>images</folder>
+	</files>
+	<positions>
+		<position>top-a</position>
+		<position>top-b</position>
+		<position>main-top</position>
+		<position>content</position>
+		<position>main-bottom</position>
+		<position>bottom-a</position>
+		<position>bottom-b</position>
+		<position>debug</position>
+	</positions>
+	<languages>
+			<language tag="en-GB">language/en-GB/en-GB.tpl_zh_template_map_fullscreen.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.tpl_zh_template_map_fullscreen.sys.ini</language>
+			<language tag="ru-RU">language/ru-RU/ru-RU.tpl_zh_template_map_fullscreen.ini</language>
+			<language tag="ru-RU">language/ru-RU/ru-RU.tpl_zh_template_map_fullscreen.sys.ini</language>
+	</languages>
+  <config>
+  		<fields name="params">
+			<fieldset name="common" label="TPL_ZH_TEMPLATE_MAP_FULLSCREEN_COMMON_TITLE">
+				<field 
+					name="css2load" 
+					type="textarea" 
+					rows="4"
+					cols="50"
+					size="200"
+					class="inputbox span10"
+					label="TPL_ZH_TEMPLATE_MAP_FULLSCREEN_ADD_CSS_LABEL" 
+					description="TPL_ZH_TEMPLATE_MAP_FULLSCREEN_ADD_CSS_DESC" 
+				/>
+				<field 
+					name="js2load" 
+					type="textarea" 
+					rows="4"
+					cols="50"
+					size="200"
+					class="inputbox span10"
+					label="TPL_ZH_TEMPLATE_MAP_FULLSCREEN_ADD_JS_LABEL" 
+					description="TPL_ZH_TEMPLATE_MAP_FULLSCREEN_ADD_JS_DESC" 
+				/>
+			</fieldset>
+		</fields>
+</config>
+        <!-- UPDATESERVER DEFINITION -->
+        <updateservers>
+                <!-- Note: No spaces or linebreaks allowed between the server tags -->
+                <server type="extension" priority="1" name="Zh Template Map FullScreen Update Site">http://zhuk.cc/update/zh_template/map_fullscreen/extension.xml</server>
+        </updateservers>
+</extension>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<metadata>
+    <layout title="COM_ZHGOOGLEMAP_VIEW_DEFAULT_TITLE">
+        <help
+            key = "COM_ZHGOOGLEMAP_VIEW_DEFAULT_HELP_KEY"
+        />        
+        <message>COM_ZHGOOGLEMAP_VIEW_DEFAULT_DESC</message>
+    </layout>
+    <fields
+        name="request"
+    >
+            <fieldset name="request">
+                <field
+                        name="id"
+                        type="mapmap"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_TITLE_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_TITLE_DESC"
+                        class="inputbox span10"
+                        required="true"
+                        addfieldprefix="ZhukDL\Component\ZhGoogleMap\Administrator\Field"
+                />
+                <field
+                        name="mapzoom"
+                        type="list"
+                        label="COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOM_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOM_DESC"
+                        size="1"
+                        default=""
+                    >
+                        <option value=""></option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                </field>
+                <field
+                        name="mapwidth"
+                        type="text"
+                        label="COM_ZHGOOGLEMAP_MAP_DETAIL_WIDTH_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_DETAIL_WIDTH_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="false"
+                        default=""
+                />
+                <field
+                        name="mapheight"
+                        type="text"
+                        label="COM_ZHGOOGLEMAP_MAP_DETAIL_HEIGHT_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_DETAIL_HEIGHT_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="false"
+                        default=""
+                />
+                <field
+                        name="placemarklistid"
+                        type="text"
+                        class="inputbox span10"
+                        default=""
+                        size="60"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_PLACEMARKLIST_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_PLACEMARKLIST_DESC"
+                />
+                <field
+                        name="explacemarklistid"
+                        type="text"
+                        class="inputbox span10"
+                        default=""
+                        size="60"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_EXPLACEMARKLIST_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_EXPLACEMARKLIST_DESC"
+                />
+                <field
+                        name="grouplistid"
+                        type="text"
+                        class="inputbox span10"
+                        default=""
+                        size="60"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_GROUPLIST_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_GROUPLIST_DESC"
+                />
+                <field
+                        name="categorylistid"
+                        type="text"
+                        class="inputbox span10"
+                        default=""
+                        size="60"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_PLACEMARKCATEGORYLIST_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_PLACEMARKCATEGORYLIST_DESC"
+                />
+                <field
+                        name="taglistid"
+                        type="text"
+                        class="inputbox span10"
+                        default=""
+                        size="60"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_PLACEMARKTAGLIST_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_PLACEMARKTAGLIST_DESC"
+                />
+                
+                <field
+                        name="routelistid"
+                        type="text"
+                        class="inputbox span10"
+                        default=""
+                        size="60"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_ROUTELIST_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_ROUTELIST_DESC"
+                />
+                <field
+                        name="exroutelistid"
+                        type="text"
+                        class="inputbox span10"
+                        default=""
+                        size="60"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_EXROUTELIST_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_EXROUTELIST_DESC"
+                />
+                <field
+                        name="routecategorylistid"
+                        type="text"
+                        class="inputbox span10"
+                        default=""
+                        size="60"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_ROUTECATEGORYLIST_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_ROUTECATEGORYLIST_DESC"
+                />
+                <field
+                        name="pathlistid"
+                        type="text"
+                        class="inputbox span10"
+                        default=""
+                        size="60"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHLIST_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHLIST_DESC"
+                />
+                <field
+                        name="expathlistid"
+                        type="text"
+                        class="inputbox span10"
+                        default=""
+                        size="60"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_EXPATHLIST_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_EXPATHLIST_DESC"
+                />
+                <field
+                        name="pathgrouplistid"
+                        type="text"
+                        class="inputbox span10"
+                        default=""
+                        size="60"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHGROUPLIST_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHGROUPLIST_DESC"
+                />
+                <field
+                        name="pathcategorylistid"
+                        type="text"
+                        class="inputbox span10"
+                        default=""
+                        size="60"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHCATEGORYLIST_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHCATEGORYLIST_DESC"
+                />    
+                <field
+                        name="pathtaglistid"
+                        type="text"
+                        class="inputbox span10"
+                        default=""
+                        size="60"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHTAGLIST_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_PATHTAGLIST_DESC"
+                />
+
+                <field
+                        name="centerplacemarkid"
+                        type="text"
+                        class="inputbox"
+                        size="30"
+                        default=""
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_MAPCENTERPLACEMARK_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_MAPCENTERPLACEMARK_DESC"
+                />
+                <field
+                        name="centerplacemarkaction"
+                        type="text"
+                        class="inputbox span10"
+                        filter="raw"
+                        size="60"
+                        default=""
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_MAPCENTERACTION_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_MAPCENTERACTION_DESC"
+                />
+                <field
+                        name="usermarkersfilter"
+                        type="list"
+                        label="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERFILTER_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERFILTER_DESC"
+                        size="1"
+                        default=""
+                    >
+                        <option value=""></option>
+                        <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERFILTER_ALL</option>
+                        <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERFILTER_YES</option>
+                        <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERFILTER_ACL</option>
+                </field>            
+                <field
+                        name="externalmarkerlink"
+                        type="radio"
+                        size="60"
+                        default="0"
+                        label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_EXTERNALMARKERLINK_LABEL"
+                        description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_EXTERNALMARKERLINK_DESC"
+                        class="btn-group"
+                    >
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+            
+            </fieldset>
+    </fields>
+
+</metadata>

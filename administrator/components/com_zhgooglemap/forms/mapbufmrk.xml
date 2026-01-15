@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="markermain">
+        <field
+            name="id"
+            type="hidden"
+        />
+        <field
+            name="title"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_TITLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_TITLE_DESC"
+            size="60"
+            class="inputbox span10"
+            required="true"
+            default=""
+        />
+        <field
+            name="description"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_DESCRIPTION_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_DESCRIPTION_DESC"
+            size="100"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />            
+        <field
+            name="latitude"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_LATITUDE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_LATITUDE_DESC"
+            size="30"
+            class="inputbox"
+            required="true"
+            default=""
+        />
+        <field
+            name="longitude"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_LONGITUDE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_LONGITUDE_DESC"
+            size="30"
+            class="inputbox"
+            required="true"
+            default=""
+        />
+        <field
+            name="addresstext"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_ADDRESSTEXT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_ADDRESSTEXT_DESC"
+            size="100"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field
+            name="status"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAPBUFMRKS_DETAIL_STATUS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPBUFMRKS_DETAIL_STATUS_DESC"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAPBUFMRKS_DETAIL_STATUS_NEW</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAPBUFMRKS_DETAIL_STATUS_PROCESSED</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAPBUFMRKS_DETAIL_STATUS_SKIPPED</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAPBUFMRKS_DETAIL_STATUS_ERROR</option>
+        </field>            
+
+        
+    </fieldset>
+    <fieldset name="details">
+        <field
+            name="published"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_PUBLISHED_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_PUBLISHED_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>            
+        <field
+            name="markergroup"
+            type="mapmarkergroup"
+            class="inputbox span10"
+            default="0"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKERGROUP_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKERGROUP_DESC"
+            required="false"
+			addfieldprefix="ZhukDL\Component\ZhGoogleMap\Administrator\Field"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAPMARKERGROUP_FILTER_GROUP</option>        
+        </field>
+        
+        <field
+            name="catid"
+            type="category"
+            extension="com_zhgooglemap"
+            class="inputbox span5"
+            default=""
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_CATEGORY_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_CATEGORY_DESC"
+            required="false"
+            >
+            <option value="0">JOPTION_SELECT_CATEGORY</option>
+        </field>
+        <field
+            name="showgps"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_GPSINFO_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_GPSINFO_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="descriptionhtml"
+            type="editor"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_DESCRIPTIONHTML_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_DESCRIPTIONHTML_DESC"
+            rows="10"
+            size="100"
+            class="inputbox"
+            required="false"
+            default=""
+            filter="raw"
+        />
+        
+    </fieldset>
+
+    <fieldset name="markeradvanced">
+        <field
+            name="icontype"
+            type="imagelist"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_ICONTYPE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_ICONTYPE_DESC"
+            directory="components/com_zhgooglemap/assets/icons"
+            size="1"
+            class="inputbox span5"
+            required="true"
+            exclude="" 
+            stripext="true"
+            hide_none="true"
+            hide_default="true"
+            default=""
+        />
+        <field
+            name="iconofsetx"
+            type="text"
+            class="inputbox"
+            default="0"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKEROFFSETX_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKEROFFSETX_DESC"
+            required="true"
+        />
+        <field
+            name="iconofsety"
+            type="text"
+            class="inputbox"
+            default="0"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKEROFFSETY_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKEROFFSETY_DESC"
+            required="true"
+        />            
+        <field
+            name="markercontent"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKERCONTENT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKERCONTENT_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKERCONTENT_TITLE_DESC</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKERCONTENT_TITLE</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKERCONTENT_DESCRIPTION</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKERCONTENT_TITLE_ARTICLE_IFRAME</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKERCONTENT_ARTICLE_IFRAME</option>
+            <option value="100">COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKERCONTENT_NONE</option>
+        </field>
+        <field
+            name="hrefimage"
+            type="media"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_HREFIMAGE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_HREFIMAGE_DESC"
+            size="40"
+            class="inputbox"
+            required="false"
+            default="" 
+            folder="/"
+        />               
+        <field name="createddate" 
+            type="calendar"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_CREATED_DATE_LABEL" 
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_CREATED_DATE_DESC"
+            translateformat="true"
+			showtime="true"
+            size="22"
+            filter="user_utc"
+        />
+    </fieldset>
+
+    <fieldset name="integration">
+        <field
+            name="preparecontent"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_PREPARECONTENT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_PREPARECONTENT_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        
+    <field
+        name="createdbyuser"
+        type="user"
+        class="inputbox span10"
+        default="0"
+        label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_USERID_LABEL"
+        description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_USERID_DESC"
+        required="false"
+    />
+        <field
+            name="showuser"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_SHOWUSER_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_SHOWUSER_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_SHOWUSER_NONE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_SHOWUSER_TEXT</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_SHOWUSER_ICON</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_SHOWUSER_NOPROMPT</option>
+        </field>
+        
+        
+    </fieldset>
+
+        
+    <fields name="params">
+        <fieldset
+            name="params"
+            label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+            >
+            <field
+                name="show_category"
+                type="list"
+                label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_SHOW_CATEGORY_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_SHOW_CATEGORY_DESC"
+                default=""
+                class="lst-dropdown-sinlge"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+        </fieldset>
+    </fields>
+
+        
+</form>

@@ -1,0 +1,39 @@
+/* Image Carousel */
+
+.carousel-caption {
+	text-align: center!important; 
+	color: gray!important;
+}
+
+.zhgm-placemarkCarouselImg img {
+  width: auto;
+  height: 300px;
+  max-height: 300px;
+}
+
+.zhgm-placemarkDetailImg {
+	padding:5px;
+}
+
+.zhgm-placemarkDetailMap {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:300px;
+}
+
+
+.zhgm-map-gpdr-buttons {
+	text-align: center!important;
+}
+
+.zhgm-map-gpdr-button {
+	margin: 10px;
+}
+
+.zhgm-map-gpdr {
+	background-image: url("../utils/gdpr.png")!important;
+	background-size: cover!important;
+	background-position: center!important;
+	height: 100%!important;
+}

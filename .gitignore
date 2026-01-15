@@ -1,0 +1,95 @@
+#######################################
+# Joomla core generated / runtime files
+#######################################
+
+/api/
+/cli/
+/files/
+/administrator/cache/
+/administrator/components/com_akeebabackup/backup/
+/cache/
+/logs/
+/tmp/
+/cli/cache/
+
+#######################################
+# Joomla configuration (VERY IMPORTANT)
+#######################################
+
+/configuration.php
+
+#######################################
+# User uploads & generated media
+#######################################
+
+/images/*
+!/images/index.html
+/media/*
+!/media/index.html
+
+#######################################
+# Local environment & server files
+#######################################
+
+.htaccess
+.htaccess.bak
+.htaccess~  
+.user.ini
+php.ini
+web.config
+
+#######################################
+# IDE / OS junk files
+#######################################
+
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+#######################################
+# Logs & temp files
+#######################################
+
+*.log
+*.tmp
+*.cache
+
+#######################################
+# Composer / Node (if used)
+#######################################
+
+/vendor/
+/node_modules/
+composer.lock
+package-lock.json
+yarn.lock
+
+#######################################
+# Backup & archive files
+#######################################
+
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.jpa
+*.jps
+*.bak
+
+#######################################
+# Joomla update & installer leftovers
+#######################################
+
+/installation/
+/administrator/components/com_joomlaupdate/tmp/
+
+#######################################
+# Testing & debug
+#######################################
+
+phpunit.xml
+coverage/

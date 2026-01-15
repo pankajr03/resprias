@@ -1,0 +1,177 @@
+.btn.off-canvas-toggle {
+  background: #252525;
+  border-radius: 50%;
+  border: 0;
+  display: inline-block;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+}
+.btn.off-canvas-toggle:focus,
+.btn.off-canvas-toggle:focus,
+.btn.off-canvas-toggle:active {
+  background: #181818;
+  outline: none;
+}
+.btn.off-canvas-toggle span {
+  background-color: #ffffff;
+  display: block;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -5px;
+  margin-top: 0px;
+  width: 10px;
+  transition: all 0.25s;
+}
+.btn.off-canvas-toggle span.bar-first {
+  margin-top: -3px;
+}
+.btn.off-canvas-toggle span.bar-last {
+  margin-top: 3px;
+}
+.off-canvas-open .off-canvas-toggle span.bar-mid {
+  display: none;
+}
+.off-canvas-open .off-canvas-toggle span.bar-first {
+  margin-top: 0;
+  transform: rotate(45deg);
+}
+.off-canvas-open .off-canvas-toggle span.bar-last {
+  margin-top: 0;
+  transform: rotate(-45deg);
+}
+#t3-off-canvas {
+  background: #252525;
+  color: #bbbbbb;
+}
+#t3-off-canvas .t3-off-canvas-header {
+  background: #3378bd;
+  color: #ffffff;
+  padding: 0 0 0 15px;
+  height: 50px;
+}
+#t3-off-canvas .t3-off-canvas-header h2 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Archivo", Helvetica, Arial, sans-serif;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+#t3-off-canvas .close {
+  background: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  font-weight: normal;
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+#t3-off-canvas .close:hover,
+#t3-off-canvas .close:focus,
+#t3-off-canvas .close:active {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+#t3-off-canvas .t3-off-canvas-body {
+  padding: 24px;
+}
+#t3-off-canvas .t3-off-canvas-body a {
+  color: #ffffff;
+  text-decoration: none;
+}
+#t3-off-canvas .t3-off-canvas-body a:hover,
+#t3-off-canvas .t3-off-canvas-body a:focus {
+  color: #3378bd;
+  text-decoration: none;
+  outline: none;
+}
+#t3-off-canvas .t3-off-canvas-body .dropdown-menu .active a {
+  background: transparent;
+}
+#t3-off-canvas .t3-off-canvas-body .nav > li + li {
+  margin-top: 12px;
+}
+#t3-off-canvas .t3-off-canvas-body .nav > li > a,
+#t3-off-canvas .t3-off-canvas-body .nav > li > span {
+  border: 0;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 0;
+  text-transform: none;
+  font-weight: 600;
+}
+#t3-off-canvas .t3-off-canvas-body .nav > li > a:hover,
+#t3-off-canvas .t3-off-canvas-body .nav > li > span:hover,
+#t3-off-canvas .t3-off-canvas-body .nav > li > a:focus,
+#t3-off-canvas .t3-off-canvas-body .nav > li > span:focus,
+#t3-off-canvas .t3-off-canvas-body .nav > li > a:active,
+#t3-off-canvas .t3-off-canvas-body .nav > li > span:active {
+  background: transparent;
+  color: #3378bd;
+}
+#t3-off-canvas .t3-off-canvas-body .nav > li.active > a,
+#t3-off-canvas .t3-off-canvas-body .nav > li.active > span {
+  background: transparent;
+  color: #3378bd;
+}
+#t3-off-canvas .t3-off-canvas-body .nav .caret,
+#t3-off-canvas .t3-off-canvas-body .nav a::after {
+  display: none;
+}
+#t3-off-canvas .t3-off-canvas-body .dropdown-menu {
+  background: transparent;
+  padding-left: 24px;
+}
+#t3-off-canvas .t3-off-canvas-body .dropdown-menu > li > a {
+  border: 0;
+  padding-left: 0;
+  font-weight: 400;
+}
+#t3-off-canvas .t3-off-canvas-body .dropdown-menu > li > a:hover,
+#t3-off-canvas .t3-off-canvas-body .dropdown-menu > li > a:focus,
+#t3-off-canvas .t3-off-canvas-body .dropdown-menu > li > a:active {
+  background: transparent;
+  color: #3378bd;
+}
+#t3-off-canvas .t3-off-canvas-body .dropdown-menu > li.active > a {
+  background: transparent;
+  color: #3378bd;
+}
+#t3-off-canvas .t3-off-canvas-body .dropdown-submenu {
+  margin-top: 12px;
+}
+#t3-off-canvas .t3-off-canvas-body .dropdown-submenu > a,
+#t3-off-canvas .t3-off-canvas-body .dropdown-submenu > span {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 6px;
+  padding-left: 0;
+}
+#t3-off-canvas .t3-off-canvas-body .t3-module {
+  background: transparent;
+  margin-bottom: 24px;
+}
+#t3-off-canvas .t3-off-canvas-body .module-title {
+  border: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+#t3-off-canvas .t3-off-canvas-body .module-title span:after {
+  display: none;
+}
+#t3-off-canvas .t3-off-canvas-body .module-ct {
+  background: transparent;
+  padding: 0;
+}

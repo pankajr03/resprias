@@ -1,0 +1,2545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="mapmain">
+        <field
+            name="id"
+            type="hidden"
+        />
+        <field
+            name="title"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_TITLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_TITLE_DESC"
+            size="50"
+            class="inputbox span10"
+            required="true"
+            default=""
+        />
+        <field
+            name="description"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_DESCRIPTION_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_DESCRIPTION_DESC"
+            size="90"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field
+            name="latitude"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_LATITUDE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_LATITUDE_DESC"
+            size="30"
+            class="inputbox"
+            required="true"
+            default=""
+        />
+        <field
+            name="longitude"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_LONGITUDE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_LONGITUDE_DESC"
+            size="30"
+            class="inputbox"
+            required="true"
+            default=""
+        />
+        <field
+            name="width"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_WIDTH_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_WIDTH_DESC"
+            size="10"
+            class="inputbox"
+            required="true"
+            default=""
+        />
+        <field
+            name="height"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_HEIGHT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_HEIGHT_DESC"
+            size="10"
+            class="inputbox"
+            required="true"
+            default=""
+        />
+            
+    </fieldset>
+            
+    <fieldset name="details">
+            
+        <field
+            name="balloon"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_BALLOON_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_BALLOON_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_BALLOON_NONE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_BALLOON_DROP</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_BALLOON_BOUNCE</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_BALLOON_SIMPLE</option>
+        </field>
+        <field
+            name="openballoon"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_OPENBALLOON_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_OPENBALLOON_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="disableautopan"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_DISABLEAUTOPAN_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_DISABLEAUTOPAN_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="closepopuponclick"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_CLOSEPOPUPONCLICK_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_CLOSEPOPUPONCLICK_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>            
+        <field
+            name="mapbounds"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MAPBOUNDS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MAPBOUNDS_DESC"
+            size="90"
+            class="inputbox span5"
+            required="false"
+            default=""
+        />        
+        <field
+            name="zoom"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOM_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOM_DESC"
+            size="1"
+            required="true"
+            default="14"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+        </field>
+        <field
+            name="minzoom"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MINZOOM_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MINZOOM_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge span4"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOM_MINZOOM</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+        </field>
+        <field
+            name="maxzoom"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MAXZOOM_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MAXZOOM_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge span4"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOM_MAXZOOM</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+        </field>
+        <field
+            name="draggable"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_DRAGGABLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_DRAGGABLE_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="defaultmaptypes"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_DEFAULTMAPTYPES_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_DEFAULTMAPTYPES_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="maptype"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPE_DESC"
+            size="1"
+            required="true"
+            default="1"
+            class="lst-dropdown-sinlge span4"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPE_ROADMAP</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPE_SATELLITE</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPE_HYBRID</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPE_TERRAIN</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPE_OSM</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPE_OPENTOPOMAP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPE_NZTOPOMAPS</option>            
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPE_CUSTOM1</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPE_STREETVIEW_OVERLAY</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPE_STREETVIEW_CONTAINER</option>
+        </field>
+        <field
+            name="openstreet"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_OPENSTREET_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_OPENSTREET_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="nztopomaps"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_NZTOPOMAPS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_NZTOPOMAPS_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_NZTOPOMAPSLAYER_NONE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_NZTOPOMAPSLAYER_OVERLAY</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_NZTOPOMAPSLAYER_OVERLAY_CONTROL</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_NZTOPOMAPSLAYER_BASE</option>
+        </field>
+        <field
+            name="opentopomap"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_OPENTOPOMAP_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_OPENTOPOMAP_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>        
+        <field
+            name="custommaptype"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_CUSTMAPTYPE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_CUSTMAPTYPE_DESC"
+            size="40"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_CUSTMAPTYPE_NO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_CUSTMAPTYPE_YES</option>
+        </field>
+        <field
+            name="custommaptypelist"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_CUSTMAPTYPELIST_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_CUSTMAPTYPELIST_DESC"
+            size="90"
+            class="inputbox span4"
+            required="false"
+            default=""
+        />
+        <field
+            name="weathertypeid"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_WEATHERTYPEID_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_WEATHERTYPEID_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_WEATHERTYPEID_NO</option>
+        </field>
+        <field
+            name="kmllayer"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_KMLLAYER_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_KMLLAYER_DESC"
+            size="90"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field
+            name="lang"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_LANGUAGE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_LANGUAGE_DESC"
+            size="6"
+            class="inputbox"
+            required="false"
+            default=""
+        />
+             
+        <field
+            name="catid"
+            type="category"
+            extension="com_zhgooglemap"
+            class="inputbox span5"
+            default=""
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_CATEGORY_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_CATEGORY_DESC"
+            required="false"
+            >
+            <option value="0">JOPTION_SELECT_CATEGORY</option>
+        </field>
+    </fieldset>
+
+
+    <fieldset name="mapmarker">        
+        <field
+            name="markerorder"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERORDER_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERORDER_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge span5"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERORDER_TITLE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERORDER_ORDERING</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERORDER_ORDERING_DESC</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERORDER_USERORDER</option>
+            <option value="20">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERORDER_GROUP_TITLE</option>
+            <option value="21">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERORDER_GROUP_TITLE_DESC</option>
+            <option value="22">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERORDER_GROUP_ORDERING</option>
+            <option value="23">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERORDER_GROUP_ORDERING_DESC</option>
+            <option value="30">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERORDER_DATE_CREATE</option>
+            <option value="31">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERORDER_DATE_CREATE_DESC</option>
+        </field>
+        <field
+            name="auto_center_zoom"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_AUTOCENTERZOOM_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_AUTOCENTERZOOM_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>            
+        <field
+            name="markercluster"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERCLUSTER_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERCLUSTER_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="clusterzoom"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_CLUSTERZOOM_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_CLUSTERZOOM_DESC"
+            size="1"
+            required="true"
+            default="12"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOM_ALLZOOM</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+        </field>
+        <field
+            name="markerclustergroup"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERCLUSTERGROUP_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERCLUSTERGROUP_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="markerspinner"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERSPINNER_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERSPINNER_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        
+       <field
+            name="showcreateinfo"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_SHOWCREATEINFO_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_SHOWCREATEINFO_LABEL"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge span5"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_SHOWCREATEINFO_NO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_SHOWCREATEINFO_USER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_SHOWCREATEINFO_DATETIME</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_SHOWCREATEINFO_DATETIMEUSER</option>
+            <option value="51">COM_ZHGOOGLEMAP_MAP_DETAIL_SHOWCREATEINFO_AUSER</option>
+            <option value="52">COM_ZHGOOGLEMAP_MAP_DETAIL_SHOWCREATEINFO_ADATETIME</option>
+            <option value="53">COM_ZHGOOGLEMAP_MAP_DETAIL_SHOWCREATEINFO_ADATETIMEUSER</option>
+        </field>
+            
+    </fieldset>
+
+    <fieldset name="mapmarkerlist">
+        <field
+            name="markerlistwidth"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_WIDTH_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_WIDTH_DESC"
+            size="10"
+            class="inputbox"
+            required="true"
+            default="0"
+        />
+        <field
+            name="markerlistheight"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_HEIGHT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_HEIGHT_DESC"
+            size="10"
+            class="inputbox"
+            required="true"
+            default="0"
+        />
+        <field
+            name="markerlistpos"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLISTPOS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLISTPOS_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLISTPOS_NONE</option>            
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+            <option value="111">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLISTPOS_LEFT</option>
+            <option value="112">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLISTPOS_RIGHT</option>
+            <option value="113">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLISTPOS_LIST_MAP</option>
+            <option value="114">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLISTPOS_MAP_LIST</option>
+            <option value="121">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLISTPOS_EXTERNAL</option>
+            <option value="120">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLISTPOS_PANEL</option>
+        </field>
+        <field
+            name="markerlist"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLISTSTYLE_SIMPLE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLISTSTYLE_ADVANCED</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLISTSTYLE_EXTERNAL</option>
+        </field>
+        <field
+            name="markerlistbgcolor"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_BACKGROUND_COLOR_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_BACKGROUND_COLOR_DESC"
+            size="90"
+            class="inputbox"
+            required="false"
+            default=""
+        />
+        <field
+            name="markerlistaction"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge span4"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_CENTER</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_CLICK</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_CENTER_CLICK</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_CENTER_ANIMATE</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_CLICK_ANIMATE</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_CENTER_CLICK_ANIMATE</option>
+        </field>
+        <field
+            name="markerlistcontent"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge span5"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLEDESC</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLEDESC2</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_ICONTITLE</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_ICONTITLEDESC</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_ICONTITLEDESC2</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_ICONTITLEDESCTABLE</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_ICONTITLEDESCTABLE2</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLEIMAGE</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLEIMAGEDESC</option>
+            <option value="16">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLEIMAGEDESC2</option>
+            <option value="13">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_IMAGETITLE</option>
+            <option value="14">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_IMAGETITLEDESC</option>
+            <option value="17">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_IMAGETITLEDESC2</option>
+            <option value="15">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_IMAGETITLEDESCTABLE</option>
+            <option value="18">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_IMAGETITLEDESCTABLE2</option>
+            <option value="101">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TABLETITLE</option>
+            <option value="102">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TABLETITLEDESC</option>
+            <option value="103">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TABLETITLEDESC2</option>
+        </field>
+        <field
+            name="markerlistbuttontype"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge span4"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_OPEN</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_ICON</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_TEXT</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_ICONOPEN</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_TEXTOPEN</option>
+        </field>
+        <field
+            name="markerlistsearch"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_SEARCH_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_SEARCH_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+            
+    </fieldset>
+    
+    <fieldset name="mapmarkergroup">
+        <field
+            name="markermanager"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERMANAGER_LABEL2"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERMANAGER_DESC2"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>        
+        <field
+            name="markergroupcontrol"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_NONE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_LEFT</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_TOP</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_BOTTOM</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_GROUP_MAP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_MAP_GROUP</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_EXTERNAL</option>
+            <option value="120">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_PANEL</option>
+        </field>
+        <field
+            name="markergrouptype"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPTYPE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPTYPE_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPTYPE_TOGGLE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPTYPE_ONLYONE</option>
+        </field>
+        <field
+            name="markergroupctlmarker"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_MARKER_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_MARKER_DESC"
+            size="80"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="markerlistsync"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROLSYNC_MARKERLIST_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROLSYNC_MARKERLIST_DESC"
+            size="80"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="markergroupctlpath"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_PATH_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_PATH_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_PATH_KML</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_PATH_SHAPE</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCONTROL_PATH_KML_SHAPE</option>
+        </field>
+        <field
+            name="markergrouporder"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPORDER_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPORDER_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge span4"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPORDER_TITLE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPORDER_ORDERING</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPORDER_USERORDER</option>
+        </field>
+        <field
+            name="markergroupwidth"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPWIDTH_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPWIDTH_DESC"
+            size="1"
+            required="true"
+            default="20"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">0</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+            <option value="35">35</option>
+            <option value="40">40</option>
+            <option value="45">45</option>
+            <option value="50">50</option>
+        </field>
+        <field
+            name="markergroupshowicon"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_DESC"
+            size="1"
+            required="true"
+            default="1"
+            class="lst-dropdown-sinlge span4"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXT</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXT_COUNT</option>
+            <option value="20">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXT_COUNT_P</option>
+            <option value="30">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXT_COUNT_PT</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXTICON</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXTICON_COUNT</option>
+            <option value="21">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXTICON_COUNT_P</option>
+            <option value="31">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXTICON_COUNT_PT</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_ICON</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_ICON_COUNT</option>
+            <option value="22">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_ICON_COUNT_P</option>
+            <option value="32">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_ICON_COUNT_PT</option>
+        </field>
+        <field
+            name="markergroupshowiconall"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICONALL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICONALL_DESC"
+            size="1"
+            required="true"
+            default="100"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="100">JNO</option>
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXT</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXTICON</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSHOWICON_ICON</option>
+        </field>
+        <field
+            name="markergroupsearch"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSEARCH_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSEARCH_DESC"
+            size="80"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>        
+        <field
+            name="markergroupcss"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCSS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCSS_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCSS_SIMPLE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCSS_ADVANCED</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPCSS_EXTERNAL</option>
+        </field>
+        <field
+            name="markergrouptitle"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPTITLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPTITLE_DESC"
+            type="text"
+            size="80"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field
+            name="markergroupdesc1"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPDESC1_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPDESC1_DESC"
+            type="editor"
+            rows="10"
+            size="100"
+            class="inputbox"
+            required="false"
+            default=""
+            filter="raw"
+        />
+        <field
+            name="markergroupsep1"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSEP1_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSEP1_DESC"
+            size="80"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="markergroupsep2"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSEP2_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPSEP2_DESC"
+            size="80"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="markergroupdesc2"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPDESC2_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MARKERGROUPDESC2_DESC"
+            type="editor"
+            rows="10"
+            size="100"
+            class="inputbox"
+            required="false"
+            default=""
+            filter="raw"
+        />
+
+
+    </fieldset>
+
+    <fieldset name="maproute">
+        <field
+            name="routedraggable"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_DRAGGABLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_DRAGGABLE_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="routeshowpanel"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_SHOWPANEL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_SHOWPANEL_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_SHOWPANEL_NONE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_SHOWPANEL_BOTTOM</option>
+        </field>
+        <field
+            name="routeaddress"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_ADDRESSTEXT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_ADDRESSTEXT_DESC"
+            size="80"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field
+            name="routedriving"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_TRAVELMODE_DRIVING_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_TRAVELMODE_DRIVING_DESC"
+            size="1"
+            required="true"
+            default="1"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+            <option value="2">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPTYPE_DEFAULT</option>
+        </field>
+        <field
+            name="routewalking"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_TRAVELMODE_WALKING_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_TRAVELMODE_WALKING_DESC"
+            size="1"
+            required="true"
+            default="1"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+            <option value="2">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPTYPE_DEFAULT</option>
+        </field>
+        <field
+            name="routebicycling"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_TRAVELMODE_BICYCLING_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_TRAVELMODE_BICYCLING_DESC"
+            size="1"
+            required="true"
+            default="1"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+            <option value="2">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPTYPE_DEFAULT</option>
+        </field>
+        <field
+            name="routetransit"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_TRAVELMODE_TRANSIT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_TRAVELMODE_TRANSIT_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+            <option value="2">COM_ZHGOOGLEMAP_CONFIG_MAP_FIELD_MAPTYPE_DEFAULT</option>
+        </field>
+        <field
+            name="routeunitsystem"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAPROUTER_DETAIL_UNITSYSTEM_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPROUTER_DETAIL_UNITSYSTEM_DESC"
+            size="1"
+            class="inputbox"
+            required="true"
+            default="1"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAPROUTER_DETAIL_UNITSYSTEM_METRIC</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAPROUTER_DETAIL_UNITSYSTEM_IMPERIAL</option>
+        </field>
+        <field
+            name="routeavoidhighways"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPROUTER_DETAIL_AVOIDHIGHWAYS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPROUTER_DETAIL_AVOIDHIGHWAYS_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="routeavoidtolls"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPROUTER_DETAIL_AVOIDTOLLS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPROUTER_DETAIL_AVOIDTOLLS_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+            
+    </fieldset>
+    
+    <fieldset name="mapadvanced">
+
+        <field
+            name="hovermarker"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_HOVERTEXT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_HOVERTEXT_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_ACTIONBYCLICK_INFO</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_ACTIONBYCLICK_INFOBUBBLE</option>
+        </field>
+        <field
+            name="hoverinfobubble"
+            type="list"
+            size="1"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_INFOBUBBLESTYLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_INFOBUBBLESTYLE_DESC"
+            required="false"
+            class="lst-dropdown-sinlge"
+        />
+        
+        <field
+            name="panelinfowin"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PANELINFO_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PANELINFO_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_PANELINFO_DEFAULT</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_PANELINFO_PANEL</option>
+        </field>
+        <field
+            name="panelwidth"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PANELWIDTH_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PANELWIDTH_DESC"
+            size="90"
+            class="inputbox"
+            required="true"
+            default="300"
+        />            
+        <field
+            name="panelstate"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PANELSTATE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PANELSTATE_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="useajaxobject"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_USEAJAXOBJECT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_USEAJAXOBJECT_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_USEAJAX_MOOTOOLS</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_USEAJAX_JQUERY</option>
+        </field>
+        <field
+            name="ajaxgetplacemark"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_AJAXGETPLACEMARK_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_AJAXGETPLACEMARK_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge span4"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_AJAXGETPLACEMARK_ALL</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_AJAXGETPLACEMARK_ALL2STEP</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_AJAXGETPLACEMARK_MAPBOUNDS</option>
+        </field>            
+        <field
+            name="ajaxbufferplacemark"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_AJAXBUFFERPLACEMARK_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_AJAXBUFFERPLACEMARK_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>
+            <option value="500">500</option>
+            <option value="600">600</option>
+            <option value="700">700</option>
+            <option value="800">800</option>
+            <option value="900">900</option>
+            <option value="1000">1000</option>
+            <option value="1100">1100</option>
+            <option value="1200">1200</option>
+            <option value="1300">1300</option>
+            <option value="1400">1400</option>
+            <option value="1500">1500</option>
+            <option value="1600">1600</option>
+            <option value="1700">1700</option>
+            <option value="1800">1800</option>
+            <option value="1900">1900</option>
+            <option value="2000">2000</option>
+            <option value="2100">2100</option>
+            <option value="2200">2200</option>
+            <option value="2300">2300</option>
+            <option value="2400">2400</option>
+            <option value="2500">2500</option>
+            <option value="2600">2600</option>
+            <option value="2700">2700</option>
+            <option value="2800">2800</option>
+            <option value="2900">2900</option>
+            <option value="3000">3000</option>
+            <option value="3100">3100</option>
+            <option value="3200">3200</option>
+            <option value="3300">3300</option>
+            <option value="3400">3400</option>
+            <option value="3500">3500</option>
+            <option value="3600">3600</option>
+            <option value="3700">3700</option>
+            <option value="3800">3800</option>
+            <option value="3900">3900</option>
+            <option value="4000">4000</option>
+            <option value="4100">4100</option>
+            <option value="4200">4200</option>
+            <option value="4300">4300</option>
+            <option value="4400">4400</option>
+            <option value="4500">4500</option>
+            <option value="4600">4600</option>
+            <option value="4700">4700</option>
+            <option value="4800">4800</option>
+            <option value="4900">4900</option>
+            <option value="5000">5000</option>
+            <option value="5100">5100</option>
+            <option value="5200">5200</option>
+            <option value="5300">5300</option>
+            <option value="5400">5400</option>
+            <option value="5500">5500</option>
+            <option value="5600">5600</option>
+            <option value="5700">5700</option>
+            <option value="5800">5800</option>
+            <option value="5900">5900</option>
+            <option value="6000">6000</option>
+            <option value="6100">6100</option>
+            <option value="6200">6200</option>
+            <option value="6300">6300</option>
+            <option value="6400">6400</option>
+            <option value="6500">6500</option>
+            <option value="6600">6600</option>
+            <option value="6700">6700</option>
+            <option value="6800">6800</option>
+            <option value="6900">6900</option>
+            <option value="7000">7000</option>
+            <option value="7100">7100</option>
+            <option value="7200">7200</option>
+            <option value="7300">7300</option>
+            <option value="7400">7400</option>
+            <option value="7500">7500</option>
+            <option value="7600">7600</option>
+            <option value="7700">7700</option>
+            <option value="7800">7800</option>
+            <option value="7900">7900</option>
+            <option value="8000">8000</option>
+            <option value="8100">8100</option>
+            <option value="8200">8200</option>
+            <option value="8300">8300</option>
+            <option value="8400">8400</option>
+            <option value="8500">8500</option>
+            <option value="8600">8600</option>
+            <option value="8700">8700</option>
+            <option value="8800">8800</option>
+            <option value="8900">8900</option>
+            <option value="9000">9000</option>
+            <option value="9100">9100</option>
+            <option value="9200">9200</option>
+            <option value="9300">9300</option>
+            <option value="9400">9400</option>
+            <option value="9500">9500</option>
+            <option value="9600">9600</option>
+            <option value="9700">9700</option>
+            <option value="9800">9800</option>
+            <option value="9900">9900</option>
+            <option value="10000">10000</option>
+        </field>
+        <field
+            name="ajaxbufferpath"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_AJAXBUFFERPATH_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_AJAXBUFFERPATH_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>
+            <option value="500">500</option>
+            <option value="600">600</option>
+            <option value="700">700</option>
+            <option value="800">800</option>
+            <option value="900">900</option>
+            <option value="1000">1000</option>
+            <option value="1100">1100</option>
+            <option value="1200">1200</option>
+            <option value="1300">1300</option>
+            <option value="1400">1400</option>
+            <option value="1500">1500</option>
+            <option value="1600">1600</option>
+            <option value="1700">1700</option>
+            <option value="1800">1800</option>
+            <option value="1900">1900</option>
+            <option value="2000">2000</option>
+            <option value="2100">2100</option>
+            <option value="2200">2200</option>
+            <option value="2300">2300</option>
+            <option value="2400">2400</option>
+            <option value="2500">2500</option>
+            <option value="2600">2600</option>
+            <option value="2700">2700</option>
+            <option value="2800">2800</option>
+            <option value="2900">2900</option>
+            <option value="3000">3000</option>
+            <option value="3100">3100</option>
+            <option value="3200">3200</option>
+            <option value="3300">3300</option>
+            <option value="3400">3400</option>
+            <option value="3500">3500</option>
+            <option value="3600">3600</option>
+            <option value="3700">3700</option>
+            <option value="3800">3800</option>
+            <option value="3900">3900</option>
+            <option value="4000">4000</option>
+            <option value="4100">4100</option>
+            <option value="4200">4200</option>
+            <option value="4300">4300</option>
+            <option value="4400">4400</option>
+            <option value="4500">4500</option>
+            <option value="4600">4600</option>
+            <option value="4700">4700</option>
+            <option value="4800">4800</option>
+            <option value="4900">4900</option>
+            <option value="5000">5000</option>
+            <option value="5100">5100</option>
+            <option value="5200">5200</option>
+            <option value="5300">5300</option>
+            <option value="5400">5400</option>
+            <option value="5500">5500</option>
+            <option value="5600">5600</option>
+            <option value="5700">5700</option>
+            <option value="5800">5800</option>
+            <option value="5900">5900</option>
+            <option value="6000">6000</option>
+            <option value="6100">6100</option>
+            <option value="6200">6200</option>
+            <option value="6300">6300</option>
+            <option value="6400">6400</option>
+            <option value="6500">6500</option>
+            <option value="6600">6600</option>
+            <option value="6700">6700</option>
+            <option value="6800">6800</option>
+            <option value="6900">6900</option>
+            <option value="7000">7000</option>
+            <option value="7100">7100</option>
+            <option value="7200">7200</option>
+            <option value="7300">7300</option>
+            <option value="7400">7400</option>
+            <option value="7500">7500</option>
+            <option value="7600">7600</option>
+            <option value="7700">7700</option>
+            <option value="7800">7800</option>
+            <option value="7900">7900</option>
+            <option value="8000">8000</option>
+            <option value="8100">8100</option>
+            <option value="8200">8200</option>
+            <option value="8300">8300</option>
+            <option value="8400">8400</option>
+            <option value="8500">8500</option>
+            <option value="8600">8600</option>
+            <option value="8700">8700</option>
+            <option value="8800">8800</option>
+            <option value="8900">8900</option>
+            <option value="9000">9000</option>
+            <option value="9100">9100</option>
+            <option value="9200">9200</option>
+            <option value="9300">9300</option>
+            <option value="9400">9400</option>
+            <option value="9500">9500</option>
+            <option value="9600">9600</option>
+            <option value="9700">9700</option>
+            <option value="9800">9800</option>
+            <option value="9900">9900</option>
+            <option value="10000">10000</option>
+        </field>        
+        <field
+            name="useajax"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_USEAJAX_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_USEAJAX_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_USEAJAX_MOOTOOLS</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_USEAJAX_JQUERY</option>
+        </field>
+
+        <field
+            name="elevation"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_ELEVATION_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_ELEVATION_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="streetview"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_OPENSTREETVIEW_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_OPENSTREETVIEW_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_STREETVIEW_NONE</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_STREETVIEW_DEFAULT_TOP</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_STREETVIEW_DEFAULT_BOTTOM</option>
+        </field>
+        <field
+            name="streetviewstyleid"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_STREETVIEW_STYLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_STREETVIEW_STYLE_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_STREETVIEW_STYLE_DEFAULT</option>
+        </field>
+
+        <field
+            name="usermarkersfilter"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERFILTER_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERFILTER_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge span3"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERFILTER_ALL</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERFILTER_YES</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERFILTER_ACL</option>
+        </field>
+        <field
+            name="usermarkers"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKER_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKER_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKER_NO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKER_ALL</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKER_ALL_NO_LOGIN_INFO</option>
+        </field>
+        <field
+            name="usermarkersinsert"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERINS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERINS_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="usermarkersupdate"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERUPD_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERUPD_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="usermarkersdelete"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERDEL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERDEL_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="usermarkerspublished"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERPUBLISHED_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERPUBLISHED_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERPUBLISHED_NO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERPUBLISHED_YES</option>
+        </field>
+        <field
+            name="usercontactpublished"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_USERCONTACTPUBLISHED_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_USERCONTACTPUBLISHED_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_USERCONTACTPUBLISHED_NO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_USERCONTACTPUBLISHED_YES</option>
+        </field>
+        <field
+            name="usermarkersicon"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERICON_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_USERMARKERICON_DESC"
+            size="40"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        
+        <field
+            name="cssclassname"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_CSSCLASSNAME_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_CSSCLASSNAME_DESC"
+            type="text"
+            size="40"
+            class="inputbox span4"
+            required="false"
+            default=""
+        />
+        <field 
+            name="css2load" 
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_ADD_CSS_LABEL" 
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_ADD_CSS_DESC" 
+            type="textarea" 
+            rows="4"
+            cols="50"
+            size="200"
+            required="false"
+            class="inputbox span4"
+            default=""
+        />
+        <field 
+            name="js2load" 
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_ADD_JS_LABEL" 
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_ADD_JS_DESC" 
+            type="textarea" 
+            rows="4"
+            cols="50"
+            size="200"
+            required="false"
+            class="inputbox span4"
+            default=""
+        />
+        <field
+            name="placemark_rating"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKRATING_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKRATING_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_USEAJAX_MOOTOOLS</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_USEAJAX_JQUERY</option>
+        </field>    
+
+        <field
+            name="override_id"
+            type="mapoverride"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MAPOVERRIDE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MAPOVERRIDE_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+            addfieldprefix="ZhukDL\Component\ZhGoogleMap\Administrator\Field"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_OVERRIDE_DEFAULT</option>
+        </field>
+            
+    </fieldset>
+
+    <fieldset name="mapgeolocation">
+        <field
+            name="autoposition"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_AUTOPOSITION_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_AUTOPOSITION_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="geolocationcontrol"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_GEOLOCATIONCONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_GEOLOCATIONCONTROL_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="geolocationbutton"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_GEOLOCATIONBUTTON_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_GEOLOCATIONBUTTON_DESC"
+            size="1"
+            required="true"
+            default="1"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_GEOLOCATIONBUTTON_ICON</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_GEOLOCATIONBUTTON_TEXT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_GEOLOCATIONBUTTON_ICONTEXT</option>
+        </field>
+    </fieldset>
+    
+    <fieldset name="positions">
+        <field
+            name="posmaptype"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_POSMAPTYPE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_POSMAPTYPE_DESC"
+            size="1"
+            required="true"
+            default="3"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+        </field>
+        <field
+            name="pospan"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_POSPAN_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_POSPAN_DESC"
+            size="1"
+            required="true"
+            default="2"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+        </field>
+        <field
+            name="poszoom"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_POSZOOM_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_POSZOOM_DESC"
+            size="1"
+            required="true"
+            default="6"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+        </field>
+        <field
+            name="posscale"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_POSSCALE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_POSSCALE_DESC"
+            size="1"
+            required="true"
+            default="11"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+        </field>
+        <field
+            name="posstreet"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_POSSTREET_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_POSSTREET_DESC"
+            size="1"
+            required="true"
+            default="4"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+        </field>
+        <field
+            name="findpos"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_POS_FINDPOS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_POS_FINDPOS_DESC"
+            size="1"
+            required="true"
+            default="101"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="101">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_MAPTOP</option>
+            <option value="102">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_MAPBOTTOM</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+        </field>
+        <field
+            name="geolocationpos"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_POS_GEOLOCATION_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_POS_GEOLOCATION_DESC"
+            size="1"
+            required="true"
+            default="2"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+        </field>
+        <field
+            name="markerlistbuttonpos"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_BUTTONPOS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACEMARKLIST_BUTTONPOS_DESC"
+            size="1"
+            required="true"
+            default="3"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+        </field>
+        <field
+            name="trafficcontrolpos"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROLPOS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROLPOS_DESC"
+            size="1"
+            required="true"
+            default="3"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+        </field>
+        <field
+            name="transitcontrolpos"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_TRANSITCONTROLPOS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_TRANSITCONTROLPOS_DESC"
+            size="1"
+            required="true"
+            default="3"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+        </field>
+        <field
+            name="bikecontrolpos"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_BIKECONTROLPOS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_BIKECONTROLPOS_DESC"
+            size="1"
+            required="true"
+            default="3"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+        </field>
+        <field
+            name="mapcentercontrolpos"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_HOMECONTROLPOS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_HOMECONTROLPOS_DESC"
+            size="1"
+            required="true"
+            default="2"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+        </field>
+        <field
+            name="overlayopacitycontrolpos"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_OVERLAYOPACITYCONTROLPOS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_OVERLAYOPACITYCONTROLPOS_DESC"
+            size="1"
+            required="true"
+            default="2"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_CENTER</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+            <option value="4">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_TOP</option>
+            <option value="5">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_TOP</option>
+            <option value="6">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_CENTER</option>
+            <option value="7">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_CENTER</option>
+            <option value="8">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_LEFT_BOTTOM</option>
+            <option value="9">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_RIGHT_BOTTOM</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_CENTER</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+        </field>             
+            
+    </fieldset>
+
+
+    <fieldset name="mapdecor">
+        <field
+            name="maptypecontrol"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPECONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPECONTROL_DESC"
+            size="1"
+            required="true"
+            default="3"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPECONTROL_NONE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPECONTROL_HORIZONTAL_BAR</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPECONTROL_DROPDOWN_MENU</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_MAPTYPECONTROL_DEFAULT</option>
+        </field>
+        <field
+            name="pancontrol"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PANCONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PANCONTROL_DESC"
+            size="40"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="zoomcontrol"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOMCONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOMCONTROL_DESC"
+            size="1"
+            required="true"
+            default="3"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOMCONTROL_NONE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOMCONTROL_SMALL</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOMCONTROL_LARGE</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOMCONTROL_DEFAULT</option>
+        </field>
+        <field
+            name="scalecontrol"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_SCALECONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_SCALECONTROL_DESC"
+            size="40"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="overviewmapcontrol"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_OVERVIEWMAPCONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_OVERVIEWMAPCONTROL_DESC"
+            size="1"
+            required="true"
+            default="1"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_OVERVIEWMAPCONTROL_NO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_OVERVIEWMAPCONTROL_YES</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_OVERVIEWMAPCONTROL_OPEN</option>
+        </field>
+        <field
+            name="doubleclickzoom"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_DOUBLECLICKZOOM_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_DOUBLECLICKZOOM_DESC"
+            size="40"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="scrollwheelzoom"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_GESTUREHANDLING_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_GESTUREHANDLING_DESC"
+            size="1"
+            required="true"
+            default="1"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAP_DETAIL_GESTUREHANDLING_NONE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_GESTUREHANDLING_COOPERATIVE</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_GESTUREHANDLING_GREEDY</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_GESTUREHANDLING_AUTO</option>
+        </field>
+        <field
+            name="rotatecontrol"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_ROTATECONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_ROTATECONTROL_DESC"
+            size="40"
+            required="true"
+            default="0"
+            class="btn-group"
+            >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="streetviewcontrol"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_STREETVIEWCONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_STREETVIEWCONTROL_DESC"
+            size="40"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="trafficcontrol"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_OPEN</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_ICON</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_TEXT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_ICONOPEN</option>
+            <option value="13">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_TEXTOPEN</option>
+        </field>
+        <field
+            name="transitcontrol"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_TRANSITLAYER_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_TRANSITLAYER_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_OPEN</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_ICON</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_TEXT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_ICONOPEN</option>
+            <option value="13">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_TEXTOPEN</option>
+        </field>
+        <field
+            name="bikecontrol"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_BIKECONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_BIKECONTROL_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_OPEN</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_ICON</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_TEXT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_ICONOPEN</option>
+            <option value="13">COM_ZHGOOGLEMAP_MAP_DETAIL_TRAFFICCONTROL_TEXTOPEN</option>
+        </field>
+        <field
+            name="mapcentercontrol"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_HOMECONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_HOMECONTROL_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge span3"
+        >
+            <option value="0">JNO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_HOMECONTROL_ICON</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_HOMECONTROL_ICON_ZOOM</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_HOMECONTROL_TEXT</option>
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_HOMECONTROL_TEXT_ZOOM</option>
+        </field>
+        <field
+            name="overlayopacitycontrol"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_OVERLAYOPACITYCONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_OVERLAYOPACITYCONTROL_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge span3"
+        >
+            <option value="0">JNO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAP_DETAIL_OVERLAYOPACITYCONTROL_DEFAULT</option>
+        </field>
+        <field
+            name="circle_border"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_CIRCLECONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_CIRCLECONTROL_DESC"
+            size="40"
+            required="true"
+            default="0"
+            class="btn-group"
+            >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+                           
+    </fieldset>
+
+    <fieldset name="mapcontrolgeofind">
+        <field
+            name="findcontrol"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_FINDCONTROL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_FINDCONTROL_DESC"
+            size="40"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="findwidth"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_FINDWIDTH_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_FINDWIDTH_DESC"
+            size="10"
+            class="inputbox"
+            required="true"
+            default="70"
+        />
+        <field
+            name="findroute"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_FINDROUTE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_FINDROUTE_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAP_DETAIL_FINDROUTE_YESANDFIND</option>
+        </field>
+        <field
+            name="zoombyfind"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOMBYFIND_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOMBYFIND_DESC"
+            size="1"
+            required="true"
+            default="100"
+        >
+            <option value="100">COM_ZHGOOGLEMAP_MAP_DETAIL_ZOOMBYFIND_NONE</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+        </field>
+        <field
+            name="region"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_REGION_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_REGION_DESC"
+            size="6"
+            class="inputbox"
+            required="false"
+            default=""
+        />
+        
+    </fieldset>
+
+    <fieldset name="mapdecorheader">
+        <field
+            name="headersep"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_HEADERSEP_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_HEADERSEP_DESC"
+            size="40"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="headerhtml"
+            type="editor"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_HEADERHTML_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_HEADERHTML_DESC"
+            rows="30"
+            size="300"
+            class="inputbox"
+            required="false"
+            default=""
+            filter="raw"
+        />
+    </fieldset>
+    <fieldset name="mapdecorfooter">
+        <field
+            name="footersep"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_FOOTERSEP_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_FOOTERSEP_DESC"
+            size="40"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="footerhtml"
+            type="editor"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_FOOTERHTML_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_FOOTERHTML_DESC"
+            rows="30"
+            size="300"
+            class="inputbox"
+            required="false"
+            default=""
+            filter="raw"
+        />
+    </fieldset>
+    <fieldset name="mapdecorstyle">
+        <field
+            name="mapstyles"
+            type="textarea"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_STYLES_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_STYLES_DESC"
+            rows="30"
+            size="300"
+            class="inputbox span10"
+            required="false"
+            default=""
+            filter="raw"
+        />
+    </fieldset>
+
+    <fieldset name="mapplaces">
+        <field
+            name="placesenable"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACESENABLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACESENABLE_DESC"
+            size="40"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="placestype"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACESTYPE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACESTYPE_DESC"
+            size="40"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field
+            name="placesradius"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACESRADIUS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACESRADIUS_DESC"
+            size="10"
+            class="inputbox"
+            required="true"
+            default="0"
+        />
+        <field
+            name="placesautocomplete"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACESAUTOCOMPLETE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACESAUTOCOMPLETE_DESC"
+            size="40"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="placesacwidth"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACESACWIDTH_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACESACWIDTH_DESC"
+            size="10"
+            class="inputbox"
+            required="true"
+            default="70"
+        />
+        <field
+            name="placestypeac"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACESTYPEAC_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACESTYPEAC_DESC"
+            size="40"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field
+            name="placesdirection"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACESDIRECTION_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_PLACESDIRECTION_DESC"
+            size="40"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="country"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_COUNTRY_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_COUNTRY_DESC"
+            size="6"
+            class="inputbox"
+            required="false"
+            default=""
+        />
+
+    </fieldset>
+
+    <fieldset name="integration">
+        <field
+            name="usercontact"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_USERCONTACT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_USERCONTACT_DESC"
+            size="40"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="usercontactattributes"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_USERCONTACTATTRS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_USERCONTACTATTRS_DESC"
+            size="80"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field
+            name="useruser"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_USERUSER_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_USERUSER_DESC"
+            size="40"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="gogoogle"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOGLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOGLE_DESC"
+            size="40"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="gogoogle_map"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOGLE_MAP_LABEL"
+            description="COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOGLE_MAP_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge span5"
+            >
+            <option value="0">JNO</option>
+            <option value="10">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_INFOWIN_LINK_YES_NEW_PAGE</option>
+            <option value="11">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_INFOWIN_LINK_YES_SAME_PAGE</option>
+            <option value="20">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_UNDER_MAP_YES_NEW_PAGE</option>
+            <option value="21">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_UNDER_MAP_YES_SAME_PAGE</option>
+            <option value="30">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_INFOWIN_LINK_UNDER_MAP_YES_NEW_PAGE</option>
+            <option value="31">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_INFOWIN_LINK_UNDER_MAP_YES_SAME_PAGE</option>            
+            <option value="12">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_MINFOWIN_LINK_YES_NEW_PAGE</option>
+            <option value="13">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_MINFOWIN_LINK_YES_SAME_PAGE</option>
+            <option value="22">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_MUNDER_MAP_YES_NEW_PAGE</option>
+            <option value="23">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_MUNDER_MAP_YES_SAME_PAGE</option>
+            <option value="32">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_MINFOWIN_LINK_UNDER_MAP_YES_NEW_PAGE</option>
+            <option value="33">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_MINFOWIN_LINK_UNDER_MAP_YES_SAME_PAGE</option>
+            <option value="14">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_LINFOWIN_LINK_YES_NEW_PAGE</option>
+            <option value="15">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_LINFOWIN_LINK_YES_SAME_PAGE</option>
+            <option value="24">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_LUNDER_MAP_YES_NEW_PAGE</option>
+            <option value="25">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_LUNDER_MAP_YES_SAME_PAGE</option>
+            <option value="34">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_LINFOWIN_LINK_UNDER_MAP_YES_NEW_PAGE</option>
+            <option value="35">COM_ZHGOOGLEMAP_MAP_DETAIL_GOGOOLE_LINFOWIN_LINK_UNDER_MAP_YES_SAME_PAGE</option>
+        </field>
+    </fieldset>
+    
+    <fields name="params">
+        <fieldset
+            name="params"
+            label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+        >
+            <field
+                name="show_category"
+                type="list"
+                label="COM_ZHGOOGLEMAP_MAP_DETAIL_SHOW_CATEGORY_LABEL"
+                description="COM_ZHGOOGLEMAP_MAP_DETAIL_SHOW_CATEGORY_DESC"
+                default=""
+                class="lst-dropdown-sinlge"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+        </fieldset>
+    </fields>
+
+</form>

@@ -1,0 +1,10 @@
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tabid` int(11) NOT NULL default '0';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab1` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab2` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab3` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab4` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab5` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab6` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab7` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab8` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab9` text NOT NULL;

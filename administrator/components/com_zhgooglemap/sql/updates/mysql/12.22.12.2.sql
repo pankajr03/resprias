@@ -1,0 +1,29 @@
+UPDATE #__zhgooglemaps_markers SET `publish_up` = NULL WHERE CAST(`publish_up` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_markers SET `publish_down` = NULL WHERE CAST(`publish_down` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_routers SET `publish_up` = NULL WHERE CAST(`publish_up` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_routers SET `publish_down` = NULL WHERE CAST(`publish_down` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_paths SET `publish_up` = NULL WHERE CAST(`publish_up` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_paths SET `publish_down` = NULL WHERE CAST(`publish_down` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_markergroups SET `publish_up` = NULL WHERE CAST(`publish_up` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_markergroups SET `publish_down` = NULL WHERE CAST(`publish_down` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_maptypes SET `publish_up` = NULL WHERE CAST(`publish_up` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_maptypes SET `publish_down` = NULL WHERE CAST(`publish_down` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_infobubbles SET `publish_up` = NULL WHERE CAST(`publish_up` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_infobubbles SET `publish_down` = NULL WHERE CAST(`publish_down` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_text_overrides SET `publish_up` = NULL WHERE CAST(`publish_up` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_text_overrides SET `publish_down` = NULL WHERE CAST(`publish_down` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_marker_content SET `publish_up` = NULL WHERE CAST(`publish_up` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_marker_content SET `publish_down` = NULL WHERE CAST(`publish_down` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_log SET `publish_up` = NULL WHERE CAST(`publish_up` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_log SET `publish_down` = NULL WHERE CAST(`publish_down` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_marker_buffer SET `publish_up` = NULL WHERE CAST(`publish_up` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_marker_buffer SET `publish_down` = NULL WHERE CAST(`publish_down` AS CHAR(20)) = '0000-00-00 00:00:00';
+
+UPDATE #__zhgooglemaps_markers SET `createddate` = NULL WHERE CAST(`createddate` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_marker_buffer SET `createddate` = NULL WHERE CAST(`createddate` AS CHAR(20)) = '0000-00-00 00:00:00';
+
+UPDATE #__zhgooglemaps_marker_rates SET `rating_date` = NULL WHERE CAST(`rating_date` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_streetviews SET `publish_up` = NULL WHERE CAST(`publish_up` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_streetviews SET `publish_down` = NULL WHERE CAST(`publish_down` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_weathertypes SET `publish_up` = NULL WHERE CAST(`publish_up` AS CHAR(20)) = '0000-00-00 00:00:00';
+UPDATE #__zhgooglemaps_weathertypes SET `publish_down` = NULL WHERE CAST(`publish_down` AS CHAR(20)) = '0000-00-00 00:00:00';

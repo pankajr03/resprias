@@ -1,0 +1,44 @@
+ALTER TABLE #__zhgooglemaps_maps MODIFY `params` text;
+ALTER TABLE #__zhgooglemaps_markers MODIFY `params` text;
+ALTER TABLE #__zhgooglemaps_routers MODIFY `params` text;
+ALTER TABLE #__zhgooglemaps_paths MODIFY `params` text;
+ALTER TABLE #__zhgooglemaps_markergroups MODIFY `params` text;
+ALTER TABLE #__zhgooglemaps_maptypes MODIFY `params` text;
+ALTER TABLE #__zhgooglemaps_infobubbles MODIFY `params` text;
+ALTER TABLE #__zhgooglemaps_marker_rates MODIFY `params` text;
+ALTER TABLE #__zhgooglemaps_text_overrides MODIFY `params` text;
+ALTER TABLE #__zhgooglemaps_marker_content MODIFY `params` text;
+ALTER TABLE #__zhgooglemaps_log MODIFY `params` text;
+ALTER TABLE #__zhgooglemaps_marker_buffer MODIFY `params` text;
+ALTER TABLE #__zhgooglemaps_streetviews MODIFY `params` text;
+ALTER TABLE #__zhgooglemaps_weathertypes MODIFY `params` text;
+
+ALTER TABLE #__zhgooglemaps_markers MODIFY `publish_up` DATETIME;
+ALTER TABLE #__zhgooglemaps_markers MODIFY `publish_down` DATETIME;
+ALTER TABLE #__zhgooglemaps_routers MODIFY `publish_up` DATETIME;
+ALTER TABLE #__zhgooglemaps_routers MODIFY `publish_down` DATETIME;
+ALTER TABLE #__zhgooglemaps_paths MODIFY `publish_up` DATETIME;
+ALTER TABLE #__zhgooglemaps_paths MODIFY `publish_down` DATETIME;
+ALTER TABLE #__zhgooglemaps_markergroups MODIFY `publish_up` DATETIME;
+ALTER TABLE #__zhgooglemaps_markergroups MODIFY `publish_down` DATETIME;
+ALTER TABLE #__zhgooglemaps_maptypes MODIFY `publish_up` DATETIME;
+ALTER TABLE #__zhgooglemaps_maptypes MODIFY `publish_down` DATETIME;
+ALTER TABLE #__zhgooglemaps_infobubbles MODIFY `publish_up` DATETIME;
+ALTER TABLE #__zhgooglemaps_infobubbles MODIFY `publish_down` DATETIME;
+ALTER TABLE #__zhgooglemaps_text_overrides MODIFY `publish_up` DATETIME;
+ALTER TABLE #__zhgooglemaps_text_overrides MODIFY `publish_down` DATETIME;
+ALTER TABLE #__zhgooglemaps_marker_content MODIFY `publish_up` DATETIME;
+ALTER TABLE #__zhgooglemaps_marker_content MODIFY `publish_down` DATETIME;
+ALTER TABLE #__zhgooglemaps_log MODIFY `publish_up` DATETIME;
+ALTER TABLE #__zhgooglemaps_log MODIFY `publish_down` DATETIME;
+ALTER TABLE #__zhgooglemaps_marker_buffer MODIFY `publish_up` DATETIME;
+ALTER TABLE #__zhgooglemaps_marker_buffer MODIFY `publish_down` DATETIME;
+ALTER TABLE #__zhgooglemaps_streetviews MODIFY `publish_up` DATETIME;
+ALTER TABLE #__zhgooglemaps_streetviews MODIFY `publish_down` DATETIME;
+ALTER TABLE #__zhgooglemaps_weathertypes MODIFY `publish_up` DATETIME;
+ALTER TABLE #__zhgooglemaps_weathertypes MODIFY `publish_down` DATETIME;
+
+ALTER TABLE #__zhgooglemaps_markers MODIFY `createddate` DATETIME;
+ALTER TABLE #__zhgooglemaps_marker_buffer MODIFY `createddate` DATETIME;
+
+ALTER TABLE #__zhgooglemaps_marker_rates MODIFY `rating_date` DATETIME;

@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="pathmain">
+        <field
+            name="id"
+            type="hidden"
+        />
+        <field
+            name="title"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_TITLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_TITLE_DESC"
+            size="60"
+            class="inputbox span10"
+            required="true"
+            default=""
+        />
+        <field
+            name="description"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_DESCRIPTION_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_DESCRIPTION_DESC"
+            size="100"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field 
+            name="tags" 
+            type="tag"
+            label="JTAG" 
+            description="JTAG_DESC"
+            class="inputbox span10 small" 
+            multiple="true"
+        >
+        </field>
+        <field
+            name="path"
+            type="textarea"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_PATH_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_PATH_DESC"
+            rows="4"
+            cols="50"
+            size="200"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field
+            name="objecttype"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_OBJECTTYPE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_OBJECTTYPE_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_OBJECTTYPE_LINE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_OBJECTTYPE_POLYGON</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_OBJECTTYPE_CIRCLE</option>
+        </field>
+        <field
+            name="mapid"
+            type="mapmap"
+            class="lst-dropdown-sinlge span5"
+            default=""
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_MAPID_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_MAPID_DESC"
+            required="true"
+            addfieldprefix="ZhukDL\Component\ZhGoogleMap\Administrator\Field"
+         >
+            <option value="">COM_ZHGOOGLEMAP_MAPPATH_FILTER_MAP</option>
+        </field>
+
+        <field
+            name="helpitem"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_HELPITEM_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_HELPITEM_DESC"
+            size="60"
+            class="inputbox span3"
+            required="false"
+            default=""
+        />
+    </fieldset>
+    <fieldset name="details">
+        
+        <field
+            name="published"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_PUBLISHED_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_PUBLISHED_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="geodesic"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_GEODESIC_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_GEODESIC_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="weight"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_WEIGHT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_WEIGHT_DESC"
+            size="1"
+            required="true"
+            default="5"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </field>
+        <field
+            name="color"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_COLOR_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_COLOR_DESC"
+            size="30"
+            class="inputbox"
+            required="true"
+            default="#FF0000"
+        />
+        <field
+            name="opacity"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_OPACITY_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_OPACITY_DESC"
+            size="30"
+            class="inputbox"
+            required="true"
+            default="0.8"
+        />
+        <field
+            name="fillcolor"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_FILLCOLOR_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_FILLCOLOR_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default=""
+        />
+        <field
+            name="fillopacity"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_FILLOPACITY_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_FILLOPACITY_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default=""
+        />
+        <field
+            name="hover_color"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_HOVERCOLOR_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_HOVERCOLOR_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default=""
+        />
+    
+           <field
+            name="hover_fillcolor"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_HOVERFILLCOLOR_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_HOVERFILLCOLOR_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default=""
+        />            
+        <field
+            name="radius"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_RADIUS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_RADIUS_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default=""
+        />            
+        <field
+            name="markergroup"
+            type="mapmarkergroup"
+            class="inputbox span10"
+            default="0"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_MARKERGROUP_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_MARKERGROUP_DESC"
+            required="false"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAPMARKERGROUP_FILTER_GROUP</option>        
+        </field>
+        <field
+            name="catid"
+            type="category"
+            extension="com_zhgooglemap"
+            class="inputbox span5"
+            default=""
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_CATEGORY_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_CATEGORY_DESC"
+            required="false"
+        >
+            <option value="0">JOPTION_SELECT_CATEGORY</option>
+        </field>
+
+        <field
+            name="descriptionhtml"
+            type="editor"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_DESCRIPTIONHTML_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_DESCRIPTIONHTML_DESC"
+            rows="10"
+            size="100"
+            class="inputbox"
+            required="false"
+            default=""
+            filter="raw"
+        />
+
+
+        <field
+            name="hoverhtml"
+            type="editor"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_HOVERHTML_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_HOVERHTML_DESC"
+            rows="10"
+            size="100"
+            class="inputbox"
+            required="false"
+            default=""
+            filter="raw"
+        />
+
+    </fieldset>
+    <fieldset name="groundimage">
+        <field
+            name="imgurl"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_IMGURL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_IMGURL_DESC"
+            size="60"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />    
+        <field
+            name="imgbounds"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_IMGBOUNDS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_IMGBOUNDS_DESC"
+            size="90"
+            class="inputbox span5"
+            required="false"
+            default=""
+        /> 
+        <field
+            name="imgopacity"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_IMGOPACITY_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_IMGOPACITY_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default=""
+        />
+        <field
+            name="imgopacitymanage"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_IMGOPACITYMANAGE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_IMGOPACITYMANAGE_DESC"
+            size="30"
+            required="true"
+            default="1"
+        class="btn-group"
+        >
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+        </field>         
+        <field
+            name="imgclickable"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_IMGCLICKABLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_IMGCLICKABLE_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>            
+    </fieldset>
+    
+    <fieldset name="pathadvanced">
+        <field
+            name="infowincontent"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_CONTENT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_CONTENT_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_CONTENT_TITLE_DESC</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_CONTENT_TITLE</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_CONTENT_DESCRIPTION</option>
+            <option value="100">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_CONTENT_NONE</option>
+        </field>
+        <field
+            name="actionbyclick"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_ACTIONBYCLICK_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_ACTIONBYCLICK_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_ACTIONBYCLICK_NONE</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_ACTIONBYCLICK_INFO</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_ACTIONBYCLICK_LINK</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_ACTIONBYCLICK_LINKSELF</option>
+
+        </field>
+        <field
+            name="hrefsite"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_HREFSITE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_HREFSITE_DESC"
+            size="60"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field
+            name="hrefsitename"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_HREFSITENAME_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_HREFSITENAME_DESC"
+            size="60"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />            
+        
+    </fieldset>
+
+    <fieldset name="kmloptions">
+        <field
+            name="kmllayer"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_KMLLAYER_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_KMLLAYER_DESC"
+            size="60"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field
+            name="showtype"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_SHOWTYPE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_SHOWTYPE_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_SHOWTYPE_ZOOM</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_SHOWTYPE_UNCHANGE</option>
+        </field>
+        <field
+            name="suppressinfowindows"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_SUPPRESSINFOWIN_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_SUPPRESSINFOWIN_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+    </fieldset>
+
+
+    <fieldset name="pathelevation">
+        <field
+            name="elevation"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_ELEVATION_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_ELEVATION_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_ELEVATION_NO</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_ELEVATION_AREACHART</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_ELEVATION_LINECHART</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAPPATH_DETAIL_ELEVATION_COLUMNCHART</option>
+        </field>
+        <field
+            name="elevationwidth"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_WIDTH_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_WIDTH_DESC"
+            size="30"
+            class="inputbox"
+            required="true"
+            default="400"
+        />
+        <field
+            name="elevationheight"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_HEIGHT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_HEIGHT_DESC"
+            size="30"
+            class="inputbox"
+            required="true"
+            default="200"
+        />
+        <field
+            name="elevationcount"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_COUNT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_COUNT_DESC"
+            size="30"
+            class="inputbox"
+            required="true"
+            default="256"
+        />
+        <field
+            name="elevationcountkml"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_COUNT_KML_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_COUNT_KML_DESC"
+            size="30"
+            class="inputbox"
+            required="true"
+            default="0"
+        />
+        <field
+            name="elevationicontype"
+            type="imagelist"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_ICONTYPE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_ICONTYPE_DESC"
+            directory="components/com_zhgooglemap/assets/icons"
+            size="1"
+            class="inputbox span5"
+            required="true"
+            exclude="" 
+            stripext="true"
+            hide_none="true"
+            hide_default="true"
+            default="gm#simple-lightblue"
+        />
+        <field
+            name="elevationbaseline"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_BASELINE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_BASELINE_DESC"
+            size="30"
+            class="inputbox"
+            required="true"
+            default="0"
+        />
+        <field
+            name="v_baseline_color"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_VBASELINECOLOR_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_VBASELINECOLOR_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default=""
+        />
+        <field
+            name="v_gridline_color"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_VGRIDLINECOLOR_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_VGRIDLINECOLOR_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default=""
+        />
+        <field
+            name="v_gridline_count"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_VGRIDLINECOUNT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_VGRIDLINECOUNT_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default="5"
+        />
+        <field
+            name="v_minor_gridline_color"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_VMINORGRIDLINECOLOR_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_VMINORGRIDLINECOLOR_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default=""
+        />
+        <field
+            name="v_minor_gridline_count"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_VMINORGRIDLINECOUNT_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_VMINORGRIDLINECOUNT_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default="0"
+        />
+        <field
+            name="v_min_value"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_VMINV_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_VMINV_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default=""
+        />
+        <field
+            name="v_max_value"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_VMAXV_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_VMAXV_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default=""
+        />            
+        <field
+            name="background_color_stroke"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_BGRCOLOR_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_BGRCOLOR_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default=""
+        />
+        <field
+            name="background_color_width"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_BGRCOLOR_WIDTH_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_BGRCOLOR_WIDTH_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default="0"
+        />
+        <field
+            name="background_color_fill"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_BGRCOLOR_FILL_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_BGRCOLOR_FILL_DESC"
+            size="30"
+            class="inputbox"
+            required="false"
+            default=""
+        />
+    </fieldset>
+        
+    <fields name="params">
+        <fieldset
+            name="params"
+            label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+        >
+            <field
+                name="show_category"
+                type="list"
+                label="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_SHOW_CATEGORY_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPPATH_DETAIL_SHOW_CATEGORY_DESC"
+                default=""
+                class="lst-dropdown-sinlge"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+        </fieldset>
+    </fields>
+
+</form>

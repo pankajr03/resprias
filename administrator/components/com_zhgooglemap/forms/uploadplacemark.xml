@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+
+    <fieldset name="details">
+
+
+        <field
+            name="mapid"
+            type="mapmap"
+            class="lst-dropdown-sinlge span5"
+            default=""
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MAPID_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MAPID_DESC"
+            required="true"
+			addfieldprefix="ZhukDL\Component\ZhGoogleMap\Administrator\Field"
+        >
+				<option value="">COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MAP</option>
+		</field>         
+
+
+        <field
+            name="upload_placemark_info"
+            type="note"
+            description="COM_ZHGOOGLEMAP_MAPBUFMRKS_IMPORT_PLACEMARK_INFO"
+            class="alert alert-info"
+        />
+    </fieldset>
+</form>

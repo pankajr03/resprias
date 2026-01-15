@@ -1,0 +1,94 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+
+// TEMPLATE STYLE
+.t3-wrapper {
+	@media (min-width: @container-wrap) {
+		border-left: 1px solid @t3-wrapper-bg;
+		border-right: 1px solid @t3-wrapper-bg;
+	}
+
+	&.menu-vertical {
+		border: 0;
+	}
+}
+
+
+// HEADRIGHT
+.headright .search .form-control {
+	@media (max-width: @container-wrap) {
+		background-image: url('@{t3-image-path-theme}/ico/search-invert.png')!important;
+	}
+
+	.menu-horizontal & {
+		background-image: url('@{t3-image-path-theme}/ico/search-invert.png')!important;
+	}
+}
+
+button.btn.off-canvas-toggle span {
+	@media (max-width: @container-wrap) {
+		background-color: @black;
+	}
+
+	.menu-horizontal & {
+		background-color: @black;
+	}
+}
+
+// SUB HEADING
+.sub-heading::after {
+	background-image: url('@{t3-image-path-theme}/mask/sub-heading-light.png');
+}
+
+// GLOBAL STYLE FOR THEMELIGHT
+.t3-wrapper {
+	// ACM Features Style 1
+	.acm-features.style-2 .action {
+		background: @btn-default-bg;
+		color: @brand-light;
+
+		&:hover,&:focus,&:active {
+			background: @brand-primary;
+			color: @white;
+		}
+	}
+
+	// ACM Features Style 3
+	.acm-features.style-3 .owl-carousel .owl-nav > div {
+		border-color: @brand-primary;
+		color: @brand-primary;
+	}
+
+	.acm-features.style-3 .features-item:hover h4 {
+		color: @white;
+	}
+
+	.acm-features.style-3 .owl-carousel .owl-dots > div {
+		background: lighten(@brand-light,10%);
+	}
+
+	// ACM Teams
+	.acm-teams .item .action {
+		background: @btn-default-bg;
+		color: @brand-light;
+
+		&:hover,&:focus,&:active {
+			background: @brand-primary;
+			color: @white;
+		}
+	}
+
+	.acm-teams .item:hover h4 {
+		color: @white;
+	}
+}

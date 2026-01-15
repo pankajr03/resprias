@@ -1,0 +1,9 @@
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab1title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab2title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab3title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab4title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab5title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab6title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab7title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab8title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab9title` varchar(250) NOT NULL default '';

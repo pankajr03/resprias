@@ -1,0 +1,1 @@
+ALTER TABLE `#__zhgooglemaps_text_overrides` ADD `placemark_date_fmt` text NOT NULL;

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details">
+        <field
+            name="id"
+            type="hidden"
+        />
+        <field
+            name="title"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPMARKERCONTENT_DETAIL_TITLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKERCONTENT_DETAIL_TITLE_DESC"
+            size="60"
+            class="inputbox span10"
+            required="true"
+            default=""
+        />
+        <field
+            name="description"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPMARKERCONTENT_DETAIL_DESCRIPTION_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKERCONTENT_DETAIL_DESCRIPTION_DESC"
+            size="100"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field
+            name="published"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPMARKERCONTENT_DETAIL_PUBLISHED_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKERCONTENT_DETAIL_PUBLISHED_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="catid"
+            type="category"
+            extension="com_zhgooglemap"
+            class="inputbox span5"
+            default=""
+            label="COM_ZHGOOGLEMAP_MAPMARKERCONTENT_DETAIL_CATEGORY_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKERCONTENT_DETAIL_CATEGORY_DESC"
+            required="false"
+            >
+            <option value="0">JOPTION_SELECT_CATEGORY</option>
+        </field>
+        <field 
+            name="ordering" 
+            type="orderinggroup" 
+            class="inputbox"
+            label="JFIELD_ORDERING_LABEL"
+            description="JFIELD_ORDERING_DESC" 
+        />
+        
+    </fieldset>
+    <fields name="params">
+        <fieldset
+            name="params"
+            label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+        >
+            <field
+                name="show_category"
+                type="list"
+                label="COM_ZHGOOGLEMAP_MAPMARKERCONTENT_DETAIL_SHOW_CATEGORY_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPMARKERCONTENT_DETAIL_SHOW_CATEGORY_DESC"
+                default=""
+                class="lst-dropdown-sinlge"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+        </fieldset>
+    </fields>
+
+</form>

@@ -1,0 +1,118 @@
+.zhgm-panel-container .card-header {
+  color: #555;
+  text-shadow: 1px 1px 1px #ccc;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 5px;
+}
+
+.zhgm-panel-container {
+    font-size: 16px;
+    margin: 0px 0px 0px 10px;
+}
+
+.zhgm-panel-comment {
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.zhgm-panel-image {
+    padding: 10px;
+}
+
+.zhgm-panel-icon {
+	text-align: center;
+    font-size: 12px;
+	float: left;
+	padding: 5px 0 5px 10px;
+}
+
+.zhgm-panel-ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+.zhgm-header-title h2 {
+    font-size: 16px;
+}
+
+.zhgm-panel-ul a:before,
+.zhgm-panel-table a:before{
+	content: none !important;
+    padding: 0px 0px 0px 5px;
+}
+
+.zhgm-panel-ul a {
+	padding: 0px 0px 0px 5px;
+}
+
+.zhgm-panel-table {
+    width: 100%;
+    font-size: 14px;
+}
+
+.zhgm-panel-table td {
+    vertical-align: top;
+    padding: 5px 5px 5px 5px;
+}
+
+
+.zhgm-panel-icon a {
+	display: block;
+	float: left;
+	border: 1px solid #c5c5c5;
+	height: 130px;
+	width: 115px;
+	color: #666666;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.zhgm-panel-icon a:hover {
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #f9f9f9;
+	color: #0B55C4;
+	text-decoration:none;
+}
+
+
+.zhgm-panel-icon-wrapper span {
+	display: block;
+	text-align: center;
+}
+
+.zhgm-panel-icon-wrapper img {
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+.zhgm-panel-icon-wrapper {
+	float: left;
+}
+
+.zhgm-panel-horizontal-type {
+    text-align: right !important;
+    margin-left: 10px !important;
+    font-weight: normal !important;
+    width: 120px !important;
+}
+
+.zhgm-panel-horizontal-value {
+    text-align: right !important;
+    margin-left: 10px !important;
+    font-weight: normal !important;
+    width: 130px !important;
+}
+
+.zhgm-panel-horizontal-desc {
+    text-align: left !important;
+    margin-left: 10px !important;
+    font-weight: normal !important;
+}
+
+.zhgm-panel-horizontal-value-version {
+    padding: 0px 5px 0px 0px;
+}

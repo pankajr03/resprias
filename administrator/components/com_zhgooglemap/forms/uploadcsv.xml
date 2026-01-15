@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+
+    <fieldset name="details">
+        <field
+            name="filecsv"
+            type="file"
+            class="inputbox"
+            default=""
+            accept=".csv,.txt"
+            label="COM_ZHGOOGLEMAP_MAPBUFMRKS_FILE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPBUFMRKS_FILE_DESC"
+            required="true"
+        />    
+        <field
+            name="delimiter"
+            type="text"
+            class="inputbox"
+            default=";"
+            label="COM_ZHGOOGLEMAP_MAPBUFMRKS_DELIM_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPBUFMRKS_DELIM_DESC"
+            required="true"
+        />             
+        <field
+            name="upload_csv_info_title"
+            type="note"
+            label="COM_ZHGOOGLEMAP_MAPBUFMRKS_DEFAULTS_TITLE"
+         />
+        <field
+            name="icontype"
+            type="imagelist"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_ICONTYPE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_ICONTYPE_DESC"
+            directory="components/com_zhgooglemap/assets/icons"
+            size="1"
+            class="inputbox span5"
+            required="true"
+            exclude="" 
+            stripext="true"
+            hide_none="true"
+            hide_default="true"
+            default=""
+        />
+        <field
+            name="markergroup"
+            type="mapmarkergroup"
+            class="lst-dropdown-sinlge span5"
+            default=""
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKERGROUP_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_MARKERGROUP_DESC"
+            required="false"
+			addfieldprefix="ZhukDL\Component\ZhGoogleMap\Administrator\Field" 
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAPMARKERGROUP_FILTER_GROUP</option>        
+        </field>           
+        <field
+            name="catid"
+            type="category"
+            extension="com_zhgooglemap"
+            class="inputbox span5"
+            default=""
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_CATEGORY_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_CATEGORY_DESC"
+            required="false"
+            >
+            <option value="0">JOPTION_SELECT_CATEGORY</option>
+        </field>
+        <field
+            name="published"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_PUBLISHED_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPMARKER_DETAIL_PUBLISHED_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field> 
+        <field
+            name="upload_csv_info"
+            type="note"
+            description="COM_ZHGOOGLEMAP_MAPBUFMRKS_INFO"
+            class="alert alert-info"
+        />
+    </fieldset>
+</form>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+    <name>System - Aimy Canonical </name>
+    <creationDate>2025-12-16</creationDate>
+    <author>Aimy Extensions (Netzum Sorglos Software GmbH)</author>
+    <authorEmail>info@aimy-extensions.com</authorEmail>
+    <authorUrl>https://www.aimy-extensions.com/</authorUrl>
+    <copyright>2013-2025 Aimy Extensions, Netzum Sorglos Software GmbH</copyright>
+    <license>GNU General Public License (GPL) v2</license>
+    <version>33.0</version>
+    <description>Canonical Link Tags for your Website </description>
+    <scriptfile>install-hints.php</scriptfile>
+    <files>
+        <filename plugin="aimycanonical">aimycanonical.php</filename>
+        <filename>index.html</filename>
+        <folder>fields</folder>
+    </files>
+    <media destination="plg_aimycanonical" folder="media">
+        <filename>aimy-logo_340x327.png</filename>
+        <filename>index.html</filename>
+    </media>
+    <languages>
+        <language tag="de-DE">i18n/de-DE.plg_system_aimycanonical.ini</language>
+        <language tag="en-GB">i18n/en-GB.plg_system_aimycanonical.ini</language>
+        <language tag="es-ES">i18n/es-ES.plg_system_aimycanonical.ini</language>
+        <language tag="fa-IR">i18n/fa-IR.plg_system_aimycanonical.ini</language>
+        <language tag="fr-FR">i18n/fr-FR.plg_system_aimycanonical.ini</language>
+        <language tag="hu-HU">i18n/hu-HU.plg_system_aimycanonical.ini</language>
+        <language tag="it-IT">i18n/it-IT.plg_system_aimycanonical.ini</language>
+        <language tag="nl-NL">i18n/nl-NL.plg_system_aimycanonical.ini</language>
+        <language tag="pl-PL">i18n/pl-PL.plg_system_aimycanonical.ini</language>
+        <language tag="pt-BR">i18n/pt-BR.plg_system_aimycanonical.ini</language>
+        <language tag="sk-SK">i18n/sk-SK.plg_system_aimycanonical.ini</language>
+        <language tag="sl-SI">i18n/sl-SI.plg_system_aimycanonical.ini</language>
+        <language tag="bg-BG">i18n/bg-BG.plg_system_aimycanonical.ini</language>
+        <language tag="prs-AF">i18n/prs-AF.plg_system_aimycanonical.ini</language>
+        <language tag="th-TH">i18n/th-TH.plg_system_aimycanonical.ini</language>
+        <language tag="ro-RO">i18n/ro-RO.plg_system_aimycanonical.ini</language>
+        <language tag="ru-RU">i18n/ru-RU.plg_system_aimycanonical.ini</language>
+        <language tag="cs-CZ">i18n/cs-CZ.plg_system_aimycanonical.ini</language>
+        <language tag="sv-SE">i18n/sv-SE.plg_system_aimycanonical.ini</language>
+    </languages>
+    <config>
+      <fields name="params"
+        addfieldpath="/plugins/system/aimycanonical/fields/">
+        <fieldset name="basic">
+          <field name="domain" type="text" default=""
+            class="inputbox"
+            required="true"
+            label="AIMY_CNCL_DOMAIN_LBL"
+            description="AIMY_CNCL_DOMAIN_DSC" />
+          <field name="protocol"
+            type="radio" default="http"
+            class="btn-group btn-group-yesno"
+            required="true"
+            labelclass="control-group"
+            label="AIMY_CNCL_PROTOCOL_LBL"
+            description="AIMY_CNCL_PROTOCOL_DSC">
+              <option value="http">http</option>
+              <option value="https">https</option>
+          </field>
+          <field type="spacer" hr="true" />
+          <field name="remove_query_string"
+            type="radio" default="0"
+            class="btn-group btn-group-yesno"
+            labelclass="control-group"
+            label="AIMY_CNCL_REMOVE_QUERY_STRING_LBL"
+            description="AIMY_CNCL_REMOVE_QUERY_STRING_DSC">
+              <option value="1">JYES</option>
+              <option value="0">JNO</option>
+          </field>
+          <field name="add_pagination_qs"
+            type="radio" default="0"
+            class="btn-group btn-group-yesno aimy-pro-feature"
+            labelclass="control-group"
+            showon="remove_query_string:1"
+            label="AIMY_CNCL_ADD_PAGINATION_QS_LBL"
+            description="AIMY_CNCL_ADD_PAGINATION_QS_DSC">
+              <option value="1">JYES</option>
+              <option value="0">JNO</option>
+          </field>
+          <field name="add_search_qs"
+            type="radio" default="0"
+            class="btn-group btn-group-yesno aimy-pro-feature"
+            labelclass="control-group"
+            showon="remove_query_string:1"
+            label="AIMY_CNCL_ADD_SEARCH_QS_LBL"
+            description="AIMY_CNCL_ADD_SEARCH_QS_DSC">
+              <option value="1">JYES</option>
+              <option value="0">JNO</option>
+          </field>
+          <field name="cleanup_query_string"
+            type="radio" default="0"
+            class="btn-group btn-group-yesno aimy-pro-feature"
+            labelclass="control-group"
+            showon="remove_query_string:0"
+            label="AIMY_CNCL_CLEANUP_QUERY_STRING_LBL"
+            description="AIMY_CNCL_CLEANUP_QUERY_STRING_DSC">
+              <option value="1">JYES</option>
+              <option value="0">JNO</option>
+          </field>
+          <field type="spacer" hr="true" />
+          <field name="trailing_slashes"
+            type="radio" default="0"
+            class="btn-group aimy-pro-feature"
+            labelclass="control-group"
+            label="AIMY_CNCL_TRAILING_SLASHES_LBL"
+            description="AIMY_CNCL_TRAILING_SLASHES_DSC">
+                <option value="0">AIMY_CNCL_TRAILING_SLASHES_AS_IS</option>
+                <option value="1">AIMY_CNCL_TRAILING_SLASHES_REMOVE</option>
+                <option value="2">AIMY_CNCL_TRAILING_SLASHES_ADD</option>
+          </field>
+          <field name="trailing_slashes_remove_on_homepage"
+            type="radio" default="0"
+            class="btn-group btn-group-yesno aimy-pro-feature"
+            labelclass="control-group"
+            showon="trailing_slashes:1"
+            label="AIMY_CNCL_TRAILING_SLASHES_REMOVE_ON_HOMEPAGE_LBL"
+            description="AIMY_CNCL_TRAILING_SLASHES_REMOVE_ON_HOMEPAGE_DSC">
+              <option value="1">JYES</option>
+              <option value="0">JNO</option>
+          </field>
+          <field type="spacer" hr="true" />
+          <field name="remove_index_php"
+            type="radio" default="0"
+            class="btn-group btn-group-yesno aimy-pro-feature"
+            labelclass="control-group"
+            label="AIMY_CNCL_REMOVE_INDEX_PHP_LBL"
+            description="AIMY_CNCL_REMOVE_INDEX_PHP_DSC">
+              <option value="1">JYES</option>
+              <option value="0">JNO</option>
+          </field>
+          <field name="cleanup_head"
+            type="radio" default="0"
+            class="btn-group btn-group-yesno aimy-pro-feature"
+            labelclass="control-group"
+            label="AIMY_CNCL_CLEANUP_HEAD_LBL"
+            description="AIMY_CNCL_CLEANUP_HEAD_DSC">
+              <option value="1">JYES</option>
+              <option value="0">JNO</option>
+          </field>
+          <field name="use_docbase"
+            type="radio" default="0"
+            class="btn-group btn-group-yesno aimy-pro-feature"
+            labelclass="control-group"
+            label="AIMY_CNCL_USE_DOCBASE_LBL"
+            description="AIMY_CNCL_USE_DOCBASE_DSC">
+              <option value="1">JYES</option>
+              <option value="0">JNO</option>
+          </field>
+          <field name="convert_case"
+            type="radio" default="0"
+            class="btn-group aimy-pro-feature"
+            labelclass="control-group"
+            label="AIMY_CNCL_CONVERT_CASE_LBL"
+            description="AIMY_CNCL_CONVERT_CASE_DSC">
+                <option value="0">AIMY_CNCL_CONVERT_CASE_KEEP</option>
+                <option value="1">AIMY_CNCL_CONVERT_CASE_LOWERCASE</option>
+                <option value="2">AIMY_CNCL_CONVERT_CASE_UPPERCASE</option>
+          </field>
+          <field name="custom_urls"
+            type="radio" class="btn-group btn-group-yesno aimy-pro-feature"
+            default="0"
+            labelclass="control-group"
+            label="AIMY_CNCL_CUSTOM_URLS_LBL"
+            description="AIMY_CNCL_CUSTOM_URLS_DSC">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+          </field>
+          <field type="proonlynotice" />
+        </fieldset>
+        <fieldset name="redirects" label="AIMY_CNCL_REDIRECTS_LBL">
+          <field name="redirect"
+            type="radio" default="0"
+            class="btn-group btn-group-yesno aimy-pro-feature"
+            labelclass="control-group"
+            label="AIMY_CNCL_REDIRECT_LBL"
+            description="AIMY_CNCL_REDIRECT_DSC">
+              <option value="1">JYES</option>
+              <option value="0">JNO</option>
+          </field>
+          <field name="redirect_on_proto"
+            type="radio" default="1"
+            class="btn-group btn-group-yesno aimy-pro-feature"
+            labelclass="control-group"
+            label="AIMY_CNCL_REDIRECT_ON_PROTO_LBL"
+            description="AIMY_CNCL_REDIRECT_ON_PROTO_DSC">
+              <option value="1">JYES</option>
+              <option value="0">JNO</option>
+          </field>
+          <field name="redirect_on_domain"
+            type="radio" default="1"
+            class="btn-group btn-group-yesno aimy-pro-feature"
+            labelclass="control-group"
+            label="AIMY_CNCL_REDIRECT_ON_DOMAIN_LBL"
+            description="AIMY_CNCL_REDIRECT_ON_DOMAIN_DSC">
+              <option value="1">JYES</option>
+              <option value="0">JNO</option>
+          </field>
+          <field name="redirect_on_path"
+            type="radio" default="0"
+            class="btn-group btn-group-yesno aimy-pro-feature"
+            labelclass="control-group"
+            label="AIMY_CNCL_REDIRECT_ON_PATH_LBL"
+            description="AIMY_CNCL_REDIRECT_ON_PATH_DSC">
+              <option value="1">JYES</option>
+              <option value="0">JNO</option>
+          </field>
+          <field name="redirect_on_query_string"
+            type="radio" default="0"
+            class="btn-group btn-group-yesno aimy-pro-feature"
+            labelclass="control-group"
+            label="AIMY_CNCL_REDIRECT_ON_QUERY_STRING_LBL"
+            description="AIMY_CNCL_REDIRECT_ON_QUERY_STRING_DSC">
+              <option value="1">JYES</option>
+              <option value="0">JNO</option>
+          </field>
+          <field name="redirect_on_query_string_ignored_params"
+            type="textarea" class="inputbox aimy-pro-feature"
+            label="AIMY_CNCL_REDIRECT_ON_QUERY_STRING_IGNORED_PARAMS_LBL"
+            description="AIMY_CNCL_REDIRECT_ON_QUERY_STRING_IGNORED_PARAMS_DSC"
+            default="" />
+          <field name="redirect_warning"
+            type="spacer"
+            label="AIMY_CNCL_REDIRECT_ALL_DISABLED_WARNING_LBL"
+            class="alert alert-danger btn-group"
+            showon="redirect:1[AND]redirect_on_proto:0[AND]redirect_on_domain:0[AND]redirect_on_path:0[AND]redirect_on_query_string:0" />
+        </fieldset>
+      </fields>
+    </config>
+    <updateservers>
+      <server
+        type="extension"
+        priority="1"
+        name="Aimy Canonical Update Server">http://updates.aimy-extensions.com/joomla/plg_aimycanonical.xml</server>
+    </updateservers>
+</extension>

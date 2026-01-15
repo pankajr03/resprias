@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field
+            name="search"
+            type="text"
+            inputmode="search"
+            label="JSEARCH_FILTER_LABEL"                
+            hint="JSEARCH_FILTER"
+        />
+		<field
+			name="description"
+			type="list"
+			label="COM_SECURITYCHECK_SELECT_DESCRIPTION"
+			description="COM_SECURITYCHECK_SELECT_DESCRIPTION"
+			onchange="this.form.submit();"
+			default="COM_SECURITYCHECK_SELECT_DESCRIPTION">
+			<option value="">COM_SECURITYCHECK_SELECT_DESCRIPTION</option>
+			<option value="TAGS_STRIPPED">COM_SECURITYCHECK_TAGS_STRIPPED</option>
+			<option value="DUPLICATE_BACKSLASHES">COM_SECURITYCHECK_DUPLICATE_BACKSLASHES</option>			
+			<option value="LINE_COMMENTS">COM_SECURITYCHECK_LINE_COMMENTS</option>
+			<option value="SQL_PATTERN">COM_SECURITYCHECK_SQL_PATTERN</option>
+			<option value="IF_STATEMENT">COM_SECURITYCHECK_IF_STATEMENT</option>
+			<option value="INTEGERS">COM_SECURITYCHECK_INTEGERS</option>
+			<option value="BACKSLASHES_ADDED">COM_SECURITYCHECK_BACKSLASHES_ADDED</option>
+			<option value="LFI">COM_SECURITYCHECK_LFI</option>
+			<option value="IP_BLOCKED">COM_SECURITYCHECK_IP_BLOCKED</option>
+			<option value="IP_PERMITTED">COM_SECURITYCHECK_IP_PERMITTED</option>
+			<option value="FORBIDDEN_WORDS">COM_SECURITYCHECK_FORBIDDEN_WORDS</option>
+			<option value="SESSION_PROTECTION">COM_SECURITYCHECK_SESSION_PROTECTION</option>
+		</field>
+		<field
+			name="type"
+			type="list"
+			label="COM_SECURITYCHECK_TYPE_DESCRIPTION"
+			description="COM_SECURITYCHECK_TYPE_DESCRIPTION"
+			onchange="this.form.submit();"
+			default="COM_SECURITYCHECK_TYPE_DESCRIPTION">
+			<option value="">COM_SECURITYCHECK_TYPE_DESCRIPTION</option>
+			<option value="XSS">COM_SECURITYCHECK_TITLE_XSS</option>
+			<option value="XSS_BASE64">COM_SECURITYCHECK_TITLE_XSS_BASE64</option>			
+			<option value="SQL_INJECTION">COM_SECURITYCHECK_TITLE_SQL_INJECTION</option>
+			<option value="SQL_INJECTION_BASE64">COM_SECURITYCHECK_TITLE_SQL_INJECTION_BASE64</option>
+			<option value="LFI">COM_SECURITYCHECK_TITLE_LFI</option>
+			<option value="LFI_BASE64">COM_SECURITYCHECK_TITLE_LFI_BASE64</option>
+			<option value="IP_PERMITTED">COM_SECURITYCHECK_TITLE_IP_PERMITTED</option>
+			<option value="IP_BLOCKED">COM_SECURITYCHECK_TITLE_IP_BLOCKED</option>
+			<option value="SECOND_LEVEL">COM_SECURITYCHECK_TITLE_SECOND_LEVEL</option>
+			<option value="USER_AGENT_MODIFICATION">COM_SECURITYCHECK_TITLE_USER_AGENT_MODIFICATION</option>
+			<option value="REFERER_MODIFICATION">COM_SECURITYCHECK_TITLE_REFERER_MODIFICATION</option>
+			<option value="SESSION_PROTECTION">COM_SECURITYCHECK_TITLE_SESSION_PROTECTION</option>
+			<option value="SPAM_PROTECTION">COM_SECURITYCHECK_SPAM_PROTECTION</option>
+		</field>
+		<field
+			name="leido"
+			type="list"
+			label="COM_SECURITYCHECK_MARKED_DESCRIPTION"
+			description="COM_SECURITYCHECK_MARKED_DESCRIPTION"
+			onchange="this.form.submit();"
+			default="0">
+			<option value="0">COM_SECURITYCHECK_LOG_NOT_READ</option>
+			<option value="1">COM_SECURITYCHECK_LOG_READ</option>		
+			
+		</field>
+    </fields>
+    <fields name="list">		
+        <field
+                name="limit"
+                type="limitbox"
+                label="JGLOBAL_LIST_LIMIT"
+                default="25"
+                onchange="this.form.submit();"
+        />
+    </fields>
+</form>

@@ -1,0 +1,22 @@
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab10` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab11` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab12` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab13` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab14` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab15` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab16` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab17` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab18` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab19` text NOT NULL;
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab10title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab11title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab12title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab13title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab14title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab15title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab16title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab17title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab18title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_markers` ADD `tab19title` varchar(250) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_paths` ADD `suppressinfowindows` tinyint(1) NOT NULL default '0';
+

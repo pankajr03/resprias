@@ -1,0 +1,30 @@
+.zhgm-form-container {
+    font-size: 14px!important;
+}
+
+.zhgm-form-header {
+    line-height: normal!important;
+    vertical-align: middle!important;
+}
+
+.zhgm-form-title-wrap {
+    white-space: normal!important;
+}
+
+.zhgm-form-item-rating {
+    min-width: 120px;
+}
+
+.zhgm-form-item-tv-label {
+    font-weight: bold!important;
+    font-size: 14px!important;
+}
+
+.zhgm-form-item-tv-label a {
+    text-decoration: none!important;
+}
+
+.zhgm-form-item-tv-value {
+    font-weigh: normal!important;
+    font-size: 12px!important;
+}

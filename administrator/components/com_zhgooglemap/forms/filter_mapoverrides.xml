@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			inputmode="search"
+			label="COM_ZHGOOGLEMAP_MAPOVERRIDE_FILTER_SEARCH_IN_TITLE_TITLE"
+			description="COM_ZHGOOGLEMAP_MAPOVERRIDE_FILTER_SEARCH_IN_TITLE_DESC"
+			hint="JSEARCH_FILTER"
+		/>
+
+		<field
+			name="published"
+			type="status"
+			label="JSTATUS"
+			onchange="this.form.submit();"
+			>
+			<option value="">JOPTION_SELECT_PUBLISHED</option>
+		</field>
+
+		<field
+			name="category_id"
+			type="category"
+			label="JCATEGORY"
+			multiple="true"
+			layout="joomla.form.field.list-fancy-select"
+			hint="JOPTION_SELECT_CATEGORY"
+			onchange="this.form.submit();"
+			published="0,1,2"
+            extension="com_zhgooglemap"
+		/>
+
+		<field
+			name="level"
+			type="integer"
+			label="JGLOBAL_MAXLEVEL_LABEL"
+			first="1"
+			last="10"
+			step="1"
+			languages="*"
+			onchange="this.form.submit();"
+			>
+			<option value="">JOPTION_SELECT_MAX_LEVELS</option>
+		</field>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="JGLOBAL_SORT_BY"
+			statuses="*,0,1,2,-2"
+			onchange="this.form.submit();"
+			default="h.title ASC"
+			validate="options"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="h.ordering ASC">JGRID_HEADING_ORDERING_ASC</option>
+			<option value="h.ordering DESC">JGRID_HEADING_ORDERING_DESC</option>
+			<option value="h.published ASC">JSTATUS_ASC</option>
+			<option value="h.published DESC">JSTATUS_DESC</option>
+			<option value="h.title ASC">COM_ZHGOOGLEMAP_MAPOVERRIDE_SEARCH_TITLE_ASC</option>
+			<option value="h.title DESC">COM_ZHGOOGLEMAP_MAPOVERRIDE_SEARCH_TITLE_DESC</option>
+			<option value="category_title ASC">JCATEGORY_ASC</option>
+			<option value="category_title DESC">JCATEGORY_DESC</option>
+			<option value="h.id ASC">COM_ZHGOOGLEMAP_MAPOVERRIDE_SEARCH_ID_ASC</option>
+			<option value="h.id DESC">COM_ZHGOOGLEMAP_MAPOVERRIDE_SEARCH_ID_DESC</option>
+		</field>
+
+		<field
+			name="limit"
+			type="limitbox"
+			label="JGLOBAL_LIST_LIMIT"
+			default="25"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

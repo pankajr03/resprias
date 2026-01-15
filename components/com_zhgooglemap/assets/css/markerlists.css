@@ -1,0 +1,576 @@
+
+
+.zhgm-wrap-markerList-simple,
+.zhgm-wrap-markerList-advanced,
+.zhgm-wrap-panel-markerList-simple,
+.zhgm-wrap-panel-markerList-advanced
+
+{
+}
+
+.zhgm-list-markerList-simple,
+.zhgm-list-panel-markerList-simple
+{
+	overflow: auto;
+}
+
+.zhgm-list-markerList-advanced
+{
+	overflow: auto;
+	border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px #666666;
+}
+
+.zhgm-list-panel-markerList-advanced
+{
+	overflow: auto;
+}
+
+.zhgm-search-markerList-simple,
+.zhgm-search-markerList-advanced
+{
+	overflow: hidden;
+	margin: 5px 5px 5px !important;
+}
+
+.zhgm-search-panel-markerList-simple,
+.zhgm-search-panel-markerList-advanced
+{
+	overflow: hidden;
+	margin: 0px !important;
+}
+
+.zhgm-table-markerList-simple,
+.zhgm-table-markerList-advanced
+{
+}
+
+
+.zhgm-ul-markerList-simple,
+.zhgm-ul-markerList-advanced
+{
+	list-style-type: none!important;
+	margin: 5px !important;
+	padding: 0 !important;
+	
+}
+
+.zhgm-li-markerList-simple,
+.zhgm-li-markerList-advanced
+{
+	margin: 0 !important;
+	padding: 2px !important;
+	line-height: normal !important;
+	font-size: 11px!important;
+        cursor: pointer; /*change click to all section*/
+}
+
+.zhgm-li-markerList-advanced
+{
+	background: #F5FCFE!important;
+	border-width: 1px!important;
+	border-style: dotted!important;
+	margin: 10px!important;
+}
+
+
+li.zhgm-li-markerList-simple:hover
+{
+	background: #EDF9FF!important;
+	border-width: 1px!important;
+	border-style: solid!important;
+	border-color: #c1c1c1!important;	
+	box-shadow: 0 0 4px #666666!important;
+}
+
+li.zhgm-li-markerList-advanced:hover
+{
+	background: #EDF9FF!important;
+	border-width: 1px!important;
+	border-style: solid!important;
+	border-color: #5897fb!important;	
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)!important;
+}
+
+
+a.zhgm-li-a-markerList-simple:visited, 
+a.zhgm-li-a-markerList-simple:link,
+a.zhgm-li-a-markerList-advanced:visited, 
+a.zhgm-li-a-markerList-advanced:link,
+a.zhgm-li-table-a-markerList-simple:visited, 
+a.zhgm-li-table-a-markerList-simple:link,
+a.zhgm-li-table-a-markerList-advanced:visited, 
+a.zhgm-li-table-a-markerList-advanced:link
+{
+	text-decoration: none!important;
+	color: #000000!important;	
+}
+
+a.zhgm-li-a-markerList-simple,
+a.zhgm-li-a-markerList-advanced,
+a.zhgm-li-table-a-markerList-simple,
+a.zhgm-li-table-a-markerList-advanced
+{
+	outline: none !important;
+}
+
+.zhgm-0-li-markerList-simple,
+.zhgm-0-li-markerList-advanced
+{
+	font-size:1em;
+}
+
+/* Placemark with title and description */
+.zhgm-1-liw-markerList-simple,
+.zhgm-1-liw-markerList-advanced,
+.zhgm-5-liw-markerList-simple,
+.zhgm-5-liw-markerList-advanced
+{
+	display: inline;
+}
+
+.zhgm-1-lit-markerList-simple,
+.zhgm-1-lit-markerList-advanced,
+.zhgm-5-lit-markerList-simple,
+.zhgm-5-lit-markerList-advanced
+{
+	font-size:1em;
+}
+
+.zhgm-1-lid-markerList-simple,
+.zhgm-1-lid-markerList-advanced,
+.zhgm-5-lid-markerList-simple,
+.zhgm-5-lid-markerList-advanced
+{
+	font-size:0.8em;
+}
+
+/* Placemark with icon and title */
+
+.zhgm-2-liw-icon-markerList-simple,
+.zhgm-2-liw-icon-markerList-advanced
+{
+}
+
+.zhgm-2-lit-icon-markerList-simple,
+.zhgm-2-lit-icon-markerList-advanced
+{
+	display: inline;
+	font-size:1em;
+	vertical-align: top;
+}
+
+.zhgm-2-lid-icon-markerList-simple,
+.zhgm-2-lid-icon-markerList-advanced
+{
+	display: inline;
+	font-size:0.8em;
+}
+
+.zhgm-2-lii-icon-markerList-simple,
+.zhgm-2-lii-icon-markerList-advanced
+{
+	display: inline;
+}
+
+
+/* Placemark with icon, title and description */
+.zhgm-3-liw-icon-markerList-simple,
+.zhgm-3-liw-icon-markerList-advanced,
+.zhgm-6-liw-icon-markerList-simple,
+.zhgm-6-liw-icon-markerList-advanced
+{
+}
+
+.zhgm-3-lit-icon-markerList-simple,
+.zhgm-3-lit-icon-markerList-advanced,
+.zhgm-6-lit-icon-markerList-simple,
+.zhgm-6-lit-icon-markerList-advanced
+{
+	display: inline;
+	font-size:1em;
+	vertical-align: top;
+}
+
+.zhgm-3-lii-icon-markerList-simple,
+.zhgm-3-lii-icon-markerList-advanced,
+.zhgm-6-lii-icon-markerList-simple,
+.zhgm-6-lii-icon-markerList-advanced
+{
+	display: inline;
+}
+
+.zhgm-3-liwd-icon-markerList-simple,
+.zhgm-3-liwd-icon-markerList-advanced,
+.zhgm-6-liwd-icon-markerList-simple,
+.zhgm-6-liwd-icon-markerList-advanced
+{
+	display: inline;
+}
+.zhgm-3-lid-icon-markerList-simple,
+.zhgm-3-lid-icon-markerList-advanced,
+.zhgm-6-lid-icon-markerList-simple,
+.zhgm-6-lid-icon-markerList-advanced
+{
+	display: inline;
+	font-size:0.8em;
+	color: #000000;
+}
+
+/* Placemark with icon, title and description (table) */
+.zhgm-4-table-icon-markerList-simple,
+.zhgm-4-table-icon-markerList-advanced,
+.zhgm-7-table-icon-markerList-simple,
+.zhgm-7-table-icon-markerList-advanced
+{
+	border: 0;
+}
+
+.zhgm-4-row-icon-markerList-simple,
+.zhgm-4-row-icon-markerList-advanced,
+.zhgm-7-row-icon-markerList-simple,
+.zhgm-7-row-icon-markerList-advanced
+{
+	text-align:left;
+	vertical-align:top;
+}
+
+.zhgm-4-tdicon-icon-markerList-simple,
+.zhgm-4-tdicon-icon-markerList-advanced,
+.zhgm-7-tdicon-icon-markerList-simple,
+.zhgm-7-tdicon-icon-markerList-advanced
+{
+	border: 0;
+	padding: 0;
+}
+
+.zhgm-4-tdtitle-icon-markerList-simple,
+.zhgm-4-tdtitle-icon-markerList-advanced,
+.zhgm-7-tdtitle-icon-markerList-simple,
+.zhgm-7-tdtitle-icon-markerList-advanced
+{
+	border: 0;
+	padding: 0;
+}
+
+.zhgm-4-tddesc-icon-markerList-simple,
+.zhgm-4-tddesc-icon-markerList-advanced,
+.zhgm-7-tddesc-icon-markerList-simple,
+.zhgm-7-tddesc-icon-markerList-advanced
+{
+	border: 0;
+	padding: 0;
+	font-size:0.8em;
+	color: #000000;
+}
+
+/* Placemark with image and title */
+.zhgm-11-liw-image-markerList-simple,
+.zhgm-11-liw-image-markerList-advanced
+{
+	text-align: center; 
+}
+.zhgm-11-lit-image-markerList-simple,
+.zhgm-11-lit-image-markerList-advanced
+{
+	font-size:1em;
+	vertical-align: top;
+	text-align: center; 
+}
+
+.zhgm-11-lii-image-markerList-simple,
+.zhgm-11-lii-image-markerList-advanced
+{
+}
+
+/* Placemark with image, title and description */
+.zhgm-12-liw-image-markerList-simple,
+.zhgm-12-liw-image-markerList-advanced,
+.zhgm-16-liw-image-markerList-simple,
+.zhgm-16-liw-image-markerList-advanced
+{
+	text-align: center; 
+}
+.zhgm-12-lit-image-markerList-simple,
+.zhgm-12-lit-image-markerList-advanced,
+.zhgm-16-lit-image-markerList-simple,
+.zhgm-16-lit-image-markerList-advanced
+{
+	font-size:1em;
+	vertical-align: top;
+	text-align: center; 
+}
+
+.zhgm-12-lii-image-markerList-simple,
+.zhgm-12-lii-image-markerList-advanced,
+.zhgm-16-lii-image-markerList-simple,
+.zhgm-16-lii-image-markerList-advanced
+{
+}
+
+.zhgm-12-liwd-image-markerList-simple,
+.zhgm-12-liwd-image-markerList-advanced,
+.zhgm-16-liwd-image-markerList-simple,
+.zhgm-16-liwd-image-markerList-advanced
+{
+	text-align: center; 
+}
+.zhgm-12-lid-image-markerList-simple,
+.zhgm-12-lid-image-markerList-advanced,
+.zhgm-16-lid-image-markerList-simple,
+.zhgm-16-lid-image-markerList-advanced
+{
+	font-size:0.8em;
+	color: #000000;
+}
+
+/* Placemark with image and title */
+.zhgm-13-liw-image-markerList-simple,
+.zhgm-13-liw-image-markerList-advanced
+{
+}
+.zhgm-13-lit-image-markerList-simple,
+.zhgm-13-lit-image-markerList-advanced
+{
+	display: inline;
+	font-size:1em;
+	vertical-align: top;
+}
+
+.zhgm-13-lii-image-markerList-simple,
+.zhgm-13-lii-image-markerList-advanced
+{
+	display: inline;
+	padding: 0 5px 0 0;
+}
+
+
+/* Placemark with image, title and description */
+.zhgm-14-liw-image-markerList-simple,
+.zhgm-14-liw-image-markerList-advanced,
+.zhgm-17-liw-image-markerList-simple,
+.zhgm-17-liw-image-markerList-advanced
+{
+}
+.zhgm-14-lit-image-markerList-simple,
+.zhgm-14-lit-image-markerList-advanced,
+.zhgm-17-lit-image-markerList-simple,
+.zhgm-17-lit-image-markerList-advanced
+{
+	display: inline;
+	font-size:1em;
+	vertical-align: top;
+}
+
+.zhgm-14-lii-image-markerList-simple,
+.zhgm-14-lii-image-markerList-advanced,
+.zhgm-17-lii-image-markerList-simple,
+.zhgm-17-lii-image-markerList-advanced
+{
+	display: inline;
+	padding: 0 5px 0 0;
+}
+
+.zhgm-14-liwd-image-markerList-simple,
+.zhgm-14-liwd-image-markerList-advanced,
+.zhgm-17-liwd-image-markerList-simple,
+.zhgm-17-liwd-image-markerList-advanced
+{
+	display: inline;
+}
+.zhgm-14-lid-image-markerList-simple,
+.zhgm-14-lid-image-markerList-advanced,
+.zhgm-17-lid-image-markerList-simple,
+.zhgm-17-lid-image-markerList-advanced
+{
+	display: inline;
+	font-size:0.8em;
+	color: #000000;
+}
+
+
+/* Placemark with image, title and description (table) */
+.zhgm-15-table-image-markerList-simple,
+.zhgm-15-table-image-markerList-advanced,
+.zhgm-18-table-image-markerList-simple,
+.zhgm-18-table-image-markerList-advanced
+{
+	border: 0;
+}
+
+.zhgm-15-row-image-markerList-simple,
+.zhgm-15-row-image-markerList-advanced,
+.zhgm-18-row-image-markerList-simple,
+.zhgm-18-row-image-markerList-advanced
+{
+	text-align:left;
+	vertical-align:top;
+}
+
+.zhgm-15-tdimage-image-markerList-simple,
+.zhgm-15-tdimage-image-markerList-advanced,
+.zhgm-18-tdimage-image-markerList-simple,
+.zhgm-18-tdimage-image-markerList-advanced
+{
+	border: 0;
+	padding: 0;
+}
+
+.zhgm-15-tdtitle-image-markerList-simple,
+.zhgm-15-tdtitle-image-markerList-advanced,
+.zhgm-18-tdtitle-image-markerList-simple,
+.zhgm-18-tdtitle-image-markerList-advanced
+{
+	border: 0;
+	padding: 0;
+}
+
+.zhgm-15-tddesc-image-markerList-simple,
+.zhgm-15-tddesc-image-markerList-advanced,
+.zhgm-18-tddesc-image-markerList-simple,
+.zhgm-18-tddesc-image-markerList-advanced
+{
+	border: 0;
+	padding: 0;
+	font-size:0.8em;
+	color: #000000;
+}
+
+/*- Placemark with image, title and description (table) -*/
+
+
+/*- Placemark List Table Type -*/
+.zhgm-ul-table-markerList-simple,
+.zhgm-ul-table-markerList-advanced
+{
+	border: 0;
+	border-collapse: collapse;
+}
+
+.zhgm-ul-tablebody-markerList-simple,
+.zhgm-ul-tablebody-markerList-advanced
+{
+	border: 0;
+}
+
+
+.zhgm-li-table-tr-markerList-simple,
+.zhgm-li-table-tr-markerList-advanced
+{
+	text-align:left;
+	vertical-align:top;
+        cursor: pointer; /*change click to all section*/
+}
+
+.zhgm-li-table-c1-markerList-simple,
+.zhgm-li-table-c2-markerList-simple,
+.zhgm-li-table-c3-markerList-simple,
+.zhgm-li-table-c1-markerList-advanced,
+.zhgm-li-table-c2-markerList-advanced,
+.zhgm-li-table-c3-markerList-advanced
+{
+	padding: 0;
+}
+
+.zhgm-li-table-tr-markerList-advanced:nth-child(odd) 
+{
+	color: #000; 
+	background: #FFF
+}
+
+.zhgm-li-table-tr-markerList-advanced:nth-child(even) 
+{
+	color: #000;
+	background: #eaeaea
+}
+
+.zhgm-li-table-tr-markerList-advanced:hover
+{
+	background: #ccc
+}
+
+/*- Placemark List Table Type - End -*/
+
+
+.zhgm-placemarklist-button-text-star
+{
+	font-family: Arial,sans-serif;   
+	padding: 3px 3px 3px 3px;
+	line-height: normal!important;
+}
+
+/* ---- Button ---- */
+.zhgm-placemarklist-button-ui
+{
+	text-align: center; 
+	font-size: 13px; 
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(113, 123, 135);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); 
+	background: #FFFFFF;
+	cursor: pointer;
+}
+
+.zhgm-placemarklist-button-text
+{
+	font-family: Arial,sans-serif;   
+	padding: 1px 6px 1px 6px;
+}
+
+.zhgm-placemarklist-button-ui-star
+{
+	text-align: center; 
+	font-size: 13px; 
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(113, 123, 135);
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); 
+	background: #FFFFFF;
+	cursor: pointer;
+}
+
+/* ---- Button for v=3.22+ ---- */
+.zhgm-placemarklist-button-ui2
+{
+	text-align: center; 
+	font-size: 11px; 
+	border-width: 1px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); 
+	border-radius: 2px;
+	background: #FFFFFF;
+	cursor: pointer;
+	margin: 5px;	
+}
+
+.zhgm-placemarklist-button-text2
+{
+	font-family: Roboto,Arial,sans-serif;
+    padding: 8px;	
+}
+
+.zhgm-placemarklist-button-ui2-star
+{
+	text-align: center; 
+	font-size: 11px; 
+	border-width: 1px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	border-radius: 2px;
+	box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3);
+	background: #FFFFFF;
+	cursor: pointer;
+	margin: 5px;
+	padding: 1px 3px 3px 3px;
+}
+
+
+/* for autocomplete field */
+div.zhgm-map-default .ui-autocomplete-input,
+div.zhgm-map-mainpanel-default .ui-autocomplete-input
+{
+	width: 96% !important;
+}

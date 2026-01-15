@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<fields name="attribs">
+    <fieldset name="extra-fields" label="TPL_GROUP_EXTRA_FIELDS_LABEL" description="" group="extrafields">
+			<field name="subtitle" type="text" label="TPL_SERVICE_SUBTITLE" description="TPL_SERVICE_SUBTITLE_DESC" size="40" filter="RAW"/>
+			<field name="cases" type="textarea" label="TPL_SERVICE_CASES" description="TPL_SERVICE_CASES_DESC" rows="10" filter="RAW"/>
+			<field name="info" type="textarea" label="TPL_SERVICE_INFO" description="TPL_SERVICE_INFO_DESC" rows="10" filter="RAW"/>
+			<field name="what-we-do" type="textarea" label="TPL_SERVICE_WWD" description="TPL_SERVICE_WWD_DESC" rows="10" cols="10" filter="RAW"/>
+    </fieldset>
+</fields>
+</form>

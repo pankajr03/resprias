@@ -1,0 +1,61 @@
+@media (min-width: 1680px) {
+  .t3-wrapper {
+    border-left: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+  }
+}
+.t3-wrapper.menu-vertical {
+  border: 0;
+}
+@media (max-width: 1680px) {
+  .headright .search .form-control {
+    background-image: url('../../../templates/ja_mason/images/ico/search-invert.png') !important;
+  }
+}
+.menu-horizontal .headright .search .form-control {
+  background-image: url('../../../templates/ja_mason/images/ico/search-invert.png') !important;
+}
+@media (max-width: 1680px) {
+  button.btn.off-canvas-toggle span {
+    background-color: #333333;
+  }
+}
+.menu-horizontal button.btn.off-canvas-toggle span {
+  background-color: #333333;
+}
+.sub-heading::after {
+  background-image: url('../../../templates/ja_mason/images/mask/sub-heading-light.png');
+}
+.t3-wrapper .acm-features.style-2 .action {
+  background: #eeeeee;
+  color: #b9b9b9;
+}
+.t3-wrapper .acm-features.style-2 .action:hover,
+.t3-wrapper .acm-features.style-2 .action:focus,
+.t3-wrapper .acm-features.style-2 .action:active {
+  background: #eb4c49;
+  color: #ffffff;
+}
+.t3-wrapper .acm-features.style-3 .owl-carousel .owl-nav > div {
+  border-color: #eb4c49;
+  color: #eb4c49;
+}
+.t3-wrapper .acm-features.style-3 .features-item:hover h4 {
+  color: #ffffff;
+}
+.t3-wrapper .acm-features.style-3 .owl-carousel .owl-dots > div {
+  background: #d3d3d3;
+}
+.t3-wrapper .acm-teams .item .action {
+  background: #eeeeee;
+  color: #b9b9b9;
+}
+.t3-wrapper .acm-teams .item .action:hover,
+.t3-wrapper .acm-teams .item .action:focus,
+.t3-wrapper .acm-teams .item .action:active {
+  background: #eb4c49;
+  color: #ffffff;
+}
+.t3-wrapper .acm-teams .item:hover h4 {
+  color: #ffffff;
+}

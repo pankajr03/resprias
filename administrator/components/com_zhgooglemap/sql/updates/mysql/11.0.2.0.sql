@@ -1,0 +1,1 @@
+ALTER TABLE `#__zhgooglemaps_marker_buffer` ADD  `markercontent` tinyint(1) NOT NULL default '0';

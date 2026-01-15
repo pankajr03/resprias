@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details">
+        <field
+            name="id"
+            type="hidden"
+        />
+        <field
+            name="title"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_TITLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_TITLE_DESC"
+            size="60"
+            class="inputbox span10"
+            required="true"
+            default=""
+        />
+        <field
+            name="description"
+            type="text"
+            label="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_DESCRIPTION_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_DESCRIPTION_DESC"
+            size="100"
+            class="inputbox span10"
+            required="false"
+            default=""
+        />
+        <field
+            name="published"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_PUBLISHED_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_PUBLISHED_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="catid"
+            type="category"
+            extension="com_zhgooglemap"
+            class="inputbox span5"
+            default=""
+            label="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_CATEGORY_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_CATEGORY_DESC"
+            required="false"
+        >
+            <option value="0">JOPTION_SELECT_CATEGORY</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="weatherlayer">
+        <field
+            name="weatherlayer"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_SHOWWEATHERLAYER_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_SHOWWEATHERLAYER_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="clickable"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_CLICKABLE_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_CLICKABLE_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="suppressinfowindows"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_SUPPRESSINFOWINDOWS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_SUPPRESSINFOWINDOWS_DESC"
+            size="30"
+            required="true"
+            default="0"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field
+            name="labelcolor"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_LABELCOLOR_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_LABELCOLOR_DESC"
+            size="1"
+            required="true"
+            default="0"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="0">COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_LABELCOLOR_DEFAULT</option>
+            <option value="1">COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_LABELCOLOR_BLACK</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_LABELCOLOR_WHITE</option>
+        </field>
+        <field
+            name="temperatureunits"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_TEMPERATUREUNITS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_TEMPERATUREUNITS_DESC"
+            size="1"
+            required="true"
+            default="1"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_TEMPERATUREUNITS_CELSIUS</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_TEMPERATUREUNITS_FAHRENHEIT</option>
+        </field>
+        <field
+            name="windspeedunits"
+            type="list"
+            label="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_WINDSPEEDUNITS_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_WINDSPEEDUNITS_DESC"
+            size="1"
+            required="true"
+            default="2"
+            class="lst-dropdown-sinlge"
+        >
+            <option value="1">COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_WINDSPEEDUNITS_KILOMETERS_PER_HOUR</option>
+            <option value="2">COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_WINDSPEEDUNITS_METERS_PER_SECOND</option>
+            <option value="3">COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_WINDSPEEDUNITS_MILES_PER_HOUR</option>
+        </field>
+    </fieldset>
+    <fieldset name="cloudlayer">
+        <field
+            name="cloudlayer"
+            type="radio"
+            label="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_SHOWCLOUDLAYER_LABEL"
+            description="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_SHOWCLOUDLAYER_DESC"
+            size="30"
+            required="true"
+            default="1"
+            class="btn-group"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="weathertypeadvanced">
+        <field name="publish_up" 
+            type="calendar"
+            label="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_PUBLISH_UP_LABEL" 
+            description="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_PUBLISH_UP_DESC"
+            translateformat="true"
+			showtime="true"
+            size="22"
+            filter="user_utc"
+        />
+        <field name="publish_down" 
+            type="calendar"
+            label="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_PUBLISH_DOWN_LABEL" 
+            description="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_PUBLISH_DOWN_DESC"
+            translateformat="true"
+			showtime="true" 
+            size="22"
+            filter="user_utc"
+        />         
+    </fieldset>
+            
+    <fields name="params">
+        <fieldset
+            name="params"
+            label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+        >
+            <field
+                name="show_category"
+                type="list"
+                label="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_SHOW_CATEGORY_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPWEATHERTYPE_DETAIL_SHOW_CATEGORY_DESC"
+                default=""
+                class="lst-dropdown-sinlge"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+        </fieldset>
+    </fields>
+
+</form>

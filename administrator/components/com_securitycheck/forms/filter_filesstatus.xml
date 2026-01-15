@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field
+            name="search"
+            type="text"
+            inputmode="search"
+            label="JSEARCH_FILTER_LABEL"                
+            hint="JSEARCH_FILTER"
+        />
+		<field
+			name="filemanager_kind"
+			type="list"
+			label="COM_SECURITYCHECK_FILEMANAGER_KIND_DESCRIPTION"
+			description="COM_SECURITYCHECK_FILEMANAGER_KIND_DESCRIPTION"
+			onchange="this.form.submit();"
+			default="COM_SECURITYCHECK_FILEMANAGER_TITLE_FILE">
+			<option value="COM_SECURITYCHECK_FILEMANAGER_TITLE_FILE">COM_SECURITYCHECK_FILEMANAGER_TITLE_FILE</option>
+			<option value="COM_SECURITYCHECK_FILEMANAGER_TITLE_FOLDER">COM_SECURITYCHECK_FILEMANAGER_TITLE_FOLDER</option>			
+		</field>
+		<field
+			name="filemanager_permissions_status"
+			type="list"
+			label="COM_SECURITYCHECK_FILEMANAGER_PERMISSIONS_STATUS_DESCRIPTION"
+			description="COM_SECURITYCHECK_FILEMANAGER_PERMISSIONS_STATUS_DESCRIPTION"
+			onchange="this.form.submit();"
+			default="COM_SECURITYCHECK_FILEMANAGER_PERMISSIONS_STATUS_DESCRIPTION">
+			<option value="0">COM_SECURITYCHECK_FILEMANAGER_TITLE_WRONG</option>
+			<option value="1">COM_SECURITYCHECK_FILEMANAGER_TITLE_OK</option>
+			<option value="2">COM_SECURITYCHECK_FILEMANAGER_TITLE_EXCEPTIONS</option>			
+		</field>		
+    </fields>
+    <fields name="list">		
+        <field
+                name="limit"
+                type="limitbox"
+                label="JGLOBAL_LIST_LIMIT"
+                default="25"
+                onchange="this.form.submit();"
+        />
+    </fields>
+</form>

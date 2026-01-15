@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="plugin" group="user" method="upgrade">
+    <name>plg_user_jchuserstate</name>
+    <author>Samuel Marshall</author>
+    <creationDate>2025-12-17</creationDate>
+    <copyright>Copyright (C) 2022 JCH Optimize Inc. All rights reserved</copyright>
+    <license>GNU/GPLv3 https://www.gnu.org/licenses/gpl-3.0.html</license>
+    <authorEmail>samuel@jch-optimize.net</authorEmail>
+    <authorUrl>https://www.jch-optimize.net</authorUrl>
+    <version>9.2.4</version>
+    <description>PLG_USER_JCHUSERSTATE_DESCRIPTION</description>
+    <namespace path="src">CodeAlfa\Plugin\User\JchUserState</namespace>
+    <files>
+        <folder plugin="jchuserstate">src</folder>
+        <folder>services</folder>
+        <filename>index.html</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/plg_user_jchuserstate.ini</language>
+        <language tag="en-GB">language/en-GB/plg_user_jchuserstate.sys.ini</language>
+    </languages>
+</extension>

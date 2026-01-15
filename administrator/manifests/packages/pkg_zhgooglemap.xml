@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<extension type="package" version="4.0" method="upgrade">
+
+    <name>PKG_ZHGOOGLEMAP</name>
+    <packagename>zhgooglemap</packagename>
+    <!-- The following elements are optional and free of formatting conttraints -->
+    <creationDate>Mar 2016</creationDate>
+    <author>Zhuk Dmitry</author>
+    <authorEmail>ZhukDL@gmail.com</authorEmail>
+    <authorUrl>http://zhuk.cc</authorUrl>
+    <copyright>Copyright</copyright>
+    <license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPLv2 or later</license>
+    <!--  The version string is recorded in the components table -->
+    <version>20.25.11.25</version>
+    <!-- The description is optional and defaults to the name -->
+    <description>PKG_ZHGOOGLEMAP_DESCRIPTION</description>
+
+ 
+     <files folder="packages">
+       <filename type="component" id="com_zhgooglemap" >com_zhgooglemap.zip</filename>
+       <filename type="module" id="mod_zhgooglemap" client="site">mod_zhgooglemap.zip</filename>
+       <filename type="plugin" id="plgzhgooglemap" group="content">plg_zhgooglemap.zip</filename>
+       <filename type="template" id="zh_template_map_fullscreen" client="site">zh_template_map_fullscreen.zip</filename>
+     </files>    
+
+    <languages>
+            <language tag="en-GB">language/en-GB/en-GB.pkg_zhgooglemap.sys.ini</language>
+    </languages>    
+
+    
+        <!-- UPDATESERVER DEFINITION -->
+        <updateservers>
+                <!-- Note: No spaces or linebreaks allowed between the server tags -->
+                <server type="extension" priority="2" name="Zh GoogleMap Package Update Site">http://zhuk.cc/update/pkg_zhgooglemap/extension.xml</server>
+        </updateservers>
+
+</extension>
+

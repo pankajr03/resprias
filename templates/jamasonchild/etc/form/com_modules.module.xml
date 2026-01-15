@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="custom-field" label="Module options" description="">
+			<field name="sub-heading" type="textarea" default="" label="TPL_SUB_HEADING_LABEL" description="TPL_SUB_HEADING_DESC" filter="RAW" />
+
+      <field name="mask-box" type="list"
+        default="none"
+        label="TPL_MASK_BOX_LABEL"
+        description="TPL_MASK_BOX_DESC">
+        <option value="none">None</option>
+        <option value="left">Left</option>
+        <option value="right">Right</option>
+        <option value="left-center">Left Center</option>
+        <option value="right-center">Right Center</option>
+      </field>
+
+      <field name="module-width" type="radio"
+        class="btn-group btn-group-yesno"
+        default="1"
+        label="TPL_ENABLE_FULL_WIDTH"
+        description="TPL_ENABLE_FULL_WIDTH_DESC">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+      </field>
+    </fieldset>
+  </fields>
+</form>

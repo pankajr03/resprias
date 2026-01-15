@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /administrator/
+Disallow: /cache/
+Disallow: /cli/
+Disallow: /logs/
+Disallow: /tmp/
+Disallow: /documents/
+
+Disallow: /live_site_baukup/
+Disallow: /staging/
+Disallow: /dev_respiras/
+Disallow: /Staging_respiras/
+Disallow: /Database_backup/
+
+# Allow Joomla rendering resources
+Allow: /components/
+Allow: /modules/
+Allow: /plugins/
+Allow: /libraries/
+Allow: /layouts/
+Allow: /media/
+
+# Sitemap: https://www.respiras.com/sitemap.xml

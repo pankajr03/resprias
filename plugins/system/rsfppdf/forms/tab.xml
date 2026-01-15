@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="adminemail" addfieldpath="/administrator/components/com_rsform/models/fields">
+		<field name="adminemail_send" type="radio" class="btn-group btn-group-yesno" label="RSFP_PDF_SEND_ADMIN_EMAIL" description="RSFP_PDF_SEND_ADMIN_EMAIL_DESC" default="0">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="adminemail_filename" type="text" label="RSFP_PDF_SEND_ADMIN_EMAIL_FILENAME" description="RSFP_PDF_SEND_ADMIN_EMAIL_FILENAME_DESC" />
+		<field name="adminemail_layout" type="syntaxhighlight" rows="20" cols="75" label="RSFP_PDF_SEND_ADMIN_EMAIL_LAYOUT" description="RSFP_PDF_SEND_ADMIN_EMAIL_LAYOUT_DESC" class="rs_90" syntax="html" />
+		<field name="adminemail_userpass" type="password" label="RSFP_PDF_USER_PASSWORD" description="RSFP_PDF_USER_PASSWORD_DESC" />
+		<field name="adminemail_ownerpass" type="password" label="RSFP_PDF_OWNER_PASSWORD" description="RSFP_PDF_OWNER_PASSWORD_DESC" />
+		<field name="adminemail_options" type="checkboxes" label="RSFP_PDF_OPTIONS" description="RSFP_PDF_OPTIONS_DESC">
+			<option value="print">RSFP_PDF_OPTION_PRINT</option>
+			<option value="modify">RSFP_PDF_OPTION_MODIFY</option>
+			<option value="copy">RSFP_PDF_OPTION_COPY</option>
+			<option value="add">RSFP_PDF_OPTION_ADD</option>
+		</field>
+	</fieldset>
+	<fieldset name="useremail" addfieldpath="/administrator/components/com_rsform/models/fields">
+		<field name="useremail_send" type="radio" class="btn-group btn-group-yesno" label="RSFP_PDF_SEND_USER_EMAIL" description="RSFP_PDF_SEND_USER_EMAIL_DESC" default="0">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="useremail_filename" type="text" label="RSFP_PDF_SEND_USER_EMAIL_FILENAME" description="RSFP_PDF_SEND_USER_EMAIL_FILENAME_DESC" />
+		<field name="useremail_layout" type="syntaxhighlight" rows="20" cols="75" label="RSFP_PDF_SEND_USER_EMAIL_LAYOUT" description="RSFP_PDF_SEND_USER_EMAIL_LAYOUT_DESC" class="rs_90" syntax="html" />
+		<field name="useremail_userpass" type="password" label="RSFP_PDF_USER_PASSWORD" description="RSFP_PDF_USER_PASSWORD_DESC" />
+		<field name="useremail_ownerpass" type="password" label="RSFP_PDF_OWNER_PASSWORD" description="RSFP_PDF_OWNER_PASSWORD_DESC" />
+		<field name="useremail_options" type="checkboxes" label="RSFP_PDF_OPTIONS" description="RSFP_PDF_OPTIONS_DESC">
+			<option value="print">RSFP_PDF_OPTION_PRINT</option>
+			<option value="modify">RSFP_PDF_OPTION_MODIFY</option>
+			<option value="copy">RSFP_PDF_OPTION_COPY</option>
+			<option value="add">RSFP_PDF_OPTION_ADD</option>
+		</field>
+	</fieldset>
+	<fieldset name="scripts" addfieldpath="/administrator/components/com_rsform/models/fields">
+		<field name="useremail_php" type="syntaxhighlight" rows="20" cols="75" label="RSFP_PDF_SEND_USER_EMAIL_PHP" description="RSFP_PDF_SEND_USER_EMAIL_PHP_DESC" class="rs_90" syntax="php" />
+		<field name="adminemail_php" type="syntaxhighlight" rows="20" cols="75" label="RSFP_PDF_SEND_ADMIN_EMAIL_PHP" description="RSFP_PDF_SEND_ADMIN_EMAIL_PHP_DESC" class="rs_90" syntax="php" />
+	</fieldset>
+</form>

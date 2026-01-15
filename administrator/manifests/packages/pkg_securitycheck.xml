@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" method="upgrade">
+	<name>Securitycheck Package</name>
+	<packagename>securitycheck</packagename>
+	<creationDate>11-11-2025</creationDate>
+	<author>Jose A. Luque</author>
+	<authorEmail>contacto@protegetuordenador.com</authorEmail>
+	<authorUrl>securitycheck.protegetuordenador.com</authorUrl>
+	<copyright>Copyright (C) Securitycheck Extensions</copyright>
+	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>4.2.6</version>
+	<description>Securitycheck</description>
+	
+	<scriptfile>script.php</scriptfile>
+		
+	<files folder="packages">
+		<file type="plugin" id="securitycheck" group="system">plg_securitycheck.zip</file>
+		<file type="component" id="com_securitycheck">com_securitycheck.zip</file>
+	</files>
+	
+ </extension>

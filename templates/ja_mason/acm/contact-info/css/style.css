@@ -1,0 +1,49 @@
+.acm-contact-info {
+  position: relative;
+}
+.acm-contact-info .info-bg {
+  padding-right: 96px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .acm-contact-info .info-bg {
+    padding-right: 0;
+    margin-bottom: 48px;
+  }
+}
+.acm-contact-info .info-bg img {
+  width: auto;
+}
+@media (min-width: 1200px) {
+  .acm-contact-info .info-bg img {
+    width: 100%;
+  }
+}
+.acm-contact-info .info-bg .map-container {
+  margin: 0;
+  max-width: 100%;
+}
+.acm-contact-info .info-list {
+  margin-bottom: 0;
+}
+.acm-contact-info .info-list dt {
+  color: #888888;
+  font-size: 11px;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.acm-contact-info .info-list dd {
+  margin-bottom: 48px;
+}
+.acm-contact-info .info-list dd a {
+  border-bottom: 1px dotted #ffc400;
+}
+.acm-contact-info.style-dark {
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
+}

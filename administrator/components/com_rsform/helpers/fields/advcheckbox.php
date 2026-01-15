@@ -1,0 +1,271 @@
+<?php
+/**
+* @package RSForm! Pro
+* @copyright (C) 2019 www.rsjoomla.com
+* @license GPL, http://www.gnu.org/copyleft/gpl.html
+*/
+
+defined('_JEXEC') or die('Restricted access');
+
+require_once JPATH_ADMINISTRATOR.'/components/com_rsform/helpers/prices.php';
+require_once JPATH_ADMINISTRATOR.'/components/com_rsform/helpers/fields/fielditem.php';
+require_once JPATH_ADMINISTRATOR.'/components/com_rsform/helpers/fieldmultiple.php';
+
+class RSFormProFieldAdvCheckbox extends RSFormProFieldMultiple
+{
+	protected $glue = '';
+	protected $start = '';
+	protected $end = '';
+
+	protected $gridStart = '';
+	protected $gridEnd = '';
+	protected $splitterStart = '<div style="float:left; width:{block_size}%">';
+	protected $splitterEnd = '</div>';
+	protected $blocks = array('1' => '100', '2' => '50', '3' => '33.33333', '4' => '25', '6' => '16.66666');
+	protected $columns = array('VERTICAL2COLUMNS' => 2, 'VERTICAL3COlUMNS' => 3, 'VERTICAL4COLUMNS' => 4, 'VERTICAL6COLUMNS' => 6);
+
+    public function getPreviewInput() {
+        $id			= $this->getId();
+        $flow		= $this->getProperty('FLOW', 'HORIZONTAL');
+
+        // Add the items
+        $parsed = array();
+        $i	    = 0;
+
+        $data =  array(
+            'id' 	=> $id,
+            'flow' 	=> $flow,
+        );
+
+        if ($items  = $this->getItems()) {
+            foreach ($items as $item) {
+                $item = new RSFormProFieldItem($item);
+
+                $data['value'] 	= $this->getItemValue($item);
+                $data['i'] 		= $i;
+                $data['item'] 	= $item;
+
+                $parsed[] 		= $this->buildInput($data) . $this->buildLabel($data);
+                $i++;
+            }
+        }
+
+		$checkboxgroup = '';
+		if ($flow != 'HORIZONTAL' && $flow != 'VERTICAL')
+		{
+			$columns = (int) $this->columns[$flow];
+			$splits = $this->splitItems($parsed, $columns);
+			$blocks = array('1' => 'span12', '2' => 'span6', '3' => 'span4', '4' => 'span3', '6' => 'span2');
+			if ($columns > 1)
+			{
+				foreach ($splits as $block)
+				{
+					$checkboxgroup .= '<div class="'.$blocks[$columns].'">';
+					$checkboxgroup .= $this->start.implode('', $block).$this->end;
+					$checkboxgroup .= '</div>';
+				}
+			}
+			else
+			{
+				$checkboxgroup .= $this->start.implode('', $splits[0]).$this->end;
+			}
+		}
+		else
+		{
+			$checkboxgroup .= $this->start.implode('', $parsed).$this->end;
+		}
+
+		return '<div class="controls formControls preview-checkbox' . ($flow == 'HORIZONTAL' ? '-inline' : '') . '">' . $this->codeIcon . $checkboxgroup . '</div>';
+    }
+
+	public function getFormInput() {
+        RSFormProAssets::addJquery();
+        RSFormProAssets::addScript(JHtml::_('script', 'plg_system_rsfpadvancedformfields/script.js', array('pathOnly' => true, 'relative' => true)));
+        RSFormProAssets::addScript(JHtml::_('script', 'plg_system_rsfpadvancedformfields/formplate/formplate.js', array('pathOnly' => true, 'relative' => true)));
+        RSFormProAssets::addStyleSheet(JHtml::_('stylesheet', 'plg_system_rsfpadvancedformfields/formplate/formplate.css', array('pathOnly' => true, 'relative' => true)));
+        RSFormProAssets::addStyleSheet(JHtml::_('stylesheet', 'plg_system_rsfpadvancedformfields/fontello/fontello.css', array('pathOnly' => true, 'relative' => true)));
+
+		$name		= $this->getName();
+		$id			= $this->getId();
+		
+		$attr		= $this->getAttributes();
+		$additional = '';
+		$flow		= $this->getProperty('FLOW', 'HORIZONTAL');
+		// Get the price instance, if we need it
+		$prices = RSFormProPrices::getInstance($this->formId);
+		
+		// Parse Additional Attributes
+		if ($attr) {
+			foreach ($attr as $key => $values) {
+				$additional .= $this->attributeToHtml($key, $values);
+			}
+		}
+		
+		// Add the items
+		$parsed = array();
+		$i	    = 0;
+		
+		$data =  array(
+			'name' 			=> $name,
+			'id' 			=> $id,
+			'additional' 	=> $additional,
+			'prices' 		=> $prices,
+			'flow' 			=> $flow,
+		);
+		
+		if ($items = $this->getItems()) {
+			foreach ($items as $item) {
+				$item = new RSFormProFieldItem($item);
+				
+				$data['value'] 	= $this->getItemValue($item);
+				$data['i'] 		= $i;
+				$data['item'] 	= $item;
+
+				$parsed[] 		= $this->buildItem($data);
+				
+				if ($item->flags['price'] !== false) {
+					$prices->addPrice($id, $item->value, $item->flags['price']);
+				}
+				
+				$i++;
+			}
+		}
+
+		$this->setFlow();
+
+		$output = '';
+		if ($flow != 'HORIZONTAL' && $flow != 'VERTICAL')
+		{
+			$columns = (int) $this->columns[$flow];
+			$splits = $this->splitItems($parsed, $columns);
+			if ($columns > 1)
+			{
+				$output .= $this->gridStart;
+				foreach ($splits as $block)
+				{
+					$output .= str_replace('{block_size}', $this->blocks[$columns], $this->splitterStart);
+					$output .= $this->start.implode($this->glue, $block).$this->end;
+					$output .= $this->splitterEnd;
+				}
+				$output .= $this->gridEnd;
+			}
+			else
+			{
+				$output .= $this->start.implode('', $splits[0]).$this->end;
+			}
+		}
+		else
+		{
+			$output .= $this->start.implode($this->glue, $parsed).$this->end;
+		}
+
+        $output = '<div class="formplate">' . $output . '</div>';
+
+        if ($max = (int) $this->getProperty('MAXSELECTIONS'))
+        {
+            $this->addScriptDeclaration("RSFormPro.AdvancedFormFields.limitSelections({$this->formId}, '{$id}', {$max});");
+        }
+		
+		return $output;
+	}
+
+	protected function buildLabel($data) {
+		// For convenience
+		extract($data);
+		
+		return '<label class="rsfpa-label" for="'.$this->escape($id).$i.'">'.$item->label.'</label>';
+	}
+	
+	protected function buildInput($data) {
+		// For convenience
+		extract($data);
+		
+		$html = '<input type="checkbox" ';
+		
+		// Disabled
+		if ($item->flags['disabled']) {
+			$html .= ' disabled="disabled"';
+		}
+		
+		// Checked
+		if ($item->value === $value) {
+			$html .= ' checked="checked"';
+		}
+		
+		// Name
+		if (isset($name) && strlen($name)) {
+			$html .= ' name="'.$this->escape($name).'"';
+		}
+		
+		// Value
+		$html .= ' value="'.$this->escape($item->value).'"';
+		
+		// Id
+		$html .= ' id="'.$this->escape($id).$i.'"';
+		
+		// Additional HTML
+		if (!empty($additional)) {
+			$html .= $additional;
+		}
+		
+		$html .= ' />';
+		
+		return $html;
+	}
+	
+	public function buildItem($data) {
+        $html = '<div class="rsfpa-checkbox rsfpa-' . strtolower($this->getProperty('FLOW')) . '">' .
+                $this->buildInput($data) .
+                $this->buildLabel($data) .
+                '</div>';
+
+		return $html;
+	}
+
+	public function setFlow() {}
+	
+	// @desc For easy styling
+	public function getAttributes() {
+		$attr = parent::getAttributes();
+		if (strlen($attr['class'])) {
+			$attr['class'] .= ' ';
+		}
+		$attr['class'] .= 'rsform-advcheckbox';
+		
+		return $attr;
+	}
+
+	public function processValidation($validationType = 'form', $submissionId = 0)
+	{
+		$minSelections = (int) $this->getProperty('MINSELECTIONS', 0);
+		$required = $this->isRequired();
+		$values = $this->getValue();
+
+		// Field is required but nothing is selected
+		if ($required && !$values)
+		{
+			return false;
+		}
+
+		// Field has a minimum amount of selections set, is required or has values sent
+		if ($minSelections > 0 && ($required || $values))
+		{
+			try
+			{
+				if (!$values || count($values) < $minSelections)
+				{
+					throw new Exception(JText::sprintf('COM_RSFORM_MINSELECTIONS_REQUIRED', $minSelections));
+				}
+			}
+			catch (Exception $e)
+			{
+				$properties =& RSFormProHelper::getComponentProperties($this->componentId);
+				$properties['VALIDATIONMESSAGE'] = $e->getMessage();
+
+				return false;
+			}
+		}
+
+		return true;
+	}
+}

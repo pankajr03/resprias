@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<fields name="attribs">
+    <fieldset name="extra-fields" label="TPL_GROUP_EXTRA_FIELDS_LABEL" description="" group="extrafields">
+			<field name="project-type" type="text" label="TPL_PROJECT_TYPE" description="TPL_PROJECT_TYPE_DESC" size="40" filter="RAW"/>
+			<field name="location" type="text" label="TPL_PROJECT_LOCATION" description="TPL_PROJECT_LOCATION_DESC" size="40" filter="RAW"/>
+			<field name="other-info" type="textarea" label="TPL_PROJECT_OTHER_INFO" description="TPL_PROJECT_OTHER_INFO_DESC" rows="6" cols="10" filter="RAW"/>
+    </fieldset>
+</fields>
+</form>

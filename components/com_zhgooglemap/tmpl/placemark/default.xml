@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<metadata>
+    <layout title="COM_ZHGOOGLEMAP_VIEW_PLACEMARK_TITLE">
+        <message>COM_ZHGOOGLEMAP_VIEW_PLACEMARK_DESC</message>
+    </layout>
+
+    <fields
+        name="request"
+    >
+        <fieldset name="request">
+            <field
+                name="id"
+                type="mapmarker"
+                required="true"
+                default=""
+                label="COM_ZHGOOGLEMAP_PLACEMARK_VIEW_FIELD_TITLE_LABEL"
+                description="COM_ZHGOOGLEMAP_PLACEMARK_VIEW_FIELD_TITLE_DESC"
+				class="inputbox span10"
+				addfieldprefix="ZhukDL\Component\ZhGoogleMap\Administrator\Field"
+            />
+            <field
+                name="hidedescriptionhtml"
+                type="radio"
+				size="60"
+                default="0"
+                label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_HIDEDESCRIPTIONHTML_LABEL"
+                description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_HIDEDESCRIPTIONHTML_DESC"
+                class="btn-group"
+                            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field
+                name="showdescriptionfullhtml"
+                type="radio"
+				size="60"
+                default="0"
+                label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_SHOWDESCRIPTIONFULLHTML_LABEL"
+                description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_SHOWDESCRIPTIONFULLHTML_DESC"
+                class="btn-group"
+                            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field
+                name="thumbnail"
+                type="radio"
+				size="60"
+                default="1"
+                label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_THUMBNAIL_LABEL"
+                description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_THUMBNAIL_DESC"
+                class="btn-group"
+                            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field
+                name="imagegalery"
+                type="radio"
+				size="60"
+                default="1"
+                label="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_IMAGEGALERY_LABEL"
+                description="COM_ZHGOOGLEMAP_MAP_VIEW_FIELD_IMAGEGALERY_DESC"
+                class="btn-group"
+			>
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            
+            <field
+					name="load_bootstrap"
+					type="list"
+					label="COM_ZHGOOGLEMAP_PLACEMARK_OPTION_FILTER_LOADBOOTSTRAP_LABEL"
+					description="COM_ZHGOOGLEMAP_PLACEMARK_OPTION_FILTER_LOADBOOTSTRAP_DESC"
+					size="1"
+					default="1"
+					class="lst-dropdown-sinlge span10"
+				>
+                <option value="0">COM_ZHGOOGLEMAP_PLACEMARK_OPTION_FILTER_LOADBOOTSTRAP_STYLES_AND_JS</option>
+                <option value="1">COM_ZHGOOGLEMAP_PLACEMARK_OPTION_FILTER_LOADBOOTSTRAP_STYLES</option>
+                <option value="9">COM_ZHGOOGLEMAP_PLACEMARK_OPTION_FILTER_LOADBOOTSTRAP_NO</option>
+            </field>            
+                        
+        </fieldset>
+    </fields>
+            
+</metadata>

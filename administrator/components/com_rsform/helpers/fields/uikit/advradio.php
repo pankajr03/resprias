@@ -1,0 +1,27 @@
+<?php
+/**
+* @package RSForm! Pro
+* @copyright (C) 2007-2019 www.rsjoomla.com
+* @license GPL, http://www.gnu.org/copyleft/gpl.html
+*/
+
+defined('_JEXEC') or die('Restricted access');
+
+require_once JPATH_ADMINISTRATOR.'/components/com_rsform/helpers/fields/advradio.php';
+
+class RSFormProFieldUikitAdvradio extends RSFormProFieldAdvradio
+{
+	public function setFlow() {
+		$flow		= $this->getProperty('FLOW', 'HORIZONTAL');
+		if ($flow != 'HORIZONTAL') {
+			$this->blocks = array('1' => 'uk-width-1-1', '2' => 'uk-width-1-2', '3' => 'uk-width-1-3', '4' => 'uk-width-1-4', '6' => 'uk-width-1-6');
+			$this->splitterStart = '<div class="{block_size}">';
+			$this->splitterEnd = '</div>';
+			
+			if ($flow != 'VERTICAL') {
+				$this->gridStart = '<div class="uk-grid">';
+				$this->gridEnd = '</div>';
+			}
+		}
+	}
+}

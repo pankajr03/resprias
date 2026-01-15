@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<extension type="plugin" version="3.0.0" method="upgrade" group="content">
+    <name>PLG_ZHGOOGLEMAP</name>
+    <!-- The following elements are optional and free of formatting conttraints -->
+    <creationDate>Feb 2013</creationDate>
+    <author>Zhuk Dmitry</author>
+    <authorEmail>ZhukDL@gmail.com</authorEmail>
+    <authorUrl>http://zhuk.cc</authorUrl>
+    <copyright>Copyright</copyright>
+    <license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPLv2 or later</license>
+    <!--  The version string is recorded in the components table -->
+    <version>6.22.5.5</version>
+    <!-- The description is optional and defaults to the name -->
+    <description>PLG_ZHGOOGLEMAP_DESCRIPTION</description>
+    <files>
+        <filename plugin="plg_zhgooglemap">plg_zhgooglemap.php</filename>
+        <filename>index.html</filename>
+        <folder>language</folder>
+        <folder>helpers</folder>
+    </files>
+    
+    <scriptfile>install.script.php</scriptfile>
+     
+    <languages>
+                <language tag="ar-AA">language/ar-AA/ar-AA.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="bg-BG">language/bg-BG/bg-BG.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="cs-CZ">language/cs-CZ/cs-CZ.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="da-DK">language/da-DK/da-DK.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="de-DE">language/de-DE/de-DE.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="el-GR">language/el-GR/el-GR.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="en-GB">language/en-GB/en-GB.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="es-ES">language/es-ES/es-ES.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="fi-FR">language/fi-FI/fi-FI.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="fr-FR">language/fr-FR/fr-FR.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="hr-HR">language/hr-HR/hr-HR.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="hu-HU">language/hu-HU/hu-HU.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="it-IT">language/it-IT/it-IT.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="nl-NL">language/nl-NL/nl-NL.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="pl-PL">language/pl-PL/pl-PL.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="pt-BR">language/pt-BR/pt-BR.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="pt-PT">language/pt-PT/pt-PT.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="ro-RO">language/ro-RO/ro-RO.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="ru-RU">language/ru-RU/ru-RU.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="tr-TR">language/tr-TR/tr-TR.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="uk-UA">language/uk-UA/uk-UA.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="vi-VN">language/vi-VN/vi-VN.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="zh-CN">language/zh-CN/zh-CN.plg_content_plg_zhgooglemap.ini</language>
+                <language tag="zh-TW">language/zh-TW/zh-TW.plg_content_plg_zhgooglemap.ini</language>
+    </languages>
+        <!-- UPDATESERVER DEFINITION -->
+        <updateservers>
+                <!-- Note: No spaces or linebreaks allowed between the server tags -->
+                <server type="extension" priority="1" name="Zh GoogleMap Plugin Update Site">http://zhuk.cc/update/plg_zhgooglemap/extension.xml</server>
+        </updateservers>
+</extension>
+

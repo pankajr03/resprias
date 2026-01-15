@@ -1,0 +1,13 @@
+ALTER TABLE `#__zhgooglemaps_infobubbles` ADD `shadowstyle` int(3) NOT NULL default '0';
+ALTER TABLE `#__zhgooglemaps_infobubbles` ADD `padding` varchar(50) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_infobubbles` ADD `borderradius` varchar(50) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_infobubbles` ADD `borderwidth` varchar(50) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_infobubbles` ADD `bordercolor` varchar(50) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_infobubbles` ADD `backgroundcolor` varchar(50) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_infobubbles` ADD `minwidth` varchar(50) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_infobubbles` ADD `maxwidth` varchar(50) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_infobubbles` ADD `minheight` varchar(50) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_infobubbles` ADD `maxheight` varchar(50) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_infobubbles` ADD `arrowsize` varchar(50) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_infobubbles` ADD `arrowposition` varchar(50) NOT NULL default '';
+ALTER TABLE `#__zhgooglemaps_infobubbles` ADD `arrowstyle` int(3) NOT NULL default '0';

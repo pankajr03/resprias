@@ -1,0 +1,1 @@
+ALTER TABLE `#__zhgooglemaps_routers` ADD `route_data` tinyint(1) NOT NULL default '0';

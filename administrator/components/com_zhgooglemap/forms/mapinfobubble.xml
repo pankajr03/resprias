@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+        <fieldset name="details">
+            <field
+                name="id"
+                type="hidden"
+            />
+            <field
+                name="title"
+                type="text"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_TITLE_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_TITLE_DESC"
+                size="60"
+                class="inputbox span10"
+                required="true"
+                default=""
+            />
+            <field
+                name="description"
+                type="text"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_DESCRIPTION_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_DESCRIPTION_DESC"
+                size="100"
+                class="inputbox span10"
+                required="false"
+                default=""
+            />
+            <field
+                name="shadowstyle"
+                type="list"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_SHADOW_STYLE_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_SHADOW_STYLE_DESC"
+                size="1"
+                required="false"
+                default=""
+                class="lst-dropdown-sinlge"
+            >
+                <option value="0">COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_SHADOW_STYLE_0</option>
+                <option value="1">COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_SHADOW_STYLE_1</option>
+                <option value="2">COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_SHADOW_STYLE_2</option>
+            </field>
+            <field
+                name="padding"
+                type="text"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_PADDING_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_PADDING_DESC"
+                size="30"
+                class="inputbox"
+                required="false"
+                default=""
+            />
+            <field
+                name="borderradius"
+                type="text"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_BORDER_RADIUS_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_BORDER_RADIUS_DESC"
+                size="30"
+                class="inputbox"
+                required="false"
+                default=""
+            />
+            <field
+                name="borderwidth"
+                type="text"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_BORDER_WIDTH_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_BORDER_WIDTH_DESC"
+                size="30"
+                class="inputbox"
+                required="false"
+                default=""
+            />
+            <field
+                name="bordercolor"
+                type="text"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_BORDER_COLOR_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_BORDER_COLOR_DESC"
+                size="30"
+                class="inputbox"
+                required="false"
+                default=""
+            />
+            <field
+                name="backgroundcolor"
+                type="text"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_BACKGROUND_COLOR_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_BACKGROUND_COLOR_DESC"
+                size="30"
+                class="inputbox"
+                required="false"
+                default=""
+            />
+            <field
+                name="minwidth"
+                type="text"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_MIN_WIDTH_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_MIN_WIDTH_DESC"
+                size="30"
+                class="inputbox"
+                required="false"
+                default=""
+            />
+            <field
+                name="maxwidth"
+                type="text"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_MAX_WIDTH_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_MAX_WIDTH_DESC"
+                size="30"
+                class="inputbox"
+                required="false"
+                default=""
+            />
+            <field
+                name="minheight"
+                type="text"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_MIN_HEIGHT_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_MIN_HEIGHT_DESC"
+                size="30"
+                class="inputbox"
+                required="false"
+                default=""
+            />
+            <field
+                name="maxheight"
+                type="text"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_MAX_HEIGHT_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_MAX_HEIGHT_DESC"
+                size="30"
+                class="inputbox"
+                required="false"
+                default=""
+            />
+            <field
+                name="arrowsize"
+                type="text"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_ARROW_SIZE_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_ARROW_SIZE_DESC"
+                size="30"
+                class="inputbox"
+                required="false"
+                default=""
+            />
+            <field
+                name="arrowposition"
+                type="text"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_ARROW_POSITION_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_ARROW_POSITION_DESC"
+                size="30"
+                class="inputbox"
+                required="false"
+                default=""
+            />
+            <field
+                name="arrowstyle"
+                type="list"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_ARROW_STYLE_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_ARROW_STYLE_DESC"
+                size="1"
+                required="false"
+                default=""
+                class="lst-dropdown-sinlge"
+            >
+                <option value="0">COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_ARROW_STYLE_0</option>
+                <option value="1">COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_ARROW_STYLE_1</option>
+                <option value="2">COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_ARROW_STYLE_2</option>
+            </field>
+            <field
+                name="disableautopan"
+                type="radio"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_DISABLEAUTOPAN_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_DISABLEAUTOPAN_DESC"
+                size="30"
+                required="true"
+                default="0"
+                class="btn-group"
+            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field
+                name="disableanimation"
+                type="radio"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_DISABLEANIMATION_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_DISABLEANIMATION_DESC"
+                size="30"
+                required="true"
+                default="0"
+                class="btn-group"
+            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field
+                name="hideclosebutton"
+                type="radio"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_HIDECLOSEBUTTON_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_HIDECLOSEBUTTON_DESC"
+                size="30"
+                required="true"
+                default="0"
+                class="btn-group"
+            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field
+                name="backgroundclassname"
+                type="text"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_BACKGROUNDCLASSNAME_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_BACKGROUNDCLASSNAME_DESC"
+                size="30"
+                class="inputbox"
+                required="false"
+                default=""
+            />
+            <field
+                name="published"
+                type="radio"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_PUBLISHED_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_PUBLISHED_DESC"
+                size="30"
+                required="true"
+                default="1"
+                class="btn-group"
+            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field
+                name="catid"
+                type="category"
+                extension="com_zhgooglemap"
+                class="inputbox span5"
+                default=""
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_CATEGORY_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_CATEGORY_DESC"
+                required="false"
+            >
+                <option value="0">JOPTION_SELECT_CATEGORY</option>
+            </field>
+        </fieldset>
+
+            
+    <fields name="params">
+        <fieldset
+            name="params"
+            label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+        >
+            <field
+                name="show_category"
+                type="list"
+                label="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_SHOW_CATEGORY_LABEL"
+                description="COM_ZHGOOGLEMAP_MAPINFOBUBBLE_DETAIL_SHOW_CATEGORY_DESC"
+                default=""
+                class="lst-dropdown-sinlge"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+        </fieldset>
+    </fields>
+
+</form>

@@ -1,0 +1,513 @@
+/* Placemark InfoWin Toolbar */
+
+.zhgm-placemark-action-div
+{
+    width:100%  !important;
+    padding: 0  !important;
+    margin: 0  !important;
+    border: 0  !important;
+}
+
+
+.zhgm-placemark-action-toolbar
+{
+    margin: 0  !important;
+    padding: 2px 2px 2px 2px  !important;
+    border-top: 1px dotted black  !important;
+    border-bottom: 1px dotted black  !important;
+    height: 30px  !important;
+}
+
+
+.zhgm-placemark-action-toolbaritem
+{
+    margin: 0  !important;
+    padding: 0 5px  !important;
+    display: inline!important;
+    text-align:left  !important;
+    vertical-align:top  !important;
+    height: 30px  !important;
+}
+
+a.zhgm-placemark-action-link-a:visited, 
+a.zhgm-placemark-action-link-a:link
+{
+    text-decoration: none  !important;
+}
+
+.zhgm-image-loading
+{
+    position:fixed;
+    z-index:900;
+    top:50%;
+    left:50%;
+    border: 0px none; 
+    padding: 0px; 
+    margin: 0px; 
+    width: 32px; 
+    height: 32px;
+    opacity: 1 !important;
+}
+
+/* Plugin GeoTags */
+
+.zhgm-geotag-wrapping-div-advanced
+{
+    width:100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+.zhgm-geotag-wrapping-tagbar-advanced
+{
+    margin: 0;
+    padding: 2px 2px 2px 2px;
+    line-height: 2.2;
+}
+
+
+.zhgm-geotag-wrapping-tagbar-item-advanced
+{
+    padding: 2px 5px;
+    display: inline;
+    text-align:left;
+    vertical-align:top;
+    background-color: #E0EAF1;
+    margin: 5px 2px 5px 0;
+    border-radius: 5px 5px 5px 5px;	
+    border-bottom: 1px solid #3E6D8E;
+    border-right: 1px solid #7F9FB6;
+}
+
+.zhgm-geotag-wrapping-tagbar-image-advanced
+{
+    display: inline;
+    border: 0;
+    padding: 2px;
+    vertical-align: middle;
+}
+
+.zhgm-geotag-wrapping-div-simple
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+.zhgm-geotag-wrapping-tagbar-simple
+{
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px #666666;	
+}
+
+
+.zhgm-geotag-wrapping-tagbar-item-simple
+{
+    margin: 0;
+    display: inline;
+    text-align:left;
+    vertical-align:top;
+}
+
+
+div.zhgm-map-default img,
+div.zhgm-map-default svg
+{
+	max-width: none !important;
+}
+
+div.zhgm-map-streetview-default iframe,
+div.zhgm-map-streetview-default svg, 
+div.zhgm-map-streetview-default img
+{
+    max-width: none !important;
+}
+
+div.placemarkContent img,
+div.placemarkContent svg
+{
+    max-width: 100% !important;
+}
+
+.zhgm-map-mainpanel-wrap-default 
+{
+    position: relative;
+}
+.zhgm-map-mainpanel-default 
+{
+    position: absolute;
+    top: 0px;
+    display: inline;
+	
+}
+
+.placemarkRate 
+{
+    height: 18px;
+}
+
+.placemarkHead  
+{
+    line-height:normal !important;
+    white-space:nowrap !important;
+}
+
+.placemarkContent,
+.placemarkBody
+{
+    line-height:normal !important;
+    font-size: 11px !important;
+}
+
+.placemarkGPS  
+{
+    line-height:0.5 !important;
+    font-size: 11px !important;
+}
+
+
+
+/* ---- Buttons ---- */
+.zhgm-mapcenter-button-text-star,
+.zhgm-traffic-button-text-star,
+.zhgm-transit-button-text-star,
+.zhgm-panoramio-button-text-star,
+.zhgm-bike-button-text-star
+{
+    font-family: Arial,sans-serif;   
+    padding: 3px 3px 3px 3px;
+    line-height: normal;
+}
+
+.zhgm-mapcenter-button-ui,
+.zhgm-traffic-button-ui,
+.zhgm-transit-button-ui,
+.zhgm-panoramio-button-ui,
+.zhgm-bike-button-ui,
+.zhgm-opacityoverlay-slider-ui
+{
+    text-align: center; 
+    font-size: 13px; 
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(113, 123, 135);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); 
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.zhgm-mapcenter-button-text,
+.zhgm-traffic-button-text,
+.zhgm-transit-button-text,
+.zhgm-panoramio-button-text,
+.zhgm-bike-button-text
+{
+    font-family: Arial,sans-serif;   
+    padding: 1px 6px 1px 6px;
+    line-height: 1.5;	
+}
+
+.zhgm-opacityoverlay-slider-input
+{
+    font-family: Arial,sans-serif;   
+    padding: 1px 1px 1px 1px;
+    line-height: 1.5;	
+    width: 50px;	
+}
+
+.zhgm-mapcenter-button-ui-star,
+.zhgm-traffic-button-ui-star,
+.zhgm-transit-button-ui-star,
+.zhgm-panoramio-button-ui-star,
+.zhgm-bike-button-ui-star
+{
+    text-align: center; 
+    font-size: 13px; 
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(113, 123, 135);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); 
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+/* panel styles - begin */
+.zhgm-panel-button-ui2-star,
+.zhgm-panel-button-ui2-star.active,
+.zhgm-panel-button-ui-star,
+.zhgm-panel-button-ui-star.active
+{
+    text-align: center; 
+    cursor: pointer;
+    line-height: normal!important;
+}
+
+.zhgm-panel-button2-star,
+.zhgm-panel-button-star
+{
+    margin: 0px!important;	
+    line-height: normal!important;
+}
+
+div.zhgm-panel-button2-star.active div.zhgm-panel-button-ui2-star div.zhgm-panel-button-text2-star,
+div.zhgm-panel-button-star.active div.zhgm-panel-button-ui-star div.zhgm-panel-button-text-star
+{
+    background: url('/components/com_zhgooglemap/assets/utils/panel_right.png');
+    width: 17px;
+    height: 21px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(113, 123, 135);
+    border-radius: 3px 0px 0px 3px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); 
+    margin: 0px;	
+    line-height: normal!important;
+}
+
+div.zhgm-panel-button2-star div.zhgm-panel-button-ui2-star div.zhgm-panel-button-text2-star,
+div.zhgm-panel-button-star div.zhgm-panel-button-ui-star div.zhgm-panel-button-text-star
+{
+    background: url('/components/com_zhgooglemap/assets/utils/panel_left.png');
+    width: 17px;
+    height: 21px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(113, 123, 135);
+    border-radius: 3px 0px 0px 3px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); 
+    margin: 0px;
+    line-height: normal!important;
+}
+/* panel styles - end */
+
+/* ---- Button for v=3.22+ ---- */
+.zhgm-mapcenter-button-text2-star,
+.zhgm-traffic-button-text2-star,
+.zhgm-transit-button-text2-star,
+.zhgm-panoramio-button-text2-star,
+.zhgm-bike-button-text2-star
+{
+    font-family: Roboto,Arial,sans-serif;
+    padding: 3px 3px 3px 3px;
+    line-height: normal;
+}
+
+.zhgm-mapcenter-button-ui2,
+.zhgm-traffic-button-ui2,
+.zhgm-transit-button-ui2,
+.zhgm-panoramio-button-ui2,
+.zhgm-bike-button-ui2,
+.zhgm-opacityoverlay-slider-ui2
+{
+    text-align: center; 
+    font-size: 11px; 
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 2px;
+    box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); 
+    background: #FFFFFF;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.zhgm-mapcenter-button-text2,
+.zhgm-traffic-button-text2,
+.zhgm-transit-button-text2,
+.zhgm-panoramio-button-text2,
+.zhgm-bike-button-text2
+{
+    font-family: Roboto,Arial,sans-serif; 
+    padding: 8px;
+    line-height: 1.5;	
+}
+
+.zhgm-opacityoverlay-slider-input2
+{
+    font-family: Roboto,Arial,sans-serif; 
+    padding: 3px;
+    line-height: 1.5;	
+    width: 50px;	
+}
+
+
+.zhgm-mapcenter-button-ui2-star,
+.zhgm-traffic-button-ui2-star,
+.zhgm-transit-button-ui2-star,
+.zhgm-panoramio-button-ui2-star,
+.zhgm-bike-button-ui2-star
+{
+    text-align: center; 
+    font-size: 11px; 
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 2px;
+    box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); 
+    background: #FFFFFF;
+    cursor: pointer;
+    margin: 5px;
+    padding: 1px 3px 1px 3px;
+}
+
+
+
+/* placemark info */
+.zhgm-placemark-stamp-top-div,
+.zhgm-placemark-stamp-bottom-div,
+.zhgm-placemark-stamp-top-bottom-div
+{
+    width:100%  !important;
+    margin: 0  !important;
+    padding: 0 !important;
+    border-style: none;
+    background: #EDF9FF;
+}
+
+.zhgm-placemark-stamp-top-bottom-div
+{
+    border-top: 1px dotted black  !important;
+    border-bottom: 1px dotted black  !important;
+}
+
+
+.zhgm-placemark-stamp-top-div
+{
+    border-top: 1px dotted black  !important;
+}
+
+.zhgm-placemark-stamp-bottom-div
+{
+    border-bottom: 1px dotted black  !important;
+}
+
+.zhgm-placemark-tag-simple-div,
+.zhgm-placemark-tag-advanced-div
+{
+    width:100% !important;
+    padding: 0 !important;
+    margin: 5px 0px 5px 0px !important;
+    border: 0 !important;
+}
+
+
+.zhgm-placemark-tag-contact-simple-div,
+.zhgm-placemark-tag-contact-advanced-div,
+.zhgm-placemark-tag-marker-simple-div,
+.zhgm-placemark-tag-marker-advanced-div
+{
+    
+}
+
+.zhgm-placemark-tag-item-simple-div,
+.zhgm-placemark-tag-item-advanced-div
+{
+    display: inline;
+    text-align:left;
+    vertical-align:top;
+}
+
+.zhgm-placemark-tag-item-simple-div
+{
+    padding: 0 0 0 2px;
+    margin: 5px 0 5px 0;    
+}
+
+.zhgm-placemark-tag-item-advanced-div
+{
+    padding: 2px 5px;
+    margin: 5px 2px 5px 0;    
+    background-color: #E0EAF1;
+    border-radius: 5px 5px 5px 5px;	
+    border-bottom: 1px solid #3E6D8E;
+    border-right: 1px solid #7F9FB6;
+}
+
+
+.zhgm-geolocation-main,
+.zhgm-panoramio-filter-main,
+.zhgm-find-address-main
+{
+    margin: 5px !important;
+}
+
+.zhgm-geolocation-button,
+.zhgm-panoramio-filter-text,
+.zhgm-panoramio-filter-button,
+.zhgm-find-address-button,
+.zhgm-find-find-button,
+.zhgm-find-panel,
+.zhgm-find-mode,
+.zhgm-find-field
+{
+    margin: 0 !important;
+}
+
+/* for panel tabs*/
+.zhgm-map-mainpanel-default .ui-tabs .ui-tabs-nav
+{
+    line-height: normal!important;
+    font-size: 11px!important;
+}
+
+.zhgm-map-mainpanel-default .ui-tabs .ui-tabs-nav li
+{
+    line-height: normal!important;
+}
+
+.zhgm-map-mainpanel-default .ui-tabs .ui-tabs-panel .ui-accordion h3.ui-accordion-header 
+{
+    line-height: normal!important;
+    font-size : 12px!important;
+}
+
+
+.zhgm-map-mainpanel-default .ui-tabs .ui-tabs-panel .ui-accordion .ui-accordion-content
+{
+    font-size : 11px!important;
+    line-height: normal!important;
+    padding: 5px!important;
+}
+
+.zhgm-map-mainpanel-default .ui-tabs div.ui-tabs-panel 
+{
+    overflow: auto!important;
+}
+
+/*fix placemark titles*/
+.zhgm-map-mainpanel-default .ui-tabs .ui-tabs-panel .ui-accordion .ui-accordion-content h2,
+.zhgm-map-mainpanel-default .ui-tabs .ui-tabs-panel .ui-accordion .ui-accordion-content h3,
+.zhgm-map-mainpanel-default .ui-tabs .ui-tabs-panel h2.placemarkHead,
+.zhgm-map-mainpanel-default .ui-tabs .ui-tabs-panel h3.placemarkHead
+{
+    font-size : 12px!important;
+    line-height: normal!important;
+    font-weight: 600;
+}
+
+/*fix placemark infobubble with tabs*/
+div[class*="_ibani"], div[class*="_ibani"] > div {
+  box-sizing: unset;
+}
+
+
+.zhgm-map-gpdr-buttons {
+	text-align: center!important;
+}
+
+.zhgm-map-gpdr-button {
+	margin: 10px;
+}
+
+.zhgm-map-gpdr {
+	background-image: url("../utils/gdpr.png")!important;
+	background-size: cover!important;
+	background-position: center!important;
+	height: 100%!important;
+}

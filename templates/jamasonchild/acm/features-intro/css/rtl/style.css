@@ -1,0 +1,191 @@
+.acm-features.style-1 .features-content .features-item {
+  padding-left: 48px;
+}
+@media (max-width: 767px) {
+  .acm-features.style-1 .features-content .features-item {
+    padding-left: 24px;
+  }
+}
+@media (max-width: 1199px) {
+  .acm-features.style-1 .features-content .features-item h2 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1392px) {
+  .acm-features.style-1 .features-content .features-image {
+    margin-left: -144px;
+  }
+}
+@media (max-width: 991px) {
+  .acm-features.style-1 .features-content .features-image {
+    margin-bottom: 48px;
+  }
+}
+.acm-features.style-1 .features-content h2 a {
+  color: #ffffff;
+}
+.acm-features.style-1 .features-content h2 a:hover,
+.acm-features.style-1 .features-content h2 a:focus,
+.acm-features.style-1 .features-content h2 a:active {
+  color: #ffc400;
+}
+.acm-features.style-1 .features-content .btn {
+  margin-top: 24px;
+}
+.acm-features.style-2 .row {
+  margin-top: -24px;
+  margin-bottom: -24px;
+}
+.acm-features.style-2 .row > div {
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+.acm-features.style-2 .font-icon {
+  margin-bottom: 24px;
+}
+.acm-features.style-2 .font-icon span {
+  color: #ffc400;
+  font-size: 40px;
+}
+.acm-features.style-2 .img-icon {
+  margin-bottom: 24px;
+}
+.acm-features.style-2 .action {
+  background: #ffffff;
+  border-radius: 50%;
+  color: #151515;
+  display: inline-block;
+  text-align: center;
+  line-height: 32px;
+  margin-top: 24px;
+  font-size: 11px;
+  height: 32px;
+  width: 32px;
+}
+@media (max-width: 767px) {
+  .acm-features.style-2 .action {
+    margin-top: 0;
+  }
+}
+.acm-features.style-2 .action:hover,
+.acm-features.style-2 .action:focus,
+.acm-features.style-2 .action:active {
+  background: #ffc400;
+}
+.full-width .acm-features.style-3 {
+  margin-right: -48px;
+  margin-left: -48px;
+}
+.full-width .acm-features.style-3 .owl-slide {
+  padding-right: 144px;
+}
+@media (min-width: 1392px) {
+  .full-width .acm-features.style-3 .owl-slide.container {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 1391px) {
+  .full-width .acm-features.style-3 .owl-slide {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+.full-width .acm-features.style-3 .owl-slide .owl-carousel {
+  padding-left: 144px;
+  overflow: hidden;
+}
+@media (max-width: 1391px) {
+  .full-width .acm-features.style-3 .owl-slide .owl-carousel {
+    padding-left: 0;
+  }
+}
+.full-width .acm-features.style-3 .owl-slide .owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+.acm-features.style-3 .owl-slide {
+  position: relative;
+  z-index: 4;
+}
+.acm-features.style-3 .owl-carousel {
+  padding-top: 96px;
+  margin-top: -96px;
+  position: relative;
+}
+.acm-features.style-3 .owl-carousel .owl-nav {
+  top: 0;
+  margin-bottom: 48px;
+  position: absolute;
+  left: 288px;
+  z-index: 2;
+}
+@media (max-width: 1391px) {
+  .acm-features.style-3 .owl-carousel .owl-nav {
+    left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .acm-features.style-3 .owl-carousel .owl-nav {
+    display: none;
+  }
+}
+.acm-features.style-3 .owl-carousel .owl-nav > div {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  line-height: 44px;
+  margin-right: 12px;
+  height: 48px;
+  width: 48px;
+}
+.acm-features.style-3 .owl-carousel .owl-nav > div:hover {
+  background: #ffc400;
+  border-color: #ffc400;
+  color: #151515;
+}
+.acm-features.style-3 .owl-carousel .owl-dots {
+  display: block;
+  text-align: center;
+  margin-top: 48px;
+}
+.acm-features.style-3 .owl-carousel .owl-dots > div {
+  background: #252525;
+  display: inline-block;
+  margin: 0 8px;
+  height: 8px;
+  width: 8px;
+}
+.acm-features.style-3 .owl-carousel .owl-dots > div.active {
+  background: #ffc400;
+}
+.acm-features.style-3 .features-text {
+  background: #252525;
+  padding: 48px 24px;
+  text-align: center;
+  -webkit-transition: 500ms all;
+  -o-transition: 500ms all;
+  transition: 500ms all;
+}
+.acm-features.style-3 .features-text h4 {
+  margin-top: 0;
+}
+.acm-features.style-3 .features-text p {
+  color: #888888;
+  font-size: 11px;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.acm-features.style-3 a:hover,
+.acm-features.style-3 a:focus,
+.acm-features.style-3 a:active {
+  text-decoration: none;
+}
+.acm-features.style-3 .features-item:hover .features-text {
+  background: #000000;
+}
+.acm-features.style-3 .features-item:hover h4 {
+  color: #ffc400;
+}

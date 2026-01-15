@@ -1,0 +1,127 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// -------------------------------
+// TEAMS STYLE
+// -------------------------------
+.acm-teams {
+	.row {
+		+ .row {
+			margin-top: @grid-gutter-width;
+
+			// Mobile view
+			@media (max-width: @screen-xs-max) {
+				margin-top: @t3-global-margin;
+			}
+		}
+
+		> div {
+			+ div {
+				// Mobile view
+				@media (max-width: @screen-xs-max) {
+					margin-top: @t3-global-margin;
+				}
+			}
+		}
+	}
+
+	.item {
+		background: @gray-dark;
+		position: relative;
+		.transition(all 500ms);
+		.clearfix();
+
+		// Member Image
+		.member-image {
+			float: left;
+			margin-right: @grid-gutter-width;
+
+			// Tablet view
+			@media (max-width: @screen-md-max) {
+				float: none;
+				margin-right: 0;
+				width: 100%;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		// Member Content
+		.member-content {
+			padding: @grid-gutter-width;
+			padding-bottom: @grid-gutter-width * 2;
+
+			// Mobile view
+			@media (max-width: @screen-xs-max) {
+				padding: @t3-global-padding;
+				padding-bottom: @grid-gutter-width * 2;
+			}
+
+			// Name
+			h4 {
+				margin-top: 0;
+			}
+		}
+
+		// Member position
+		.member-title {
+			color: @gray-light;
+			font-size: @font-size-h6;
+			text-transform: uppercase;
+		}
+
+		// Member Description
+		.member-desc {
+			margin-bottom: 0;
+		}
+
+		// Member Action
+		.action {
+			background: @inverse-color;
+			border-radius: 50%;
+			bottom: @grid-gutter-width;
+			color: @gray-darker;
+			position: absolute;
+			line-height: 32px;
+			text-align: center;
+			height: 32px;
+			width: 32px;
+
+			// Mobile view
+			@media (max-width: @screen-xs-max) {
+				bottom: @t3-global-margin;
+				left: @t3-global-margin;
+			}
+
+			&:hover,&:focus,&:active {
+				background: @brand-primary;
+			}
+		}
+
+		&:hover {
+			background: @black;
+
+			h4 {
+				color: @brand-primary;
+			}
+		}
+	}
+
+	// Action
+	.action {
+		margin-top: @grid-gutter-width;
+
+		// Tablet/Mobile view
+		@media (max-width: @screen-sm-max) {
+			padding-left: 0;
+		}
+	}
+}

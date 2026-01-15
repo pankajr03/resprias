@@ -1,0 +1,83 @@
+// RTL STYLES
+// ------------------------------------------------------
+div.t3-off-canvas {
+	width: 0;
+
+	.off-canvas-open & {
+		width: @t3-off-canvas-width;
+	}
+}
+// Article Images
+// --------------
+
+
+.languageswitcherload {
+  ul {
+    float: left;
+  }
+}
+
+.popover {
+	right: auto!important;
+
+	&.left .arrow {
+		transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		right: auto;
+		left: 100%;
+	}
+}
+
+// OWL RTL
+.owl-stage-outer {
+	direction: ltr;
+
+	.owl-stage {
+		direction: rtl;
+	}
+}
+
+// Icon
+span {
+	&.ion-arrow-right-c::before {
+   content: "\f108";
+	}
+
+	&.ion-arrow-left-c::before {
+	    content: "\f10b";
+	}
+
+	&.ion-chevron-left::before {
+    content: "\f125";
+	}
+
+	&.ion-chevron-right::before {
+    content: "\f124";
+	}
+
+	&.fa-arrow-left::before {
+    content: "\f061";
+	}
+
+	&.fa-arrow-right::before {
+    content: "\f060";
+	}
+}
+
+div.mce-btn-has-text .mce-ico {
+	padding-right: 0;
+	padding-left: 5px;
+}
+
+// ACM STYLE
+
+// Slideshow
+div.acm-slideshow .owl-carousel .item::before {
+	background-image: linear-gradient(to left, #000000, transparent);
+}
+
+// Client
+div.acm-cliens.img-grayscale .client-item span {
+	left: 50%;
+	right: auto;
+}

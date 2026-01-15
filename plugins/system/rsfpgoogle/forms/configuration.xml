@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="params">
+		<field name="google.code" type="text" label="RSFP_GOOGLE_CODE" size="100" />
+	</fieldset>
+</form>

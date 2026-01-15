@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+    <name>System - Aimy H1 Heading </name>
+    <creationDate>2025-05-12</creationDate>
+    <author>Aimy Extensions (Netzum Sorglos Software GmbH)</author>
+    <authorEmail>info@aimy-extensions.com</authorEmail>
+    <authorUrl>https://www.aimy-extensions.com/</authorUrl>
+    <copyright>2015-2025 Aimy Extensions, Netzum Sorglos Software GmbH</copyright>
+    <license>GNU General Public License (GPL) v2</license>
+    <version>8.0</version>
+    <description>Adds missing H1 headings </description>
+    <scriptfile>install-hints.php</scriptfile>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="scope"
+                  type="radio"
+                  default="1"
+                  class="btn-group"
+                  label="AIMY_H1_WORK_ON_LBL"
+                  description="AIMY_H1_WORK_ON_DSC">
+                    <option value="1">AIMY_H1_WORK_ON_PAGE</option>
+                    <option value="2">AIMY_H1_WORK_ON_COMPONENT</option>
+                </field>
+                <field name="show_context"
+                  type="radio"
+                  default="0"
+                  class="btn-group btn-group-yesno"
+                  labelclass="control-group"
+                  label="AIMY_H1_SHOW_CONTEXT_LBL"
+                  description="AIMY_H1_SHOW_CONTEXT_DSC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="exclude_contexts"
+                  type="textarea"
+                  class="inputbox"
+                  rows="10"
+                  cols="30"
+                  required="false"
+                  default="com_content.category&#13;&#10;com_content.archive&#13;&#10;com_content.featured"
+                  label="AIMY_H1_EXCLUDE_CONTEXTS_LBL"
+                  description="AIMY_H1_EXCLUDE_CONTEXTS_DSC" />
+                <field name="check_count"
+                  type="radio"
+                  default="0"
+                  class="btn-group btn-group-yesno"
+                  labelclass="control-group"
+                  label="AIMY_H1_CHECK_COUNT_LBL"
+                  description="AIMY_H1_CHECK_COUNT_DSC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+    <files>
+        <filename plugin="aimyh1heading">aimyh1heading.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <media destination="plg_aimyh1heading" folder="media">
+        <filename>aimy-logo_340x327.png</filename>
+        <filename>index.html</filename>
+    </media>
+    <languages>
+        <language tag="de-DE">i18n/de-DE.plg_system_aimyh1heading.ini</language>
+        <language tag="en-GB">i18n/en-GB.plg_system_aimyh1heading.ini</language>
+        <language tag="es-ES">i18n/es-ES.plg_system_aimyh1heading.ini</language>
+        <language tag="fa-IR">i18n/fa-IR.plg_system_aimyh1heading.ini</language>
+        <language tag="nl-NL">i18n/nl-NL.plg_system_aimyh1heading.ini</language>
+        <language tag="ru-RU">i18n/ru-RU.plg_system_aimyh1heading.ini</language>
+        <language tag="pl-PL">i18n/pl-PL.plg_system_aimyh1heading.ini</language>
+        <language tag="sl-SI">i18n/sl-SI.plg_system_aimyh1heading.ini</language>
+        <language tag="sv-SE">i18n/sv-SE.plg_system_aimyh1heading.ini</language>
+    </languages>
+    <updateservers>
+      <server
+        type="extension"
+        priority="1"
+        name="Aimy H1 Heading Update Server">http://updates.aimy-extensions.com/joomla/plg_aimyh1heading.xml</server>
+    </updateservers>
+</extension>

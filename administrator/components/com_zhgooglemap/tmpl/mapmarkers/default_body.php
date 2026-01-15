@@ -1,0 +1,209 @@
+<?php
+/*------------------------------------------------------------------------
+# com_zhgooglemap - Zh GoogleMap
+# ------------------------------------------------------------------------
+# author:    Dmitry Zhuk
+# copyright: Copyright (C) 2011 zhuk.cc. All Rights Reserved.
+# license:   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
+# website:   http://zhuk.cc
+# Technical Support Forum: http://forum.zhuk.cc/
+-------------------------------------------------------------------------*/
+// No direct access to this file
+defined('_JEXEC') or die('Restricted Access');
+
+use Joomla\CMS\Factory;
+use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Helper\ContentHelper;
+use Joomla\CMS\Router\Route;
+use Joomla\CMS\Language\Text;
+use Joomla\CMS\Uri\Uri;
+
+
+?>
+<?php 
+    $user   = Factory::getUser();
+    $userId = $user->id;
+    
+    $listOrder    = $this->escape($this->state->get('list.ordering'));
+    $listDirn    = $this->escape($this->state->get('list.direction'));
+    $saveOrder = $listOrder == 'h.ordering';
+
+    foreach($this->items as $i => $item): 
+
+    $canDo = ContentHelper::getActions('com_zhgooglemap');
+    
+    $canEdit    = $canDo->get('core.edit');
+    $canEditOwn = $canDo->get('core.edit.own') && 1==2; //$item->createdbyuser == $userId;
+    $canChange  = $canDo->get('core.edit.state');
+    
+    $imgpath = URI::root() .'components/com_zhgooglemap/assets/icons/';
+    $utilspath = URI::root() .'administrator/components/com_zhgooglemap/assets/utils/';
+?>
+    <tr class="row<?php echo $i % 2; ?>" data-draggable-group="<?php echo $item->catid?>">
+        <td class="text-center">
+            <?php echo HTMLHelper::_('grid.id', $i, $item->id, false, 'cid', 'cb', $item->id); ?>
+        </td>
+        <td class="text-center d-none d-md-table-cell">
+            <?php
+            $iconClass = '';
+
+            if (!$canChange)
+            {
+                $iconClass = ' inactive';
+            }
+            elseif (!$saveOrder)
+            {
+                $iconClass = ' inactive" title="' . Text::_('JORDERINGDISABLED');
+            }
+            ?>
+            <span class="sortable-handler <?php echo $iconClass ?>">
+                <span class="icon-ellipsis-v" aria-hidden="true"></span>
+            </span>
+            <?php if ($canChange && $saveOrder) : ?>
+                <input type="text" name="order[]" size="5"
+                    value="<?php echo $item->ordering; ?>" class="width-20 text-area-order hidden">
+            <?php endif; ?>
+        </td>
+        <td>     
+            <div>
+            <?php if ($canEdit || $canEditOwn) : ?>
+                    <a href="<?php echo Route::_('index.php?option=com_zhgooglemap&task=mapmarker.edit&id=' . $item->id); ?>">
+                    <?php echo $this->escape($item->title); ?></a>
+            <?php else : ?>
+                    <?php echo $this->escape($item->title); ?>
+            <?php endif; ?>
+            </div>
+            <div>
+            <span class="zhgm-form-item-tv-label">
+                <?php echo Text::_('COM_ZHGOOGLEMAP_MAPMARKER_HEADING_MAPTITLE') . ": "; ?>
+            </span>
+            <span class="zhgm-form-item-tv-value">
+                <?php echo $this->escape($item->mapname); ?>
+            </span>
+            </div>
+            <?php 
+            if ($item->markergroupname != "")
+            {
+            ?>
+            <div>
+            <span class="zhgm-form-item-tv-label">
+                <?php echo Text::_('COM_ZHGOOGLEMAP_MAPMARKER_HEADING_MARKERGROUP') . ": "; ?>
+            </span>
+            <span class="zhgm-form-item-tv-value">
+            <?php           
+                 echo $this->escape($item->markergroupname); 
+            ?>
+            </span>
+            </div>
+            <?php
+            }
+            if ($item->category != "")
+            {
+            ?>
+            <div>
+            <span class="zhgm-form-item-tv-label">
+                <?php echo HTMLHelper::_('searchtools.sort', 'COM_ZHGOOGLEMAP_MAPMARKER_HEADING_CATEGORY', 'category_title', $listDirn, $listOrder) . ": ";?>
+            </span>
+            <span class="zhgm-form-item-tv-value">
+            <?php 
+                if ($item->category_language !== '*')
+                {
+                    echo $this->escape($item->category) . ' (' .$this->escape($item->category_language) . ')';
+                }
+                else
+                {
+                    echo $this->escape($item->category); 
+                }  
+            ?>
+            </span>
+            </div>
+            <?php
+            }            
+            if ($item->fullusername != "")
+            {
+            ?>
+            <div>
+            <span class="zhgm-form-item-tv-label">
+                <?php echo Text::_('COM_ZHGOOGLEMAP_MAPMARKER_HEADING_USER') . ": "; ?>
+            </span>
+            <span class="zhgm-form-item-tv-value">
+            <?php           
+                 echo $this->escape($item->fullusername); 
+            ?>
+            </span>
+            </div>
+            <?php
+            }
+            ?>
+        </td>
+
+        <td align="center">
+            <?php echo '<img src="'.$imgpath.str_replace("#", "%23", $item->icontype).'.png" alt="" />'; ?>
+        </td>
+        <td align="center">
+            <?php 
+                echo HTMLHelper::_('jgrid.published', $item->published, $i, 'mapmarkers.', $canChange, 'cb', $item->publish_up, $item->publish_down); 
+                //echo '<img src="'.URI::root() .'administrator/components/com_zhgooglemap/assets/utils/published'.$item->published.'.png" alt="" />'; 
+            ?>            
+        </td>
+
+        
+        <td class="zhgm-form-item-rating">
+            <?php 
+                echo "<div>";
+                $val_cnt_max = 5;
+                
+                $val_main = $item->rating_value;
+                $val_int = floor($val_main);
+                
+                if ($val_main > $val_cnt_max)
+                {
+                    $val_main = $val_cnt_max;
+                    $val_int = $val_cnt_max;
+                }
+                
+                $val_cnt = 0;
+                if ($val_main == 0)
+                {
+                    echo '<img name="image" src="'.$utilspath .'star0_00.png" alt="" />';
+                    $val_cnt++;
+                }
+                else if ($val_int == 0 && $val_main > 0)
+                {
+                    echo '<img name="image" src="'.$utilspath .'star0_05.png" alt="" />';
+                    $val_cnt++;
+                }
+                else
+                {
+                    for ($i=0; $i<$val_int; $i++)
+                    {
+                        echo '<img name="image" src="'.$utilspath .'star0_10.png" alt="" />';
+                        $val_cnt++;
+                    }
+                    if (ceil(($val_main-$val_int)*10)>4)
+                    {
+                        echo '<img name="image" src="'.$utilspath .'star0_05.png" alt="" />';
+                        $val_cnt++;
+                    }
+                }
+                for ($i=$val_cnt; $i < $val_cnt_max; $i++)
+                {
+                    echo '<img name="image" src="'.$utilspath .'star0_00.png" alt="" />';
+                }
+                
+                
+                echo "</div>";
+            ?>
+        </td>
+        <td>
+            <?php echo $this->escape($item->access_level); ?>
+        </td>
+        <td>
+            <?php echo $this->escape($item->userorder); ?>
+        </td>
+        <td>
+            <?php echo $item->id; ?>
+        </td>
+    </tr>
+<?php endforeach; ?>
+

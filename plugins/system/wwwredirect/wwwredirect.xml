@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_WWWREDIRECT</name>
+	<author>Web357 (Yiannis Christodoulou)</author>
+	<creationDate>2025-10-27</creationDate>
+	<copyright>Copyright: (©) 2014-2024 Web357. All rights reserved.</copyright>
+	<license>GNU/GPLv3, https://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>support@web357.com</authorEmail>
+	<authorUrl>https://www.web357.com</authorUrl>
+	<version>1.2.8</version>
+	<variant>free</variant>
+	<description>With this tiny Joomla! System Plugin you can redirect all of the requests from non-www to www, or from www to non-www. (Example: from http://yourdomain.com to http://www.yourdomain.com, or from http://www.yourdomain.com to http://yourdomain.com).</description>
+	
+	<files>
+		<folder>elements</folder>
+		<folder>language</folder>
+		<filename plugin="wwwredirect">wwwredirect.php</filename>
+		<filename>index.html</filename>
+		<filename>script.install.helper.php</filename>
+	</files>
+	
+	<scriptfile>script.install.php</scriptfile>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/web357framework/elements">
+			
+			<!-- ::: PLUGIN ::: -->
+			<fieldset name="basic">
+			
+				<!-- Version Check -->
+				<field type="header" class="w357_large_header" label="W357FRM_HEADER_VERSION_CHECK" />
+				<field name="info" id="info" type="info" extension_type="plugin" extension_name="wwwredirect" real_name="PLG_SYSTEM_WWWREDIRECT" plugin_type="system" label="" addfieldpath="/plugins/system/web357framework/elements" />
+
+				
+				<!-- Check if Web357 Framework plugin exists -->
+				<field name="w357frmrk" id="w357frmrk" type="w357frmrk" addfieldpath="/plugins/system/wwwredirect/elements" />
+
+				<!-- Default Parameters -->
+				<field type="header" class="w357_large_header" label="J357_PLG_SYSTEM_WWWREDIRECT_BASE_SETTINGS" />
+				<field name="redirection_type" type="list" class="btn-group" default="with_www" label="J357_PLG_SYSTEM_REDIRECTION_TYPE_LBL" description="J357_PLG_SYSTEM_REDIRECTION_TYPE_DESC">
+					<option value="0">J357_PLG_SYSTEM_REDIRECTION_TYPE_OPTION_DISABLED</option>
+					<option value="with_www">J357_PLG_SYSTEM_REDIRECTION_TYPE_OPTION_WITH_WWW</option>
+					<option value="non_www">J357_PLG_SYSTEM_REDIRECTION_TYPE_OPTION_NON_WWW</option>
+				</field>
+				<field name="force_https" type="list" class="btn-group" default="with_https" label="J357_PLG_SYSTEM_FORCE_HTTPS_LBL" description="J357_PLG_SYSTEM_FORCE_HTTPS_DESC">
+					<option value="0">J357_PLG_SYSTEM_REDIRECTION_TYPE_OPTION_DISABLED</option>
+					<option value="with_https">J357_PLG_SYSTEM_REDIRECTION_TYPE_OPTION_WITH_HTTPS</option>
+					<option value="non_https">J357_PLG_SYSTEM_REDIRECTION_TYPE_OPTION_NON_HTTPS</option>
+				</field>
+				<field name="apply_admin" type="radio" class="btn-group btn-group-yesno" default="0" label="J357_PLG_SYSTEM_APPLY_ADMIN_LBL" description="J357_PLG_SYSTEM_APPLY_ADMIN_DESC">
+					<option value="0">J357_PLG_SYSTEM_REDIRECTION_TYPE_OPTION_DISABLED</option>
+					<option value="1">J357_PLG_SYSTEM_REDIRECTION_TYPE_OPTION_ENABLED</option>
+				</field>
+				<field name="exclusion_patterns" type="textarea" default="" label="J357_PLG_SYSTEM_EXCLUSION_PATTERNS_LBL" 
+                       description="J357_PLG_SYSTEM_EXCLUSION_PATTERNS_DESC" hint="J357_PLG_SYSTEM_EXCLUSION_PATTERNS_HINT">
+                </field>
+                <field name="enable_logging" type="radio" default="0" class="btn-group btn-group-yesno" label="J357_PLG_SYSTEM_ENABLE_LOGGING_LBL" description="J357_PLG_SYSTEM_ENABLE_LOGGING_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                
+                <!-- Multi-Domain Redirection -->
+                <field type="header" class="w357_large_header" label="Multi-Domain Redirection" />
+                <field name="preferred_domain" type="text" default="" label="J357_PLG_SYSTEM_PREFERRED_DOMAIN_LBL" 
+                       description="J357_PLG_SYSTEM_PREFERRED_DOMAIN_DESC" hint="J357_PLG_SYSTEM_PREFERRED_DOMAIN_HINT">
+                </field>
+                <field name="domain_detection" id="domain_detection" type="domaindetection" label="J357_PLG_SYSTEM_DOMAIN_DETECTION_LBL" 
+                       description="J357_PLG_SYSTEM_DOMAIN_DETECTION_DESC" addfieldpath="/plugins/system/wwwredirect/elements" />
+
+				<!-- JED Review -->
+				<field type="header" class="w357_large_header" label="W357FRM_HEADER_JED_REVIEW_AND_RATING" />
+				<field name="jedreview" id="jedreview" type="jedreview" extension_type="module" extension_name="wwwredirect" real_name="PLG_SYSTEM_WWWREDIRECT" plugin_type="system" label="" addfieldpath="/plugins/system/web357framework/elements" jed_url="" />
+
+			</fieldset>
+
+			<fieldset name="description" label="W357FRM_HEADER_DESCRIPTION">
+
+				<!-- Description -->
+				<field type="header" class="w357_large_header" label="W357FRM_HEADER_DESCRIPTION" />
+				<field name="description" id="description" type="description" extension_type="plugin" extension_name="wwwredirect" real_name="PLG_SYSTEM_WWWREDIRECT" plugin_type="system" label="" addfieldpath="/plugins/system/web357framework/elements" />
+			
+			</fieldset>
+			
+			<fieldset name="about" label="W357FRM_HEADER_ABOUT_WEB357">
+				
+				<!-- About Web357 -->
+				<field type="header" class="w357_large_header" label="W357FRM_HEADER_ABOUT_WEB357" />
+				<field name="about" id="about" type="about" label="" addfieldpath="/plugins/system/web357framework/elements" />
+				
+			</fieldset>
+			
+		</fields>
+	</config>
+	
+	<updateservers><server type="extension" priority="1" name="www Redirect (free version)">https://updates.web357.com/wwwredirect/wwwredirect_free.xml</server></updateservers>	
+
+</extension>

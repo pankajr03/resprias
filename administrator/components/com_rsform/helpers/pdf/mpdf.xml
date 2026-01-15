@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="file" method="upgrade">
+    <name>Library - mPDF</name>
+    <author>RSJoomla!</author>
+    <creationDate>September 2022</creationDate>
+    <copyright>(C) 2022 www.rsjoomla.com</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>support@rsjoomla.com</authorEmail>
+    <authorUrl>www.rsjoomla.com</authorUrl>
+    <version>8.2.0</version>
+    <description></description>
+
+    <updateservers>
+        <server type="extension" priority="1" name="Library - mPDF">https://www.rsjoomla.com/updates/com_rsform/3rd%20Party/mpdf.xml</server>
+    </updateservers>
+
+    <fileset>
+        <files target="administrator/components/com_rsform/helpers/pdf/">
+            <folder>mpdf</folder>
+        </files>
+    </fileset>
+</extension>
