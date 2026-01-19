@@ -477,3 +477,24 @@ h3.n2-ss-item-content {
     font-display: swap;
 }
 
+.innovation-text {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.innovation-text span {
+  color: #ffffff;
+  opacity: 0.45;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .innovation-text span {
+    font-size: 38px;
+    opacity: 0.6;
+    right: 4%;
+  }
+}
