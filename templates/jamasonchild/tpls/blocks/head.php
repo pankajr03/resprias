@@ -36,6 +36,15 @@ defined('_JEXEC') or die;
 		//]]>
 	</script>
 <?php endif ?>
+<!-- Social Preview -->
+<meta property="og:title" content="Breathing Education for Wellness, Performance & Longevity – Respiras Breathing" />
+<meta property="og:description" content="Respiras teaches breathing as a trainable skill that supports nervous system adaptability, regulation, and sustainable performance under stress." />
+<meta property="og:image" content="https://www.respiras.com/images/home/images_1200-healthy-aging-happy-couple-respiras-breathing.jpg" />
+<meta property="og:url" content="https://www.respiras.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
 <meta name="HandheldFriendly" content="true"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <!-- //META FOR IOS & HANDHELD -->

@@ -7,7 +7,9 @@
 /files/
 /administrator/cache/
 /administrator/components/com_akeebabackup/backup/
-/administrator/logs/
+/administrator/logs/*
+/administrator/logs/deprecated.php
+/administrator/logs/everything.php
 /cache/
 /logs/
 /tmp/
