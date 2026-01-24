@@ -60,6 +60,7 @@ $this->addHead();
 ?>
 
 <!-- ✅ Lazy-load Slick CSS -->
+<link rel="preload" href="./templates/jamasonchild/fonts/ionicons/fonts/ionicons.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" onload="this.onload=null;this.rel='stylesheet';">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"></noscript>
 
@@ -68,8 +69,8 @@ $this->addHead();
 
 <!-- ✅ Non-blocking JS -->
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js" defer></script> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.css" as="style"> 
 
 <?php
 
@@ -89,7 +90,7 @@ if (is_file(T3_TEMPLATE_PATH . '/js/custom.js')) {
 <script type="text/javascript" src="<?php echo T3_URL ?>/js/respond.min.js"></script>
 <![endif]-->
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" -->
 
 <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>-->
 

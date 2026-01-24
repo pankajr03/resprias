@@ -21,6 +21,11 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Ionicons';
+  font-display: swap;
+}
+
 figure.none.item-image {
     margin-top: 0% !important;
 }
